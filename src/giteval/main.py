@@ -173,37 +173,9 @@ def compute_metrics(commits: List[CommitNumstat]) -> RepoMetrics:
     files_changed_total = sum(c.files_changed for c in commits_sorted)
     avg_commits_per_day = (commits_total / span_days) if span_days > 0 else 0.0
 
-    # Effort estimation: group commit sessions per author.
-    # A session starts when time gap since previous commit by same author > SESSION_GAP_MINUTES.
-    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
-    max_hours_per_day = float(os.getenv("MAX_HOURS_PER_DAY", "10") or "10")
-    session_gap = timedelta(minutes=session_gap_minutes)
-
-    hours_total = 0.0
-    per_author: Dict[str, List[CommitNumstat]] = defaultdict(list)
-    for c in commits_sorted:
-        key = c.author_email or c.author_name
-        per_author[key].append(c)
-
-    for author, cs in per_author.items():
-        cs.sort(key=lambda x: x.author_date)
-        day_buckets: Dict[datetime.date, List[Tuple[datetime, datetime]]] = defaultdict(list)
-        session_start: Optional[datetime] = None
-        prev_time: Optional[datetime] = None
-        for c in cs:
-            if prev_time is None or (c.author_date - prev_time) > session_gap:
-                # new session
-                if session_start is not None:
-                    # close previous
-                    day_buckets[prev_time.date()].append((session_start, prev_time))
-                session_start = c.author_date
-            prev_time = c.author_date
-        if session_start is not None and prev_time is not None:
-            day_buckets[prev_time.date()].append((session_start, prev_time))
-        # Sum per day with cap
-        for day, sessions in day_buckets.items():
-            total = sum((end - start).total_seconds() / 3600.0 for start, end in sessions)
-            hours_total += min(total, max_hours_per_day)
+    # Effort estimation using session + commit-weighted heuristic
+    author_effort = _estimate_hours_per_author(commits_sorted)
+    hours_total = sum(v["hours"] for v in author_effort.values())
 
     return RepoMetrics(
         repo_path="",
@@ -247,9 +219,7 @@ def _author_details(commits: List[CommitNumstat]) -> List[Dict[str, object]]:
             key = f"{key} <{c.author_email}>"
         per_author_commits[key].append(c)
     details: List[Dict[str, object]] = []
-    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
-    session_gap = timedelta(minutes=session_gap_minutes)
-    max_hours_per_day = float(os.getenv("MAX_HOURS_PER_DAY", "10") or "10")
+    effort = _estimate_hours_per_author(commits)
     for author, cs in per_author_commits.items():
         cs.sort(key=lambda x: x.author_date)
         commits_total = len(cs)
@@ -263,25 +233,6 @@ def _author_details(commits: List[CommitNumstat]) -> List[Dict[str, object]]:
         sizes = [c.added + c.deleted for c in cs]
         avg_size = round(sum(sizes) / commits_total, 2) if commits_total else 0.0
         med_size = float(statistics.median(sizes)) if sizes else 0.0
-        # sessions & hours
-        day_buckets: Dict[date, List[Tuple[datetime, datetime]]] = defaultdict(list)
-        session_start: Optional[datetime] = None
-        prev_time: Optional[datetime] = None
-        sessions_count = 0
-        for c in cs:
-            if prev_time is None or (c.author_date - prev_time) > session_gap:
-                if session_start is not None:
-                    day_buckets[prev_time.date()].append((session_start, prev_time))
-                    sessions_count += 1
-                session_start = c.author_date
-            prev_time = c.author_date
-        if session_start is not None and prev_time is not None:
-            day_buckets[prev_time.date()].append((session_start, prev_time))
-            sessions_count += 1
-        hours_total = 0.0
-        for day, sessions in day_buckets.items():
-            total = sum((end - start).total_seconds() / 3600.0 for start, end in sessions)
-            hours_total += min(total, max_hours_per_day)
         details.append({
             "author": author,
             "commits_total": commits_total,
@@ -294,12 +245,87 @@ def _author_details(commits: List[CommitNumstat]) -> List[Dict[str, object]]:
             "active_days": active_days,
             "avg_commit_size": avg_size,
             "median_commit_size": med_size,
-            "sessions": sessions_count,
-            "estimated_hours": round(hours_total, 2),
+            "sessions": effort.get(author, {}).get("sessions", 0),
+            "estimated_hours": round(effort.get(author, {}).get("hours", 0.0), 2),
         })
     # sort by estimated hours desc then commits desc
     details.sort(key=lambda d: (d["estimated_hours"], d["commits_total"]), reverse=True)
     return details
+
+
+def _estimate_hours_per_author(commits_sorted: List[CommitNumstat]) -> Dict[str, Dict[str, float]]:
+    """Estimate hours per author using a session + commit-weighted heuristic.
+
+    For each author:
+    - Split commits into sessions with gap > SESSION_GAP_MINUTES.
+    - Per session, compute per-commit minutes as:
+        minutes = MINUTES_PER_COMMIT_BASE
+                  + (sqrt(lines_changed)/10) * MINUTES_PER_100_LINES
+                  + files_changed * MINUTES_PER_FILE
+      Sum minutes across commits in the session.
+    - Enforce MIN_SESSION_MINUTES minimum per session.
+    - Sum per day with a cap of MAX_HOURS_PER_DAY.
+    - Multiply totals by CALIBRATION_FACTOR.
+    Returns mapping author -> {"hours": float, "sessions": int}.
+    """
+    # config
+    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
+    max_hours_per_day = float(os.getenv("MAX_HOURS_PER_DAY", "10") or "10")
+    min_session_minutes = float(os.getenv("MIN_SESSION_MINUTES", "30") or "30")
+    per_commit_base = float(os.getenv("MINUTES_PER_COMMIT_BASE", "12") or "12")
+    per_100_lines = float(os.getenv("MINUTES_PER_100_LINES", "8") or "8")
+    per_file_min = float(os.getenv("MINUTES_PER_FILE", "2") or "2")
+    calibration = float(os.getenv("CALIBRATION_FACTOR", "1.5") or "1.5")
+
+    session_gap = timedelta(minutes=session_gap_minutes)
+
+    per_author_commits: Dict[str, List[CommitNumstat]] = defaultdict(list)
+    for c in commits_sorted:
+        key = (c.author_name or "Unknown").strip()
+        if c.author_email:
+            key = f"{key} <{c.author_email}>"
+        per_author_commits[key].append(c)
+
+    result: Dict[str, Dict[str, float]] = {}
+    for author, cs in per_author_commits.items():
+        cs.sort(key=lambda x: x.author_date)
+        # Build sessions
+        sessions: List[List[CommitNumstat]] = []
+        cur: List[CommitNumstat] = []
+        prev_time: Optional[datetime] = None
+        for c in cs:
+            if prev_time is None or (c.author_date - prev_time) > session_gap:
+                if cur:
+                    sessions.append(cur)
+                cur = [c]
+            else:
+                cur.append(c)
+            prev_time = c.author_date
+        if cur:
+            sessions.append(cur)
+        sessions_count = len(sessions)
+
+        # Aggregate per day with cap
+        per_day_hours: Dict[date, float] = defaultdict(float)
+        for sess in sessions:
+            # Compute per-commit minutes
+            sess_minutes = 0.0
+            for c in sess:
+                loc = max(0, c.added + c.deleted)
+                # sqrt attenuates huge commits but still increases effort
+                minutes = per_commit_base + (loc ** 0.5 / 10.0) * per_100_lines + c.files_changed * per_file_min
+                sess_minutes += minutes
+            sess_minutes = max(sess_minutes, min_session_minutes)
+            # Assign to session end date
+            end_date = sess[-1].author_date.date()
+            per_day_hours[end_date] += sess_minutes / 60.0
+        # Apply per-day cap
+        total_hours = 0.0
+        for d, h in per_day_hours.items():
+            total_hours += min(h, max_hours_per_day)
+        total_hours *= calibration
+        result[author] = {"hours": total_hours, "sessions": float(sessions_count)}
+    return result
 
 
 def _aggregate_daily(commits: List[CommitNumstat]) -> List[Tuple[str, int, int, int, int]]:
@@ -471,6 +497,28 @@ def _write_markdown_report(output_dir: Path, work_tree: Path, metrics: RepoMetri
         lines.append("```")
         lines.append("")
 
+    # Effort model
+    lines.append("## Effort estimation model")
+    lines.append("")
+    lines.append("This report estimates effort using a session + commit-weighted heuristic:")
+    lines.append("- Split commits per author into sessions where the gap > SESSION_GAP_MINUTES.")
+    lines.append("- Per session, sum per-commit minutes: base + sqrt(lines)/10 * MINUTES_PER_100_LINES + files * MINUTES_PER_FILE.")
+    lines.append("- Enforce MIN_SESSION_MINUTES minimum per session.")
+    lines.append("- Sum per day with MAX_HOURS_PER_DAY cap; multiply by CALIBRATION_FACTOR.")
+    lines.append("")
+    lines.append("Parameters:")
+    lines.append("")
+    lines.append("| Param | Value |")
+    lines.append("|---|---:|")
+    lines.append(f"| SESSION_GAP_MINUTES | {int(os.getenv('SESSION_GAP_MINUTES', '90') or '90')} |")
+    lines.append(f"| MAX_HOURS_PER_DAY | {float(os.getenv('MAX_HOURS_PER_DAY', '10') or '10')} |")
+    lines.append(f"| MIN_SESSION_MINUTES | {float(os.getenv('MIN_SESSION_MINUTES', '30') or '30')} |")
+    lines.append(f"| MINUTES_PER_COMMIT_BASE | {float(os.getenv('MINUTES_PER_COMMIT_BASE', '12') or '12')} |")
+    lines.append(f"| MINUTES_PER_100_LINES | {float(os.getenv('MINUTES_PER_100_LINES', '8') or '8')} |")
+    lines.append(f"| MINUTES_PER_FILE | {float(os.getenv('MINUTES_PER_FILE', '2') or '2')} |")
+    lines.append(f"| CALIBRATION_FACTOR | {float(os.getenv('CALIBRATION_FACTOR', '1.5') or '1.5')} |")
+    lines.append("")
+
     # Monthly activity
     if monthly:
         lines.append("## Monthly activity")
@@ -559,12 +607,22 @@ def write_reports(output_dir: Path, work_tree: Path, metrics: RepoMetrics, commi
     base = output_dir / f"{repo_name}_git_eval"
 
     # JSON
+    curr_loc = _current_loc_snapshot(work_tree)
     payload = {
         "repo": work_tree.as_posix(),
         "metrics": asdict(metrics),
         "current_loc": {
-            "lines": _current_loc_snapshot(work_tree)[0],
-            "files": _current_loc_snapshot(work_tree)[1],
+            "lines": curr_loc[0],
+            "files": curr_loc[1],
+        },
+        "effort_model": {
+            "SESSION_GAP_MINUTES": int(os.getenv("SESSION_GAP_MINUTES", "90") or "90"),
+            "MAX_HOURS_PER_DAY": float(os.getenv("MAX_HOURS_PER_DAY", "10") or "10"),
+            "MIN_SESSION_MINUTES": float(os.getenv("MIN_SESSION_MINUTES", "30") or "30"),
+            "MINUTES_PER_COMMIT_BASE": float(os.getenv("MINUTES_PER_COMMIT_BASE", "12") or "12"),
+            "MINUTES_PER_100_LINES": float(os.getenv("MINUTES_PER_100_LINES", "8") or "8"),
+            "MINUTES_PER_FILE": float(os.getenv("MINUTES_PER_FILE", "2") or "2"),
+            "CALIBRATION_FACTOR": float(os.getenv("CALIBRATION_FACTOR", "1.5") or "1.5"),
         },
         "commits": [
             {
