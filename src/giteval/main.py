@@ -606,6 +606,10 @@ def write_reports(output_dir: Path, work_tree: Path, metrics: RepoMetrics, commi
     repo_name = work_tree.name
     base = output_dir / f"{repo_name}_git_eval"
 
+    # Determine excluded extensions
+    exclude_exts_env = os.getenv("GIT_EVAL_EXCLUDE_EXTS", ".csv,.txt,.json")
+    excluded = {e.strip().lower() for e in exclude_exts_env.split(",") if e.strip()}
+
     # JSON
     curr_loc = _current_loc_snapshot(work_tree)
     payload = {
@@ -658,18 +662,18 @@ def write_reports(output_dir: Path, work_tree: Path, metrics: RepoMetrics, commi
     # CSV (summary)
     if ".csv" not in excluded:
         with (base.with_suffix(".csv")).open("w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow([
-            "repo_path","commits_total","merges_total","non_merges_total","unique_authors",
-            "first_commit","last_commit","active_days","span_days","avg_commits_per_day",
-            "added_lines_total","deleted_lines_total","files_changed_total","estimated_hours_total"
-        ])
-        w.writerow([
-            work_tree.as_posix(), metrics.commits_total, metrics.merges_total, metrics.non_merges_total,
-            metrics.unique_authors, metrics.first_commit, metrics.last_commit, metrics.active_days,
-            metrics.span_days, metrics.avg_commits_per_day, metrics.added_lines_total,
-            metrics.deleted_lines_total, metrics.files_changed_total, metrics.estimated_hours_total
-        ])
+            w = csv.writer(f)
+            w.writerow([
+                "repo_path","commits_total","merges_total","non_merges_total","unique_authors",
+                "first_commit","last_commit","active_days","span_days","avg_commits_per_day",
+                "added_lines_total","deleted_lines_total","files_changed_total","estimated_hours_total"
+            ])
+            w.writerow([
+                work_tree.as_posix(), metrics.commits_total, metrics.merges_total, metrics.non_merges_total,
+                metrics.unique_authors, metrics.first_commit, metrics.last_commit, metrics.active_days,
+                metrics.span_days, metrics.avg_commits_per_day, metrics.added_lines_total,
+                metrics.deleted_lines_total, metrics.files_changed_total, metrics.estimated_hours_total
+            ])
 
     # TXT human-readable
     lines = []

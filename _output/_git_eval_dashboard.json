@@ -1,0 +1,3045 @@
+{
+  "repos": [
+    {
+      "repo": "/home/quantium/labs/oriane/orn-admin-api",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-admin-api",
+        "commits_total": 441,
+        "merges_total": 75,
+        "non_merges_total": 366,
+        "unique_authors": 4,
+        "first_commit": "2024-12-10T09:59:05+01:00",
+        "last_commit": "2025-09-09T20:49:10+02:00",
+        "active_days": 101,
+        "span_days": 274,
+        "avg_commits_per_day": 1.6095,
+        "added_lines_total": 120376,
+        "deleted_lines_total": 88133,
+        "files_changed_total": 1668,
+        "estimated_hours_total": 647.2
+      },
+      "current_loc": {
+        "lines": 31093,
+        "files": 141
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "JRosSx91 <hazee.1491@gmail.com>",
+            "commits_total": 181,
+            "merges_total": 7,
+            "added_total": 45383,
+            "deleted_total": 58475,
+            "files_changed_total": 916,
+            "first_commit": "2024-12-10T10:10:29+01:00",
+            "last_commit": "2025-05-28T11:48:20+02:00",
+            "active_days": 64,
+            "avg_commit_size": 573.8,
+            "median_commit_size": 48.0,
+            "sessions": 97.0,
+            "estimated_hours": 290.25
+          },
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 185,
+            "merges_total": 17,
+            "added_total": 74139,
+            "deleted_total": 29473,
+            "files_changed_total": 675,
+            "first_commit": "2025-02-08T22:27:14+01:00",
+            "last_commit": "2025-09-09T20:49:10+02:00",
+            "active_days": 52,
+            "avg_commit_size": 560.06,
+            "median_commit_size": 58.0,
+            "sessions": 83.0,
+            "estimated_hours": 267.36
+          },
+          {
+            "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+            "commits_total": 34,
+            "merges_total": 33,
+            "added_total": 1,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2024-12-10T09:59:05+01:00",
+            "last_commit": "2025-05-23T11:22:44+02:00",
+            "active_days": 22,
+            "avg_commit_size": 0.03,
+            "median_commit_size": 0.0,
+            "sessions": 26.0,
+            "estimated_hours": 40.0
+          },
+          {
+            "author": "Alex Colls <alex.colls@innocv.com>",
+            "commits_total": 23,
+            "merges_total": 0,
+            "added_total": 853,
+            "deleted_total": 185,
+            "files_changed_total": 76,
+            "first_commit": "2024-12-28T20:48:05+01:00",
+            "last_commit": "2025-02-14T08:16:36+01:00",
+            "active_days": 9,
+            "avg_commit_size": 45.13,
+            "median_commit_size": 8.0,
+            "sessions": 13.0,
+            "estimated_hours": 28.09
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 18,
+            "merges_total": 18,
+            "added_total": 0,
+            "deleted_total": 0,
+            "files_changed_total": 0,
+            "first_commit": "2024-12-28T18:53:45+01:00",
+            "last_commit": "2025-05-28T11:55:25+02:00",
+            "active_days": 12,
+            "avg_commit_size": 0.0,
+            "median_commit_size": 0.0,
+            "sessions": 14.0,
+            "estimated_hours": 21.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2024-12",
+            "commits": 64,
+            "added": 14545,
+            "deleted": 11557,
+            "files": 374
+          },
+          {
+            "month": "2025-01",
+            "commits": 25,
+            "added": 968,
+            "deleted": 269,
+            "files": 68
+          },
+          {
+            "month": "2025-02",
+            "commits": 58,
+            "added": 15065,
+            "deleted": 11536,
+            "files": 150
+          },
+          {
+            "month": "2025-03",
+            "commits": 108,
+            "added": 15166,
+            "deleted": 2337,
+            "files": 236
+          },
+          {
+            "month": "2025-04",
+            "commits": 79,
+            "added": 9005,
+            "deleted": 18922,
+            "files": 209
+          },
+          {
+            "month": "2025-05",
+            "commits": 50,
+            "added": 43587,
+            "deleted": 25183,
+            "files": 438
+          },
+          {
+            "month": "2025-06",
+            "commits": 11,
+            "added": 3675,
+            "deleted": 555,
+            "files": 48
+          },
+          {
+            "month": "2025-07",
+            "commits": 2,
+            "added": 5,
+            "deleted": 2,
+            "files": 4
+          },
+          {
+            "month": "2025-08",
+            "commits": 10,
+            "added": 1210,
+            "deleted": 347,
+            "files": 29
+          },
+          {
+            "month": "2025-09",
+            "commits": 34,
+            "added": 17150,
+            "deleted": 17425,
+            "files": 112
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-admin-web",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-admin-web",
+        "commits_total": 461,
+        "merges_total": 74,
+        "non_merges_total": 387,
+        "unique_authors": 4,
+        "first_commit": "2024-12-11T12:55:53+01:00",
+        "last_commit": "2025-09-09T17:21:55+02:00",
+        "active_days": 89,
+        "span_days": 273,
+        "avg_commits_per_day": 1.6886,
+        "added_lines_total": 84119,
+        "deleted_lines_total": 59776,
+        "files_changed_total": 1552,
+        "estimated_hours_total": 590.43
+      },
+      "current_loc": {
+        "lines": 23470,
+        "files": 243
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "JRosSx91 <hazee.1491@gmail.com>",
+            "commits_total": 212,
+            "merges_total": 9,
+            "added_total": 61486,
+            "deleted_total": 49412,
+            "files_changed_total": 838,
+            "first_commit": "2024-12-11T13:00:08+01:00",
+            "last_commit": "2025-05-28T11:48:37+02:00",
+            "active_days": 60,
+            "avg_commit_size": 523.1,
+            "median_commit_size": 17.5,
+            "sessions": 89.0,
+            "estimated_hours": 290.23
+          },
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 186,
+            "merges_total": 22,
+            "added_total": 20985,
+            "deleted_total": 10213,
+            "files_changed_total": 672,
+            "first_commit": "2025-03-04T12:24:46+01:00",
+            "last_commit": "2025-09-09T17:21:55+02:00",
+            "active_days": 40,
+            "avg_commit_size": 167.73,
+            "median_commit_size": 21.0,
+            "sessions": 67.0,
+            "estimated_hours": 223.93
+          },
+          {
+            "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+            "commits_total": 33,
+            "merges_total": 32,
+            "added_total": 1,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2024-12-11T12:55:53+01:00",
+            "last_commit": "2025-04-22T16:21:19+02:00",
+            "active_days": 23,
+            "avg_commit_size": 0.03,
+            "median_commit_size": 0.0,
+            "sessions": 25.0,
+            "estimated_hours": 39.5
+          },
+          {
+            "author": "Alex Colls <alex.colls@innocv.com>",
+            "commits_total": 19,
+            "merges_total": 0,
+            "added_total": 1647,
+            "deleted_total": 151,
+            "files_changed_total": 41,
+            "first_commit": "2024-12-28T18:41:20+01:00",
+            "last_commit": "2025-02-16T14:17:03+01:00",
+            "active_days": 8,
+            "avg_commit_size": 94.63,
+            "median_commit_size": 8.0,
+            "sessions": 11.0,
+            "estimated_hours": 21.77
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 11,
+            "merges_total": 11,
+            "added_total": 0,
+            "deleted_total": 0,
+            "files_changed_total": 0,
+            "first_commit": "2025-03-26T17:23:47+01:00",
+            "last_commit": "2025-05-28T11:54:58+02:00",
+            "active_days": 10,
+            "avg_commit_size": 0.0,
+            "median_commit_size": 0.0,
+            "sessions": 10.0,
+            "estimated_hours": 15.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2024-12",
+            "commits": 58,
+            "added": 10121,
+            "deleted": 5110,
+            "files": 213
+          },
+          {
+            "month": "2025-01",
+            "commits": 56,
+            "added": 4367,
+            "deleted": 1202,
+            "files": 128
+          },
+          {
+            "month": "2025-02",
+            "commits": 63,
+            "added": 36569,
+            "deleted": 32386,
+            "files": 310
+          },
+          {
+            "month": "2025-03",
+            "commits": 70,
+            "added": 12068,
+            "deleted": 8325,
+            "files": 205
+          },
+          {
+            "month": "2025-04",
+            "commits": 159,
+            "added": 13970,
+            "deleted": 11401,
+            "files": 519
+          },
+          {
+            "month": "2025-05",
+            "commits": 36,
+            "added": 6683,
+            "deleted": 1237,
+            "files": 148
+          },
+          {
+            "month": "2025-09",
+            "commits": 19,
+            "added": 341,
+            "deleted": 115,
+            "files": 29
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-experience-app",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-experience-app",
+        "commits_total": 240,
+        "merges_total": 12,
+        "non_merges_total": 228,
+        "unique_authors": 4,
+        "first_commit": "2025-05-20T19:47:54+02:00",
+        "last_commit": "2025-09-12T04:04:02+02:00",
+        "active_days": 40,
+        "span_days": 116,
+        "avg_commits_per_day": 2.069,
+        "added_lines_total": 89459,
+        "deleted_lines_total": 63918,
+        "files_changed_total": 1796,
+        "estimated_hours_total": 400.6
+      },
+      "current_loc": {
+        "lines": 25828,
+        "files": 189
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 203,
+            "merges_total": 6,
+            "added_total": 81439,
+            "deleted_total": 44470,
+            "files_changed_total": 1662,
+            "first_commit": "2025-05-20T20:30:06+02:00",
+            "last_commit": "2025-09-12T04:04:02+02:00",
+            "active_days": 36,
+            "avg_commit_size": 620.24,
+            "median_commit_size": 84.0,
+            "sessions": 71.0,
+            "estimated_hours": 338.6
+          },
+          {
+            "author": "JRosSx91 <hazee.1491@gmail.com>",
+            "commits_total": 24,
+            "merges_total": 0,
+            "added_total": 7206,
+            "deleted_total": 823,
+            "files_changed_total": 98,
+            "first_commit": "2025-05-30T12:05:02+02:00",
+            "last_commit": "2025-06-11T23:38:19+02:00",
+            "active_days": 10,
+            "avg_commit_size": 334.54,
+            "median_commit_size": 83.5,
+            "sessions": 16.0,
+            "estimated_hours": 36.97
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 8,
+            "merges_total": 4,
+            "added_total": 18,
+            "deleted_total": 2641,
+            "files_changed_total": 4,
+            "first_commit": "2025-05-20T19:47:54+02:00",
+            "last_commit": "2025-06-11T21:11:06+02:00",
+            "active_days": 4,
+            "avg_commit_size": 332.38,
+            "median_commit_size": 1.0,
+            "sessions": 5.0,
+            "estimated_hours": 10.68
+          },
+          {
+            "author": "alexcolls <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 52,
+            "deleted_total": 15718,
+            "files_changed_total": 4,
+            "first_commit": "2025-07-05T19:58:57+02:00",
+            "last_commit": "2025-07-05T19:58:57+02:00",
+            "active_days": 1,
+            "avg_commit_size": 15770.0,
+            "median_commit_size": 15770.0,
+            "sessions": 1.0,
+            "estimated_hours": 5.92
+          },
+          {
+            "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 744,
+            "deleted_total": 266,
+            "files_changed_total": 28,
+            "first_commit": "2025-09-04T18:04:29+02:00",
+            "last_commit": "2025-09-05T11:13:31+02:00",
+            "active_days": 2,
+            "avg_commit_size": 505.0,
+            "median_commit_size": 505.0,
+            "sessions": 2.0,
+            "estimated_hours": 5.44
+          },
+          {
+            "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+            "commits_total": 2,
+            "merges_total": 2,
+            "added_total": 0,
+            "deleted_total": 0,
+            "files_changed_total": 0,
+            "first_commit": "2025-05-30T15:52:56+02:00",
+            "last_commit": "2025-06-06T23:06:34+02:00",
+            "active_days": 2,
+            "avg_commit_size": 0.0,
+            "median_commit_size": 0.0,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-05",
+            "commits": 24,
+            "added": 15530,
+            "deleted": 2543,
+            "files": 353
+          },
+          {
+            "month": "2025-06",
+            "commits": 105,
+            "added": 22338,
+            "deleted": 23924,
+            "files": 965
+          },
+          {
+            "month": "2025-07",
+            "commits": 39,
+            "added": 43436,
+            "deleted": 17272,
+            "files": 249
+          },
+          {
+            "month": "2025-08",
+            "commits": 53,
+            "added": 3423,
+            "deleted": 18308,
+            "files": 132
+          },
+          {
+            "month": "2025-09",
+            "commits": 19,
+            "added": 4732,
+            "deleted": 1871,
+            "files": 97
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab",
+        "commits_total": 130,
+        "merges_total": 4,
+        "non_merges_total": 126,
+        "unique_authors": 1,
+        "first_commit": "2025-05-16T12:29:52+02:00",
+        "last_commit": "2025-07-28T16:47:30+02:00",
+        "active_days": 29,
+        "span_days": 74,
+        "avg_commits_per_day": 1.7568,
+        "added_lines_total": 4897360,
+        "deleted_lines_total": 396945,
+        "files_changed_total": 24813,
+        "estimated_hours_total": 341.92
+      },
+      "current_loc": {
+        "lines": 5705980,
+        "files": 14740
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 126,
+            "merges_total": 3,
+            "added_total": 4896791,
+            "deleted_total": 396581,
+            "files_changed_total": 24800,
+            "first_commit": "2025-05-16T12:40:00+02:00",
+            "last_commit": "2025-07-18T16:25:42+02:00",
+            "active_days": 27,
+            "avg_commit_size": 42010.89,
+            "median_commit_size": 379.5,
+            "sessions": 45.0,
+            "estimated_hours": 334.72
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 3,
+            "merges_total": 1,
+            "added_total": 35,
+            "deleted_total": 1,
+            "files_changed_total": 3,
+            "first_commit": "2025-05-16T12:29:52+02:00",
+            "last_commit": "2025-07-28T16:47:30+02:00",
+            "active_days": 3,
+            "avg_commit_size": 12.0,
+            "median_commit_size": 2.0,
+            "sessions": 3.0,
+            "estimated_hours": 4.5
+          },
+          {
+            "author": "alexcolls <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 534,
+            "deleted_total": 363,
+            "files_changed_total": 10,
+            "first_commit": "2025-07-05T20:13:29+02:00",
+            "last_commit": "2025-07-05T20:13:29+02:00",
+            "active_days": 1,
+            "avg_commit_size": 897.0,
+            "median_commit_size": 897.0,
+            "sessions": 1.0,
+            "estimated_hours": 2.7
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-05",
+            "commits": 38,
+            "added": 404754,
+            "deleted": 367883,
+            "files": 8941
+          },
+          {
+            "month": "2025-06",
+            "commits": 35,
+            "added": 135805,
+            "deleted": 19793,
+            "files": 606
+          },
+          {
+            "month": "2025-07",
+            "commits": 57,
+            "added": 4356801,
+            "deleted": 9269,
+            "files": 15266
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-processor-etls",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-processor-etls",
+        "commits_total": 87,
+        "merges_total": 0,
+        "non_merges_total": 87,
+        "unique_authors": 2,
+        "first_commit": "2025-08-06T09:35:48+02:00",
+        "last_commit": "2025-09-08T12:52:42+02:00",
+        "active_days": 20,
+        "span_days": 34,
+        "avg_commits_per_day": 2.5588,
+        "added_lines_total": 72067,
+        "deleted_lines_total": 36305,
+        "files_changed_total": 1865,
+        "estimated_hours_total": 240.43
+      },
+      "current_loc": {
+        "lines": 27137,
+        "files": 141
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 70,
+            "merges_total": 0,
+            "added_total": 69955,
+            "deleted_total": 33709,
+            "files_changed_total": 1785,
+            "first_commit": "2025-08-06T09:35:48+02:00",
+            "last_commit": "2025-08-25T22:15:26+02:00",
+            "active_days": 12,
+            "avg_commit_size": 1480.91,
+            "median_commit_size": 191.0,
+            "sessions": 23.0,
+            "estimated_hours": 213.56
+          },
+          {
+            "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+            "commits_total": 17,
+            "merges_total": 0,
+            "added_total": 2112,
+            "deleted_total": 2596,
+            "files_changed_total": 80,
+            "first_commit": "2025-08-12T18:42:26+02:00",
+            "last_commit": "2025-09-08T12:52:42+02:00",
+            "active_days": 12,
+            "avg_commit_size": 276.94,
+            "median_commit_size": 48.0,
+            "sessions": 13.0,
+            "estimated_hours": 26.87
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-08",
+            "commits": 85,
+            "added": 72033,
+            "deleted": 36160,
+            "files": 1849
+          },
+          {
+            "month": "2025-09",
+            "commits": 2,
+            "added": 34,
+            "deleted": 145,
+            "files": 16
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi",
+        "commits_total": 70,
+        "merges_total": 2,
+        "non_merges_total": 68,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:18:10+02:00",
+        "last_commit": "2025-08-06T06:55:32+02:00",
+        "active_days": 13,
+        "span_days": 21,
+        "avg_commits_per_day": 3.3333,
+        "added_lines_total": 175711,
+        "deleted_lines_total": 145169,
+        "files_changed_total": 1568,
+        "estimated_hours_total": 166.13
+      },
+      "current_loc": {
+        "lines": 30411,
+        "files": 182
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 68,
+            "merges_total": 1,
+            "added_total": 175502,
+            "deleted_total": 145169,
+            "files_changed_total": 1566,
+            "first_commit": "2025-07-18T10:46:05+02:00",
+            "last_commit": "2025-08-06T06:55:32+02:00",
+            "active_days": 12,
+            "avg_commit_size": 4715.75,
+            "median_commit_size": 586.0,
+            "sessions": 26.0,
+            "estimated_hours": 163.13
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 1,
+            "added_total": 209,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-07-17T21:18:10+02:00",
+            "last_commit": "2025-07-27T20:57:15+02:00",
+            "active_days": 2,
+            "avg_commit_size": 104.5,
+            "median_commit_size": 104.5,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 69,
+            "added": 174796,
+            "deleted": 145079,
+            "files": 1546
+          },
+          {
+            "month": "2025-08",
+            "commits": 1,
+            "added": 915,
+            "deleted": 90,
+            "files": 22
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash",
+        "commits_total": 61,
+        "merges_total": 5,
+        "non_merges_total": 56,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:42:59+02:00",
+        "last_commit": "2025-08-01T14:01:10+02:00",
+        "active_days": 10,
+        "span_days": 16,
+        "avg_commits_per_day": 3.8125,
+        "added_lines_total": 65134,
+        "deleted_lines_total": 8386,
+        "files_changed_total": 1026,
+        "estimated_hours_total": 105.14
+      },
+      "current_loc": {
+        "lines": 45982,
+        "files": 240
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 57,
+            "merges_total": 2,
+            "added_total": 65132,
+            "deleted_total": 8386,
+            "files_changed_total": 1025,
+            "first_commit": "2025-07-19T23:07:10+02:00",
+            "last_commit": "2025-08-01T14:01:10+02:00",
+            "active_days": 9,
+            "avg_commit_size": 1289.79,
+            "median_commit_size": 178.0,
+            "sessions": 19.0,
+            "estimated_hours": 100.64
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 4,
+            "merges_total": 3,
+            "added_total": 2,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-07-17T21:42:59+02:00",
+            "last_commit": "2025-07-27T16:39:59+02:00",
+            "active_days": 3,
+            "avg_commit_size": 0.5,
+            "median_commit_size": 0.0,
+            "sessions": 3.0,
+            "estimated_hours": 4.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 60,
+            "added": 65084,
+            "deleted": 8337,
+            "files": 1024
+          },
+          {
+            "month": "2025-08",
+            "commits": 1,
+            "added": 50,
+            "deleted": 49,
+            "files": 2
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant",
+        "commits_total": 47,
+        "merges_total": 3,
+        "non_merges_total": 44,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:54:02+02:00",
+        "last_commit": "2025-07-30T10:39:45+02:00",
+        "active_days": 9,
+        "span_days": 14,
+        "avg_commits_per_day": 3.3571,
+        "added_lines_total": 73047,
+        "deleted_lines_total": 38067,
+        "files_changed_total": 1136,
+        "estimated_hours_total": 103.61
+      },
+      "current_loc": {
+        "lines": 258569,
+        "files": 249
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 45,
+            "merges_total": 2,
+            "added_total": 73045,
+            "deleted_total": 38067,
+            "files_changed_total": 1135,
+            "first_commit": "2025-07-19T23:24:03+02:00",
+            "last_commit": "2025-07-30T10:39:45+02:00",
+            "active_days": 8,
+            "avg_commit_size": 2469.16,
+            "median_commit_size": 162.0,
+            "sessions": 16.0,
+            "estimated_hours": 100.61
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 1,
+            "added_total": 2,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-07-17T21:54:02+02:00",
+            "last_commit": "2025-07-27T17:35:17+02:00",
+            "active_days": 2,
+            "avg_commit_size": 1.0,
+            "median_commit_size": 1.0,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 47,
+            "added": 73047,
+            "deleted": 38067,
+            "files": 1136
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python",
+        "commits_total": 80,
+        "merges_total": 8,
+        "non_merges_total": 72,
+        "unique_authors": 2,
+        "first_commit": "2024-12-20T17:39:28+01:00",
+        "last_commit": "2025-03-18T12:44:10+01:00",
+        "active_days": 12,
+        "span_days": 89,
+        "avg_commits_per_day": 0.8989,
+        "added_lines_total": 11720,
+        "deleted_lines_total": 12182,
+        "files_changed_total": 299,
+        "estimated_hours_total": 95.76
+      },
+      "current_loc": {
+        "lines": 3853,
+        "files": 50
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Alex Colls <alex.colls@innocv.com>",
+            "commits_total": 49,
+            "merges_total": 2,
+            "added_total": 8554,
+            "deleted_total": 11121,
+            "files_changed_total": 198,
+            "first_commit": "2024-12-20T21:14:08+01:00",
+            "last_commit": "2025-01-26T20:04:17+01:00",
+            "active_days": 5,
+            "avg_commit_size": 401.53,
+            "median_commit_size": 17.0,
+            "sessions": 7.0,
+            "estimated_hours": 59.08
+          },
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 28,
+            "merges_total": 4,
+            "added_total": 3165,
+            "deleted_total": 1061,
+            "files_changed_total": 100,
+            "first_commit": "2025-02-08T11:42:39+01:00",
+            "last_commit": "2025-03-18T12:44:10+01:00",
+            "active_days": 7,
+            "avg_commit_size": 150.93,
+            "median_commit_size": 8.0,
+            "sessions": 10.0,
+            "estimated_hours": 33.68
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 3,
+            "merges_total": 2,
+            "added_total": 1,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2024-12-20T17:39:28+01:00",
+            "last_commit": "2025-01-26T16:18:16+01:00",
+            "active_days": 2,
+            "avg_commit_size": 0.33,
+            "median_commit_size": 0.0,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2024-12",
+            "commits": 3,
+            "added": 4599,
+            "deleted": 0,
+            "files": 12
+          },
+          {
+            "month": "2025-01",
+            "commits": 49,
+            "added": 3956,
+            "deleted": 11121,
+            "files": 187
+          },
+          {
+            "month": "2025-02",
+            "commits": 5,
+            "added": 175,
+            "deleted": 21,
+            "files": 10
+          },
+          {
+            "month": "2025-03",
+            "commits": 23,
+            "added": 2990,
+            "deleted": 1040,
+            "files": 90
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda",
+        "commits_total": 39,
+        "merges_total": 0,
+        "non_merges_total": 39,
+        "unique_authors": 1,
+        "first_commit": "2025-04-24T11:41:42+02:00",
+        "last_commit": "2025-05-12T17:21:01+02:00",
+        "active_days": 11,
+        "span_days": 19,
+        "avg_commits_per_day": 2.0526,
+        "added_lines_total": 1245928,
+        "deleted_lines_total": 1241311,
+        "files_changed_total": 11410,
+        "estimated_hours_total": 86.3
+      },
+      "current_loc": {
+        "lines": 226041,
+        "files": 59
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 37,
+            "merges_total": 0,
+            "added_total": 1245752,
+            "deleted_total": 1241310,
+            "files_changed_total": 11407,
+            "first_commit": "2025-04-24T12:30:14+02:00",
+            "last_commit": "2025-05-12T17:21:01+02:00",
+            "active_days": 11,
+            "avg_commit_size": 67217.89,
+            "median_commit_size": 41.0,
+            "sessions": 15.0,
+            "estimated_hours": 83.3
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 176,
+            "deleted_total": 1,
+            "files_changed_total": 3,
+            "first_commit": "2025-04-24T11:41:42+02:00",
+            "last_commit": "2025-04-24T19:09:40+02:00",
+            "active_days": 1,
+            "avg_commit_size": 88.5,
+            "median_commit_size": 88.5,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 25,
+            "added": 1242645,
+            "deleted": 1240427,
+            "files": 11237
+          },
+          {
+            "month": "2025-05",
+            "commits": 14,
+            "added": 3283,
+            "deleted": 884,
+            "files": 173
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+        "commits_total": 26,
+        "merges_total": 1,
+        "non_merges_total": 25,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:23:42+02:00",
+        "last_commit": "2025-09-10T23:16:55+02:00",
+        "active_days": 7,
+        "span_days": 56,
+        "avg_commits_per_day": 0.4643,
+        "added_lines_total": 111265,
+        "deleted_lines_total": 96151,
+        "files_changed_total": 780,
+        "estimated_hours_total": 85.34
+      },
+      "current_loc": {
+        "lines": 244685,
+        "files": 156
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 25,
+            "merges_total": 1,
+            "added_total": 111056,
+            "deleted_total": 96151,
+            "files_changed_total": 778,
+            "first_commit": "2025-07-19T10:40:39+02:00",
+            "last_commit": "2025-09-10T23:16:55+02:00",
+            "active_days": 6,
+            "avg_commit_size": 8288.28,
+            "median_commit_size": 242.0,
+            "sessions": 9.0,
+            "estimated_hours": 83.84
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 209,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-07-17T21:23:42+02:00",
+            "last_commit": "2025-07-17T21:23:42+02:00",
+            "active_days": 1,
+            "avg_commit_size": 209.0,
+            "median_commit_size": 209.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 23,
+            "added": 106839,
+            "deleted": 91292,
+            "files": 588
+          },
+          {
+            "month": "2025-08",
+            "commits": 1,
+            "added": 4387,
+            "deleted": 4394,
+            "files": 189
+          },
+          {
+            "month": "2025-09",
+            "commits": 2,
+            "added": 39,
+            "deleted": 465,
+            "files": 3
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda",
+        "commits_total": 47,
+        "merges_total": 0,
+        "non_merges_total": 47,
+        "unique_authors": 1,
+        "first_commit": "2025-03-14T15:21:23+01:00",
+        "last_commit": "2025-04-30T11:50:16+02:00",
+        "active_days": 10,
+        "span_days": 48,
+        "avg_commits_per_day": 0.9792,
+        "added_lines_total": 296055,
+        "deleted_lines_total": 148163,
+        "files_changed_total": 887,
+        "estimated_hours_total": 65.46
+      },
+      "current_loc": {
+        "lines": 1683,
+        "files": 15
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 41,
+            "merges_total": 0,
+            "added_total": 295699,
+            "deleted_total": 148159,
+            "files_changed_total": 879,
+            "first_commit": "2025-03-14T15:59:08+01:00",
+            "last_commit": "2025-04-30T11:50:16+02:00",
+            "active_days": 10,
+            "avg_commit_size": 10825.8,
+            "median_commit_size": 45.0,
+            "sessions": 11.0,
+            "estimated_hours": 60.18
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 6,
+            "merges_total": 0,
+            "added_total": 356,
+            "deleted_total": 4,
+            "files_changed_total": 8,
+            "first_commit": "2025-03-14T15:21:23+01:00",
+            "last_commit": "2025-03-15T16:14:05+01:00",
+            "active_days": 2,
+            "avg_commit_size": 60.0,
+            "median_commit_size": 2.0,
+            "sessions": 2.0,
+            "estimated_hours": 5.27
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 44,
+            "added": 296049,
+            "deleted": 148157,
+            "files": 884
+          },
+          {
+            "month": "2025-04",
+            "commits": 3,
+            "added": 6,
+            "deleted": 6,
+            "files": 3
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/SSCD-model",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/SSCD-model",
+        "commits_total": 43,
+        "merges_total": 0,
+        "non_merges_total": 43,
+        "unique_authors": 1,
+        "first_commit": "2025-04-03T03:20:27+02:00",
+        "last_commit": "2025-05-28T00:55:26+02:00",
+        "active_days": 14,
+        "span_days": 56,
+        "avg_commits_per_day": 0.7679,
+        "added_lines_total": 60464,
+        "deleted_lines_total": 763,
+        "files_changed_total": 127,
+        "estimated_hours_total": 62.59
+      },
+      "current_loc": {
+        "lines": 4251223,
+        "files": 35
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 42,
+            "merges_total": 0,
+            "added_total": 60288,
+            "deleted_total": 763,
+            "files_changed_total": 125,
+            "first_commit": "2025-04-03T03:24:53+02:00",
+            "last_commit": "2025-05-28T00:55:26+02:00",
+            "active_days": 14,
+            "avg_commit_size": 1453.6,
+            "median_commit_size": 16.0,
+            "sessions": 19.0,
+            "estimated_hours": 61.09
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 176,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-04-03T03:20:27+02:00",
+            "last_commit": "2025-04-03T03:20:27+02:00",
+            "active_days": 1,
+            "avg_commit_size": 176.0,
+            "median_commit_size": 176.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 28,
+            "added": 60065,
+            "deleted": 405,
+            "files": 97
+          },
+          {
+            "month": "2025-05",
+            "commits": 15,
+            "added": 399,
+            "deleted": 358,
+            "files": 30
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-search-api",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-search-api",
+        "commits_total": 178,
+        "merges_total": 0,
+        "non_merges_total": 178,
+        "unique_authors": 1,
+        "first_commit": "2025-09-10T11:55:06+02:00",
+        "last_commit": "2025-09-12T20:12:32+02:00",
+        "active_days": 3,
+        "span_days": 3,
+        "avg_commits_per_day": 59.3333,
+        "added_lines_total": 91334,
+        "deleted_lines_total": 75729,
+        "files_changed_total": 687,
+        "estimated_hours_total": 61.61
+      },
+      "current_loc": {
+        "lines": 243254,
+        "files": 103
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 177,
+            "merges_total": 0,
+            "added_total": 90924,
+            "deleted_total": 75729,
+            "files_changed_total": 684,
+            "first_commit": "2025-09-10T21:51:14+02:00",
+            "last_commit": "2025-09-12T20:12:32+02:00",
+            "active_days": 3,
+            "avg_commit_size": 941.54,
+            "median_commit_size": 36.0,
+            "sessions": 9.0,
+            "estimated_hours": 60.0
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 410,
+            "deleted_total": 0,
+            "files_changed_total": 3,
+            "first_commit": "2025-09-10T11:55:06+02:00",
+            "last_commit": "2025-09-10T11:55:06+02:00",
+            "active_days": 1,
+            "avg_commit_size": 410.0,
+            "median_commit_size": 410.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.61
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-09",
+            "commits": 178,
+            "added": 91334,
+            "deleted": 75729,
+            "files": 687
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
+        "commits_total": 10,
+        "merges_total": 0,
+        "non_merges_total": 10,
+        "unique_authors": 1,
+        "first_commit": "2025-06-18T16:29:57+02:00",
+        "last_commit": "2025-06-25T09:20:23+02:00",
+        "active_days": 4,
+        "span_days": 8,
+        "avg_commits_per_day": 1.25,
+        "added_lines_total": 18012,
+        "deleted_lines_total": 12860,
+        "files_changed_total": 495,
+        "estimated_hours_total": 59.53
+      },
+      "current_loc": {
+        "lines": 45700,
+        "files": 224
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 9,
+            "merges_total": 0,
+            "added_total": 17817,
+            "deleted_total": 12860,
+            "files_changed_total": 493,
+            "first_commit": "2025-06-18T18:16:41+02:00",
+            "last_commit": "2025-06-25T09:20:23+02:00",
+            "active_days": 4,
+            "avg_commit_size": 3408.56,
+            "median_commit_size": 107.0,
+            "sessions": 4.0,
+            "estimated_hours": 58.03
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 195,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-06-18T16:29:57+02:00",
+            "last_commit": "2025-06-18T16:29:57+02:00",
+            "active_days": 1,
+            "avg_commit_size": 195.0,
+            "median_commit_size": 195.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-06",
+            "commits": 10,
+            "added": 18012,
+            "deleted": 12860,
+            "files": 495
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-acquisition-lambdas",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-acquisition-lambdas",
+        "commits_total": 41,
+        "merges_total": 0,
+        "non_merges_total": 41,
+        "unique_authors": 1,
+        "first_commit": "2025-08-17T12:42:10+02:00",
+        "last_commit": "2025-09-09T22:07:44+02:00",
+        "active_days": 4,
+        "span_days": 24,
+        "avg_commits_per_day": 1.7083,
+        "added_lines_total": 12005,
+        "deleted_lines_total": 2138,
+        "files_changed_total": 117,
+        "estimated_hours_total": 54.2
+      },
+      "current_loc": {
+        "lines": 9867,
+        "files": 39
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 40,
+            "merges_total": 0,
+            "added_total": 11797,
+            "deleted_total": 2138,
+            "files_changed_total": 115,
+            "first_commit": "2025-09-03T12:23:42+02:00",
+            "last_commit": "2025-09-09T22:07:44+02:00",
+            "active_days": 3,
+            "avg_commit_size": 348.38,
+            "median_commit_size": 134.5,
+            "sessions": 8.0,
+            "estimated_hours": 52.7
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 208,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-08-17T12:42:10+02:00",
+            "last_commit": "2025-08-17T12:42:10+02:00",
+            "active_days": 1,
+            "avg_commit_size": 208.0,
+            "median_commit_size": 208.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-08",
+            "commits": 1,
+            "added": 208,
+            "deleted": 0,
+            "files": 2
+          },
+          {
+            "month": "2025-09",
+            "commits": 40,
+            "added": 11797,
+            "deleted": 2138,
+            "files": 115
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda",
+        "commits_total": 18,
+        "merges_total": 0,
+        "non_merges_total": 18,
+        "unique_authors": 1,
+        "first_commit": "2025-03-26T08:53:24+01:00",
+        "last_commit": "2025-04-30T11:49:35+02:00",
+        "active_days": 6,
+        "span_days": 36,
+        "avg_commits_per_day": 0.5,
+        "added_lines_total": 101585,
+        "deleted_lines_total": 99564,
+        "files_changed_total": 45,
+        "estimated_hours_total": 52.48
+      },
+      "current_loc": {
+        "lines": 2305,
+        "files": 20
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 17,
+            "merges_total": 0,
+            "added_total": 101448,
+            "deleted_total": 99564,
+            "files_changed_total": 43,
+            "first_commit": "2025-03-26T08:55:49+01:00",
+            "last_commit": "2025-04-30T11:49:35+02:00",
+            "active_days": 6,
+            "avg_commit_size": 11824.24,
+            "median_commit_size": 100.0,
+            "sessions": 7.0,
+            "estimated_hours": 50.98
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 137,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-03-26T08:53:24+01:00",
+            "last_commit": "2025-03-26T08:53:24+01:00",
+            "active_days": 1,
+            "avg_commit_size": 137.0,
+            "median_commit_size": 137.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 6,
+            "added": 1739,
+            "deleted": 268,
+            "files": 23
+          },
+          {
+            "month": "2025-04",
+            "commits": 12,
+            "added": 99846,
+            "deleted": 99296,
+            "files": 22
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
+        "commits_total": 37,
+        "merges_total": 0,
+        "non_merges_total": 37,
+        "unique_authors": 2,
+        "first_commit": "2025-03-21T10:39:55+01:00",
+        "last_commit": "2025-05-27T20:23:56+02:00",
+        "active_days": 11,
+        "span_days": 68,
+        "avg_commits_per_day": 0.5441,
+        "added_lines_total": 8760,
+        "deleted_lines_total": 1715,
+        "files_changed_total": 84,
+        "estimated_hours_total": 46.48
+      },
+      "current_loc": {
+        "lines": 8381,
+        "files": 23
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 35,
+            "merges_total": 0,
+            "added_total": 8540,
+            "deleted_total": 1603,
+            "files_changed_total": 81,
+            "first_commit": "2025-03-21T15:43:06+01:00",
+            "last_commit": "2025-05-27T20:23:56+02:00",
+            "active_days": 10,
+            "avg_commit_size": 289.8,
+            "median_commit_size": 15.0,
+            "sessions": 13.0,
+            "estimated_hours": 43.48
+          },
+          {
+            "author": "JRosSx91 <hazee.1491@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 82,
+            "deleted_total": 112,
+            "files_changed_total": 1,
+            "first_commit": "2025-03-24T18:06:43+01:00",
+            "last_commit": "2025-03-24T18:06:43+01:00",
+            "active_days": 1,
+            "avg_commit_size": 194.0,
+            "median_commit_size": 194.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 138,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-03-21T10:39:55+01:00",
+            "last_commit": "2025-03-21T10:39:55+01:00",
+            "active_days": 1,
+            "avg_commit_size": 138.0,
+            "median_commit_size": 138.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 23,
+            "added": 7590,
+            "deleted": 995,
+            "files": 49
+          },
+          {
+            "month": "2025-04",
+            "commits": 10,
+            "added": 1093,
+            "deleted": 670,
+            "files": 28
+          },
+          {
+            "month": "2025-05",
+            "commits": 4,
+            "added": 77,
+            "deleted": 50,
+            "files": 7
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
+        "commits_total": 23,
+        "merges_total": 1,
+        "non_merges_total": 22,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:25:58+02:00",
+        "last_commit": "2025-07-28T22:21:14+02:00",
+        "active_days": 10,
+        "span_days": 12,
+        "avg_commits_per_day": 1.9167,
+        "added_lines_total": 20596,
+        "deleted_lines_total": 8057,
+        "files_changed_total": 369,
+        "estimated_hours_total": 41.01
+      },
+      "current_loc": {
+        "lines": 242529,
+        "files": 89
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 22,
+            "merges_total": 1,
+            "added_total": 20387,
+            "deleted_total": 8057,
+            "files_changed_total": 367,
+            "first_commit": "2025-07-18T10:38:29+02:00",
+            "last_commit": "2025-07-28T22:21:14+02:00",
+            "active_days": 9,
+            "avg_commit_size": 1292.91,
+            "median_commit_size": 79.5,
+            "sessions": 13.0,
+            "estimated_hours": 39.51
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 209,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-07-17T21:25:58+02:00",
+            "last_commit": "2025-07-17T21:25:58+02:00",
+            "active_days": 1,
+            "avg_commit_size": 209.0,
+            "median_commit_size": 209.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 23,
+            "added": 20596,
+            "deleted": 8057,
+            "files": 369
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
+        "commits_total": 6,
+        "merges_total": 0,
+        "non_merges_total": 6,
+        "unique_authors": 1,
+        "first_commit": "2025-07-28T12:04:52+02:00",
+        "last_commit": "2025-07-29T17:56:29+02:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 3.0,
+        "added_lines_total": 21119,
+        "deleted_lines_total": 14561,
+        "files_changed_total": 302,
+        "estimated_hours_total": 38.64
+      },
+      "current_loc": {
+        "lines": 6558,
+        "files": 48
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 5,
+            "merges_total": 0,
+            "added_total": 21118,
+            "deleted_total": 14561,
+            "files_changed_total": 301,
+            "first_commit": "2025-07-28T17:14:01+02:00",
+            "last_commit": "2025-07-29T17:56:29+02:00",
+            "active_days": 2,
+            "avg_commit_size": 7135.8,
+            "median_commit_size": 6101.0,
+            "sessions": 3.0,
+            "estimated_hours": 37.14
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 1,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-07-28T12:04:52+02:00",
+            "last_commit": "2025-07-28T12:04:52+02:00",
+            "active_days": 1,
+            "avg_commit_size": 1.0,
+            "median_commit_size": 1.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 6,
+            "added": 21119,
+            "deleted": 14561,
+            "files": 302
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda",
+        "commits_total": 11,
+        "merges_total": 0,
+        "non_merges_total": 11,
+        "unique_authors": 1,
+        "first_commit": "2025-03-14T11:20:34+01:00",
+        "last_commit": "2025-03-19T11:32:01+01:00",
+        "active_days": 3,
+        "span_days": 6,
+        "avg_commits_per_day": 1.8333,
+        "added_lines_total": 697960,
+        "deleted_lines_total": 254972,
+        "files_changed_total": 5099,
+        "estimated_hours_total": 26.53
+      },
+      "current_loc": {
+        "lines": 588490,
+        "files": 2870
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 10,
+            "merges_total": 0,
+            "added_total": 697784,
+            "deleted_total": 254972,
+            "files_changed_total": 5097,
+            "first_commit": "2025-03-14T11:26:29+01:00",
+            "last_commit": "2025-03-19T11:32:01+01:00",
+            "active_days": 3,
+            "avg_commit_size": 95275.6,
+            "median_commit_size": 44.0,
+            "sessions": 6.0,
+            "estimated_hours": 25.03
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 176,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-03-14T11:20:34+01:00",
+            "last_commit": "2025-03-14T11:20:34+01:00",
+            "active_days": 1,
+            "avg_commit_size": 176.0,
+            "median_commit_size": 176.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 11,
+            "added": 697960,
+            "deleted": 254972,
+            "files": 5099
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda",
+        "commits_total": 24,
+        "merges_total": 0,
+        "non_merges_total": 24,
+        "unique_authors": 1,
+        "first_commit": "2025-03-18T12:42:33+01:00",
+        "last_commit": "2025-03-30T22:42:37+02:00",
+        "active_days": 4,
+        "span_days": 13,
+        "avg_commits_per_day": 1.8462,
+        "added_lines_total": 1707,
+        "deleted_lines_total": 174,
+        "files_changed_total": 52,
+        "estimated_hours_total": 23.36
+      },
+      "current_loc": {
+        "lines": 1002,
+        "files": 12
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 20,
+            "merges_total": 0,
+            "added_total": 1355,
+            "deleted_total": 172,
+            "files_changed_total": 46,
+            "first_commit": "2025-03-18T19:30:55+01:00",
+            "last_commit": "2025-03-30T22:42:37+02:00",
+            "active_days": 4,
+            "avg_commit_size": 76.35,
+            "median_commit_size": 16.0,
+            "sessions": 4.0,
+            "estimated_hours": 19.4
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 4,
+            "merges_total": 0,
+            "added_total": 352,
+            "deleted_total": 2,
+            "files_changed_total": 6,
+            "first_commit": "2025-03-18T12:42:33+01:00",
+            "last_commit": "2025-03-18T19:59:14+01:00",
+            "active_days": 1,
+            "avg_commit_size": 88.5,
+            "median_commit_size": 88.5,
+            "sessions": 2.0,
+            "estimated_hours": 3.96
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 24,
+            "added": 1707,
+            "deleted": 174,
+            "files": 52
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda",
+        "commits_total": 10,
+        "merges_total": 0,
+        "non_merges_total": 10,
+        "unique_authors": 1,
+        "first_commit": "2025-03-20T14:45:37+01:00",
+        "last_commit": "2025-03-24T11:03:30+01:00",
+        "active_days": 3,
+        "span_days": 5,
+        "avg_commits_per_day": 2.0,
+        "added_lines_total": 52436,
+        "deleted_lines_total": 193,
+        "files_changed_total": 29,
+        "estimated_hours_total": 22.29
+      },
+      "current_loc": {
+        "lines": 52243,
+        "files": 13
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 8,
+            "merges_total": 0,
+            "added_total": 52259,
+            "deleted_total": 191,
+            "files_changed_total": 26,
+            "first_commit": "2025-03-20T15:15:58+01:00",
+            "last_commit": "2025-03-24T11:03:30+01:00",
+            "active_days": 3,
+            "avg_commit_size": 6556.25,
+            "median_commit_size": 305.0,
+            "sessions": 4.0,
+            "estimated_hours": 19.29
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 177,
+            "deleted_total": 2,
+            "files_changed_total": 3,
+            "first_commit": "2025-03-20T14:45:37+01:00",
+            "last_commit": "2025-03-21T10:46:27+01:00",
+            "active_days": 2,
+            "avg_commit_size": 89.5,
+            "median_commit_size": 89.5,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 10,
+            "added": 52436,
+            "deleted": 193,
+            "files": 29
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
+        "commits_total": 6,
+        "merges_total": 1,
+        "non_merges_total": 5,
+        "unique_authors": 1,
+        "first_commit": "2025-03-04T23:11:23+01:00",
+        "last_commit": "2025-03-05T00:18:00+01:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 3.0,
+        "added_lines_total": 301105,
+        "deleted_lines_total": 1,
+        "files_changed_total": 842,
+        "estimated_hours_total": 21.5
+      },
+      "current_loc": {
+        "lines": 318129,
+        "files": 838
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 4,
+            "merges_total": 1,
+            "added_total": 301102,
+            "deleted_total": 1,
+            "files_changed_total": 840,
+            "first_commit": "2025-03-04T23:58:27+01:00",
+            "last_commit": "2025-03-05T00:18:00+01:00",
+            "active_days": 2,
+            "avg_commit_size": 75275.75,
+            "median_commit_size": 2.5,
+            "sessions": 1.0,
+            "estimated_hours": 20.0
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 3,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-03-04T23:11:23+01:00",
+            "last_commit": "2025-03-05T00:01:08+01:00",
+            "active_days": 2,
+            "avg_commit_size": 1.5,
+            "median_commit_size": 1.5,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 6,
+            "added": 301105,
+            "deleted": 1,
+            "files": 842
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda",
+        "commits_total": 1,
+        "merges_total": 0,
+        "non_merges_total": 1,
+        "unique_authors": 1,
+        "first_commit": "2025-05-16T12:32:12+02:00",
+        "last_commit": "2025-05-16T12:32:12+02:00",
+        "active_days": 1,
+        "span_days": 1,
+        "avg_commits_per_day": 1.0,
+        "added_lines_total": 34683,
+        "deleted_lines_total": 0,
+        "files_changed_total": 144,
+        "estimated_hours_total": 20.0
+      },
+      "current_loc": {
+        "lines": 258049,
+        "files": 143
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 34683,
+            "deleted_total": 0,
+            "files_changed_total": 144,
+            "first_commit": "2025-05-16T12:32:12+02:00",
+            "last_commit": "2025-05-16T12:32:12+02:00",
+            "active_days": 1,
+            "avg_commit_size": 34683.0,
+            "median_commit_size": 34683.0,
+            "sessions": 1.0,
+            "estimated_hours": 20.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-05",
+            "commits": 1,
+            "added": 34683,
+            "deleted": 0,
+            "files": 144
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
+        "commits_total": 2,
+        "merges_total": 0,
+        "non_merges_total": 2,
+        "unique_authors": 1,
+        "first_commit": "2025-05-16T12:17:02+02:00",
+        "last_commit": "2025-05-16T12:34:35+02:00",
+        "active_days": 1,
+        "span_days": 1,
+        "avg_commits_per_day": 2.0,
+        "added_lines_total": 247837,
+        "deleted_lines_total": 0,
+        "files_changed_total": 440,
+        "estimated_hours_total": 20.0
+      },
+      "current_loc": {
+        "lines": 516183,
+        "files": 439
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 247837,
+            "deleted_total": 0,
+            "files_changed_total": 440,
+            "first_commit": "2025-05-16T12:17:02+02:00",
+            "last_commit": "2025-05-16T12:34:35+02:00",
+            "active_days": 1,
+            "avg_commit_size": 123918.5,
+            "median_commit_size": 123918.5,
+            "sessions": 1.0,
+            "estimated_hours": 20.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-05",
+            "commits": 2,
+            "added": 247837,
+            "deleted": 0,
+            "files": 440
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-processor-applications",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-processor-applications",
+        "commits_total": 15,
+        "merges_total": 0,
+        "non_merges_total": 15,
+        "unique_authors": 2,
+        "first_commit": "2025-08-08T20:11:09+02:00",
+        "last_commit": "2025-09-02T20:50:08+02:00",
+        "active_days": 8,
+        "span_days": 26,
+        "avg_commits_per_day": 0.5769,
+        "added_lines_total": 718,
+        "deleted_lines_total": 138,
+        "files_changed_total": 59,
+        "estimated_hours_total": 19.95
+      },
+      "current_loc": {
+        "lines": 580,
+        "files": 18
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+            "commits_total": 14,
+            "merges_total": 0,
+            "added_total": 716,
+            "deleted_total": 138,
+            "files_changed_total": 58,
+            "first_commit": "2025-08-08T21:12:46+02:00",
+            "last_commit": "2025-09-02T20:50:08+02:00",
+            "active_days": 8,
+            "avg_commit_size": 61.0,
+            "median_commit_size": 17.0,
+            "sessions": 10.0,
+            "estimated_hours": 18.45
+          },
+          {
+            "author": "thibaut-oriane <thibaut@oriane.xyz>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 2,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-08-08T20:11:09+02:00",
+            "last_commit": "2025-08-08T20:11:09+02:00",
+            "active_days": 1,
+            "avg_commit_size": 2.0,
+            "median_commit_size": 2.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-08",
+            "commits": 13,
+            "added": 703,
+            "deleted": 123,
+            "files": 54
+          },
+          {
+            "month": "2025-09",
+            "commits": 2,
+            "added": 15,
+            "deleted": 15,
+            "files": 5
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/InstagramTests",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/InstagramTests",
+        "commits_total": 5,
+        "merges_total": 0,
+        "non_merges_total": 5,
+        "unique_authors": 1,
+        "first_commit": "2025-03-12T18:25:02+01:00",
+        "last_commit": "2025-04-06T11:48:48+02:00",
+        "active_days": 4,
+        "span_days": 26,
+        "avg_commits_per_day": 0.1923,
+        "added_lines_total": 10649,
+        "deleted_lines_total": 111,
+        "files_changed_total": 65,
+        "estimated_hours_total": 16.31
+      },
+      "current_loc": {
+        "lines": 343704,
+        "files": 62
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 4,
+            "merges_total": 0,
+            "added_total": 10648,
+            "deleted_total": 111,
+            "files_changed_total": 64,
+            "first_commit": "2025-03-13T18:57:05+01:00",
+            "last_commit": "2025-04-06T11:48:48+02:00",
+            "active_days": 3,
+            "avg_commit_size": 2689.75,
+            "median_commit_size": 2131.5,
+            "sessions": 3.0,
+            "estimated_hours": 14.81
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 1,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-03-12T18:25:02+01:00",
+            "last_commit": "2025-03-12T18:25:02+01:00",
+            "active_days": 1,
+            "avg_commit_size": 1.0,
+            "median_commit_size": 1.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 2,
+            "added": 6495,
+            "deleted": 0,
+            "files": 14
+          },
+          {
+            "month": "2025-04",
+            "commits": 3,
+            "added": 4154,
+            "deleted": 111,
+            "files": 51
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/ViT-model",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/ViT-model",
+        "commits_total": 6,
+        "merges_total": 0,
+        "non_merges_total": 6,
+        "unique_authors": 1,
+        "first_commit": "2025-04-05T13:09:07+02:00",
+        "last_commit": "2025-04-06T23:36:53+02:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 3.0,
+        "added_lines_total": 29351,
+        "deleted_lines_total": 2,
+        "files_changed_total": 10,
+        "estimated_hours_total": 13.46
+      },
+      "current_loc": {
+        "lines": 29284,
+        "files": 6
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 5,
+            "merges_total": 0,
+            "added_total": 29176,
+            "deleted_total": 2,
+            "files_changed_total": 8,
+            "first_commit": "2025-04-05T13:35:52+02:00",
+            "last_commit": "2025-04-06T23:36:53+02:00",
+            "active_days": 2,
+            "avg_commit_size": 5835.6,
+            "median_commit_size": 66.0,
+            "sessions": 3.0,
+            "estimated_hours": 11.96
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 175,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-04-05T13:09:07+02:00",
+            "last_commit": "2025-04-05T13:09:07+02:00",
+            "active_days": 1,
+            "avg_commit_size": 175.0,
+            "median_commit_size": 175.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 6,
+            "added": 29351,
+            "deleted": 2,
+            "files": 10
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-platform-clusters",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-platform-clusters",
+        "commits_total": 8,
+        "merges_total": 0,
+        "non_merges_total": 8,
+        "unique_authors": 1,
+        "first_commit": "2025-08-08T18:43:11+02:00",
+        "last_commit": "2025-08-17T02:55:58+02:00",
+        "active_days": 5,
+        "span_days": 10,
+        "avg_commits_per_day": 0.8,
+        "added_lines_total": 573,
+        "deleted_lines_total": 18,
+        "files_changed_total": 24,
+        "estimated_hours_total": 12.5
+      },
+      "current_loc": {
+        "lines": 555,
+        "files": 16
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
+            "commits_total": 7,
+            "merges_total": 0,
+            "added_total": 571,
+            "deleted_total": 18,
+            "files_changed_total": 23,
+            "first_commit": "2025-08-08T18:57:50+02:00",
+            "last_commit": "2025-08-17T02:55:58+02:00",
+            "active_days": 5,
+            "avg_commit_size": 84.14,
+            "median_commit_size": 10.0,
+            "sessions": 6.0,
+            "estimated_hours": 11.0
+          },
+          {
+            "author": "thibaut-oriane <thibaut@oriane.xyz>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 2,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-08-08T18:43:11+02:00",
+            "last_commit": "2025-08-08T18:43:11+02:00",
+            "active_days": 1,
+            "avg_commit_size": 2.0,
+            "median_commit_size": 2.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-08",
+            "commits": 8,
+            "added": 573,
+            "deleted": 18,
+            "files": 24
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda",
+        "commits_total": 9,
+        "merges_total": 0,
+        "non_merges_total": 9,
+        "unique_authors": 1,
+        "first_commit": "2025-04-30T12:08:09+02:00",
+        "last_commit": "2025-05-07T11:12:41+02:00",
+        "active_days": 3,
+        "span_days": 8,
+        "avg_commits_per_day": 1.125,
+        "added_lines_total": 1590,
+        "deleted_lines_total": 447,
+        "files_changed_total": 27,
+        "estimated_hours_total": 12.4
+      },
+      "current_loc": {
+        "lines": 1195,
+        "files": 15
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 8,
+            "merges_total": 0,
+            "added_total": 1415,
+            "deleted_total": 447,
+            "files_changed_total": 25,
+            "first_commit": "2025-05-04T19:43:45+02:00",
+            "last_commit": "2025-05-07T11:12:41+02:00",
+            "active_days": 2,
+            "avg_commit_size": 232.75,
+            "median_commit_size": 150.5,
+            "sessions": 3.0,
+            "estimated_hours": 10.9
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 175,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-04-30T12:08:09+02:00",
+            "last_commit": "2025-04-30T12:08:09+02:00",
+            "active_days": 1,
+            "avg_commit_size": 175.0,
+            "median_commit_size": 175.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 1,
+            "added": 175,
+            "deleted": 0,
+            "files": 2
+          },
+          {
+            "month": "2025-05",
+            "commits": 8,
+            "added": 1415,
+            "deleted": 447,
+            "files": 25
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-platform-applications",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-platform-applications",
+        "commits_total": 5,
+        "merges_total": 0,
+        "non_merges_total": 5,
+        "unique_authors": 1,
+        "first_commit": "2025-08-08T18:45:37+02:00",
+        "last_commit": "2025-08-15T19:23:22+02:00",
+        "active_days": 3,
+        "span_days": 8,
+        "avg_commits_per_day": 0.625,
+        "added_lines_total": 851,
+        "deleted_lines_total": 6,
+        "files_changed_total": 40,
+        "estimated_hours_total": 10.35
+      },
+      "current_loc": {
+        "lines": 845,
+        "files": 36
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
+            "commits_total": 4,
+            "merges_total": 0,
+            "added_total": 849,
+            "deleted_total": 6,
+            "files_changed_total": 39,
+            "first_commit": "2025-08-08T18:59:25+02:00",
+            "last_commit": "2025-08-15T19:23:22+02:00",
+            "active_days": 3,
+            "avg_commit_size": 213.75,
+            "median_commit_size": 5.5,
+            "sessions": 3.0,
+            "estimated_hours": 8.85
+          },
+          {
+            "author": "thibaut-oriane <thibaut@oriane.xyz>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 2,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-08-08T18:45:37+02:00",
+            "last_commit": "2025-08-08T18:45:37+02:00",
+            "active_days": 1,
+            "avg_commit_size": 2.0,
+            "median_commit_size": 2.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-08",
+            "commits": 5,
+            "added": 851,
+            "deleted": 6,
+            "files": 40
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda",
+        "commits_total": 7,
+        "merges_total": 0,
+        "non_merges_total": 7,
+        "unique_authors": 1,
+        "first_commit": "2025-03-30T23:52:32+02:00",
+        "last_commit": "2025-04-03T03:54:49+02:00",
+        "active_days": 3,
+        "span_days": 5,
+        "avg_commits_per_day": 1.4,
+        "added_lines_total": 796,
+        "deleted_lines_total": 140,
+        "files_changed_total": 15,
+        "estimated_hours_total": 8.63
+      },
+      "current_loc": {
+        "lines": 656,
+        "files": 9
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 6,
+            "merges_total": 0,
+            "added_total": 621,
+            "deleted_total": 140,
+            "files_changed_total": 13,
+            "first_commit": "2025-03-31T08:51:20+02:00",
+            "last_commit": "2025-04-03T03:54:49+02:00",
+            "active_days": 2,
+            "avg_commit_size": 126.83,
+            "median_commit_size": 77.5,
+            "sessions": 3.0,
+            "estimated_hours": 7.13
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 175,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-03-30T23:52:32+02:00",
+            "last_commit": "2025-03-30T23:52:32+02:00",
+            "active_days": 1,
+            "avg_commit_size": 175.0,
+            "median_commit_size": 175.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 6,
+            "added": 782,
+            "deleted": 125,
+            "files": 13
+          },
+          {
+            "month": "2025-04",
+            "commits": 1,
+            "added": 14,
+            "deleted": 15,
+            "files": 2
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/SAM-model",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/SAM-model",
+        "commits_total": 3,
+        "merges_total": 0,
+        "non_merges_total": 3,
+        "unique_authors": 1,
+        "first_commit": "2025-04-05T13:09:44+02:00",
+        "last_commit": "2025-04-06T11:55:00+02:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 1.5,
+        "added_lines_total": 382,
+        "deleted_lines_total": 0,
+        "files_changed_total": 5,
+        "estimated_hours_total": 4.5
+      },
+      "current_loc": {
+        "lines": 443,
+        "files": 5
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 207,
+            "deleted_total": 0,
+            "files_changed_total": 3,
+            "first_commit": "2025-04-05T17:15:33+02:00",
+            "last_commit": "2025-04-06T11:55:00+02:00",
+            "active_days": 2,
+            "avg_commit_size": 103.5,
+            "median_commit_size": 103.5,
+            "sessions": 2.0,
+            "estimated_hours": 3.0
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 175,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-04-05T13:09:44+02:00",
+            "last_commit": "2025-04-05T13:09:44+02:00",
+            "active_days": 1,
+            "avg_commit_size": 175.0,
+            "median_commit_size": 175.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 3,
+            "added": 382,
+            "deleted": 0,
+            "files": 5
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
+        "commits_total": 4,
+        "merges_total": 0,
+        "non_merges_total": 4,
+        "unique_authors": 1,
+        "first_commit": "2025-04-05T13:17:21+02:00",
+        "last_commit": "2025-04-06T12:07:44+02:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 2.0,
+        "added_lines_total": 449,
+        "deleted_lines_total": 3,
+        "files_changed_total": 10,
+        "estimated_hours_total": 4.3
+      },
+      "current_loc": {
+        "lines": 446,
+        "files": 6
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 3,
+            "merges_total": 0,
+            "added_total": 177,
+            "deleted_total": 2,
+            "files_changed_total": 4,
+            "first_commit": "2025-04-05T13:17:21+02:00",
+            "last_commit": "2025-04-05T13:19:00+02:00",
+            "active_days": 1,
+            "avg_commit_size": 59.67,
+            "median_commit_size": 2.0,
+            "sessions": 1.0,
+            "estimated_hours": 2.54
+          },
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 272,
+            "deleted_total": 1,
+            "files_changed_total": 6,
+            "first_commit": "2025-04-06T12:07:44+02:00",
+            "last_commit": "2025-04-06T12:07:44+02:00",
+            "active_days": 1,
+            "avg_commit_size": 273.0,
+            "median_commit_size": 273.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.76
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 4,
+            "added": 449,
+            "deleted": 3,
+            "files": 10
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/orn-experience-applications",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-experience-applications",
+        "commits_total": 1,
+        "merges_total": 0,
+        "non_merges_total": 1,
+        "unique_authors": 1,
+        "first_commit": "2025-09-11T10:09:35+02:00",
+        "last_commit": "2025-09-11T10:09:35+02:00",
+        "active_days": 1,
+        "span_days": 1,
+        "avg_commits_per_day": 1.0,
+        "added_lines_total": 1,
+        "deleted_lines_total": 0,
+        "files_changed_total": 1,
+        "estimated_hours_total": 1.5
+      },
+      "current_loc": {
+        "lines": 1,
+        "files": 1
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "thibaut-oriane <thibaut@oriane.xyz>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 1,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-09-11T10:09:35+02:00",
+            "last_commit": "2025-09-11T10:09:35+02:00",
+            "active_days": 1,
+            "avg_commit_size": 1.0,
+            "median_commit_size": 1.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-09",
+            "commits": 1,
+            "added": 1,
+            "deleted": 0,
+            "files": 1
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws",
+        "commits_total": 1,
+        "merges_total": 0,
+        "non_merges_total": 1,
+        "unique_authors": 1,
+        "first_commit": "2025-05-23T15:07:15+02:00",
+        "last_commit": "2025-05-23T15:07:15+02:00",
+        "active_days": 1,
+        "span_days": 1,
+        "avg_commits_per_day": 1.0,
+        "added_lines_total": 175,
+        "deleted_lines_total": 0,
+        "files_changed_total": 2,
+        "estimated_hours_total": 1.5
+      },
+      "current_loc": {
+        "lines": 175,
+        "files": 2
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 175,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-05-23T15:07:15+02:00",
+            "last_commit": "2025-05-23T15:07:15+02:00",
+            "active_days": 1,
+            "avg_commit_size": 175.0,
+            "median_commit_size": 175.0,
+            "sessions": 1.0,
+            "estimated_hours": 1.5
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-05",
+            "commits": 1,
+            "added": 175,
+            "deleted": 0,
+            "files": 2
+          }
+        ]
+      }
+    }
+  ],
+  "authors": [
+    {
+      "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
+        "/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab",
+        "/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda",
+        "/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda",
+        "/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda",
+        "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
+        "/home/quantium/labs/oriane/_deprecated/InstagramTests",
+        "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda",
+        "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda",
+        "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
+        "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python",
+        "/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash",
+        "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
+        "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
+        "/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi",
+        "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+        "/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant",
+        "/home/quantium/labs/oriane/_deprecated/SAM-model",
+        "/home/quantium/labs/oriane/_deprecated/SSCD-model",
+        "/home/quantium/labs/oriane/_deprecated/ViT-model",
+        "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
+        "/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda",
+        "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda",
+        "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda",
+        "/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda",
+        "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
+        "/home/quantium/labs/oriane/orn-acquisition-lambdas",
+        "/home/quantium/labs/oriane/orn-admin-api",
+        "/home/quantium/labs/oriane/orn-admin-web",
+        "/home/quantium/labs/oriane/orn-experience-app",
+        "/home/quantium/labs/oriane/orn-processor-etls",
+        "/home/quantium/labs/oriane/orn-search-api"
+      ],
+      "commits_total": 1489,
+      "estimated_hours": 2579.760000000001,
+      "added_total": 8822338,
+      "deleted_total": 2664061,
+      "files_changed_total": 55405,
+      "active_days": 307
+    },
+    {
+      "author": "JRosSx91 <hazee.1491@gmail.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
+        "/home/quantium/labs/oriane/orn-admin-api",
+        "/home/quantium/labs/oriane/orn-admin-web",
+        "/home/quantium/labs/oriane/orn-experience-app"
+      ],
+      "commits_total": 418,
+      "estimated_hours": 618.95,
+      "added_total": 114157,
+      "deleted_total": 108822,
+      "files_changed_total": 1853,
+      "active_days": 135
+    },
+    {
+      "author": "Alex Colls <alex.colls@innocv.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python",
+        "/home/quantium/labs/oriane/orn-admin-api",
+        "/home/quantium/labs/oriane/orn-admin-web"
+      ],
+      "commits_total": 91,
+      "estimated_hours": 108.94,
+      "added_total": 11054,
+      "deleted_total": 11457,
+      "files_changed_total": 315,
+      "active_days": 22
+    },
+    {
+      "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
+        "/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab",
+        "/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda",
+        "/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda",
+        "/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda",
+        "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
+        "/home/quantium/labs/oriane/_deprecated/InstagramTests",
+        "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda",
+        "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda",
+        "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
+        "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python",
+        "/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash",
+        "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
+        "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
+        "/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi",
+        "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+        "/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant",
+        "/home/quantium/labs/oriane/_deprecated/SAM-model",
+        "/home/quantium/labs/oriane/_deprecated/SSCD-model",
+        "/home/quantium/labs/oriane/_deprecated/ViT-model",
+        "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
+        "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda",
+        "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda",
+        "/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda",
+        "/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws",
+        "/home/quantium/labs/oriane/orn-acquisition-lambdas",
+        "/home/quantium/labs/oriane/orn-admin-api",
+        "/home/quantium/labs/oriane/orn-admin-web",
+        "/home/quantium/labs/oriane/orn-experience-app",
+        "/home/quantium/labs/oriane/orn-search-api"
+      ],
+      "commits_total": 86,
+      "estimated_hours": 108.56,
+      "added_total": 4243,
+      "deleted_total": 2653,
+      "files_changed_total": 69,
+      "active_days": 63
+    },
+    {
+      "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/orn-admin-api",
+        "/home/quantium/labs/oriane/orn-admin-web",
+        "/home/quantium/labs/oriane/orn-experience-app"
+      ],
+      "commits_total": 69,
+      "estimated_hours": 82.5,
+      "added_total": 2,
+      "deleted_total": 0,
+      "files_changed_total": 2,
+      "active_days": 47
+    },
+    {
+      "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/orn-experience-app",
+        "/home/quantium/labs/oriane/orn-processor-applications",
+        "/home/quantium/labs/oriane/orn-processor-etls"
+      ],
+      "commits_total": 33,
+      "estimated_hours": 50.760000000000005,
+      "added_total": 3572,
+      "deleted_total": 3000,
+      "files_changed_total": 166,
+      "active_days": 22
+    },
+    {
+      "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
+      "repos": [
+        "/home/quantium/labs/oriane/orn-platform-applications",
+        "/home/quantium/labs/oriane/orn-platform-clusters"
+      ],
+      "commits_total": 11,
+      "estimated_hours": 19.85,
+      "added_total": 1420,
+      "deleted_total": 24,
+      "files_changed_total": 62,
+      "active_days": 8
+    },
+    {
+      "author": "alexcolls <alexcollsoutumuro@gmail.com>",
+      "repos": [
+        "/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab",
+        "/home/quantium/labs/oriane/orn-experience-app"
+      ],
+      "commits_total": 2,
+      "estimated_hours": 8.620000000000001,
+      "added_total": 586,
+      "deleted_total": 16081,
+      "files_changed_total": 14,
+      "active_days": 2
+    },
+    {
+      "author": "thibaut-oriane <thibaut@oriane.xyz>",
+      "repos": [
+        "/home/quantium/labs/oriane/orn-experience-applications",
+        "/home/quantium/labs/oriane/orn-platform-applications",
+        "/home/quantium/labs/oriane/orn-platform-clusters",
+        "/home/quantium/labs/oriane/orn-processor-applications"
+      ],
+      "commits_total": 4,
+      "estimated_hours": 6.0,
+      "added_total": 7,
+      "deleted_total": 0,
+      "files_changed_total": 4,
+      "active_days": 4
+    }
+  ]
+}
