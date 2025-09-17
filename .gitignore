@@ -6,7 +6,7 @@ outputs/
 *.pyo
 *.pyd
 *.log
-output/
-outputs/
-.output/
-.outputs/
+# output/
+# outputs/
+# .output/
+# .outputs/
