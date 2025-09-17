@@ -652,10 +652,12 @@ def write_reports(output_dir: Path, work_tree: Path, metrics: RepoMetrics, commi
             ],
         },
     }
-    (base.with_suffix(".json")).write_text(json.dumps(payload, indent=2))
+    if ".json" not in excluded:
+        (base.with_suffix(".json")).write_text(json.dumps(payload, indent=2))
 
     # CSV (summary)
-    with (base.with_suffix(".csv")).open("w", newline="") as f:
+    if ".csv" not in excluded:
+        with (base.with_suffix(".csv")).open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow([
             "repo_path","commits_total","merges_total","non_merges_total","unique_authors",
@@ -678,16 +680,18 @@ def write_reports(output_dir: Path, work_tree: Path, metrics: RepoMetrics, commi
     lines.append(f"Active days: {metrics.active_days}, span days: {metrics.span_days}, avg commits/day: {metrics.avg_commits_per_day}")
     lines.append(f"Numstat totals: added={metrics.added_lines_total}, deleted={metrics.deleted_lines_total}, files_changed={metrics.files_changed_total}")
     lines.append(f"Estimated hours (session-based): {metrics.estimated_hours_total}")
-    (base.with_suffix(".txt")).write_text("\n".join(lines) + "\n")
+    if ".txt" not in excluded:
+        (base.with_suffix(".txt")).write_text("\n".join(lines) + "\n")
 
-    # Markdown visual report
-    _write_markdown_report(output_dir, work_tree, metrics, commits)
+    # Markdown visual report (always written unless explicitly excluded)
+    if ".md" not in excluded:
+        _write_markdown_report(output_dir, work_tree, metrics, commits)
 
 
 def main(argv: Optional[List[str]] = None) -> int:
     load_dotenv()
     git_dir_input = os.getenv("GIT_EVAL_GIT_DIR", "").strip()
-    output_dir = Path(os.getenv("OUTPUT_DIR", "./outputs")).resolve()
+    output_dir = Path(os.getenv("OUTPUT_DIR", "./_output")).resolve()
     include_merges = os.getenv("INCLUDE_MERGES", "1") not in {"0", "false", "False"}
 
     if not git_dir_input:

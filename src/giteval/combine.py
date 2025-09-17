@@ -10,10 +10,13 @@ from giteval.main import (
     parse_git_log_with_numstat,
     compute_metrics,
     write_reports,
+    _aggregate_monthly,
+    _author_details,
+    _current_loc_snapshot,
 )
 
 BASE = Path("/home/quantium/labs/oriane").resolve()
-OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "./outputs")).resolve()
+OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "./_output")).resolve()
 
 
 def discover_repos(base: Path) -> List[Path]:
@@ -123,16 +126,25 @@ def main(argv: List[str] = None) -> int:
     for path in repo_paths:
         try:
             commits = parse_git_log_with_numstat(path, include_merges=(os.getenv("INCLUDE_MERGES", "1") not in {"0", "false", "False"}))
-        except Exception as e:
+        except Exception:
             continue
         metrics = compute_metrics(commits)
         metrics.repo_path = path.as_posix()
         write_reports(OUTPUT_DIR, path, metrics, commits)
-        # Load corresponding JSON we just wrote for combined view
-        json_path = OUTPUT_DIR / f"{path.name}_git_eval.json"
-        if json_path.exists():
-            data = json.loads(json_path.read_text())
-            all_payloads.append(data)
+        curr_loc = _current_loc_snapshot(path)
+        data = {
+            "repo": path.as_posix(),
+            "metrics": asdict(metrics),
+            "current_loc": {"lines": curr_loc[0], "files": curr_loc[1]},
+            "breakdowns": {
+                "authors": _author_details(commits),
+                "monthly": [
+                    {"month": m, "commits": c, "added": a, "deleted": d, "files": f}
+                    for (m, c, a, d, f) in _aggregate_monthly(commits)
+                ],
+            },
+        }
+        all_payloads.append(data)
 
     md, combined = build_dashboard(all_payloads)
     (OUTPUT_DIR / "_git_eval_dashboard.md").write_text(md)
