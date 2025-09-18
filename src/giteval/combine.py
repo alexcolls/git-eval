@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import List, Dict, Tuple
 from dataclasses import asdict
 import json
+import csv
 from datetime import timedelta
 
 from giteval.main import (
@@ -262,6 +263,58 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
             lines.append(f"| {i} | {m} | {month_totals_hours.get(m,0.0):.2f} | {month_totals_commits.get(m,0)} | {month_totals_added.get(m,0)} | {month_totals_deleted.get(m,0)} |")
         lines.append("")
 
+        # Stacked bar of monthly commits per top N repos (xychart-beta)
+        lines.append("## Monthly commits — stacked (top 5 repos)")
+        lines.append("")
+        # Determine top 5 repos by total commits
+        repo_commit_totals: Dict[str, int] = {}
+        per_repo_month_commits: Dict[str, Dict[str, int]] = {}
+        all_months: set = set()
+        for r in per_repo_sorted:
+            repo_name = Path(r["repo"]).name
+            repo_map: Dict[str, int] = {}
+            for row in r.get("breakdowns", {}).get("monthly", []):
+                m = row.get("month")
+                c = int(row.get("commits", 0))
+                if not m:
+                    continue
+                all_months.add(m)
+                repo_map[m] = repo_map.get(m, 0) + c
+            per_repo_month_commits[repo_name] = repo_map
+            repo_commit_totals[repo_name] = sum(repo_map.values())
+        months_sorted = sorted(all_months)
+        top_repos = [name for name, _ in sorted(repo_commit_totals.items(), key=lambda x: x[1], reverse=True)[:5]]
+        if months_sorted and top_repos:
+            lines.append("```mermaid")
+            lines.append("xychart-beta")
+            lines.append("    title Monthly commits — stacked (top 5 repos)")
+            lines.append(f"    x-axis [{', '.join(months_sorted)}]")
+            lines.append("    stacked")
+            # y-axis omitted to let mermaid auto-scale
+            for name in top_repos:
+                series_vals = [str(per_repo_month_commits.get(name, {}).get(m, 0)) for m in months_sorted]
+                safe = name.replace('"', '\\"')
+                lines.append(f"    series \"{safe}\" [{', '.join(series_vals)}]")
+            lines.append("```")
+            lines.append("")
+
+        # Treemap-like hours by repo using sankey-beta
+        lines.append("## Hours by repo — treemap-like")
+        lines.append("")
+        lines.append("```mermaid")
+        lines.append("sankey-beta")
+        lines.append("    title Hours by repo (top 15)")
+        # Build top 15 repos by hours
+        parts = []
+        for r in per_repo_sorted[:15]:
+            repo_name = Path(r["repo"]).name
+            parts.append((repo_name, float(r["metrics"]["estimated_hours_total"])) )
+        for repo_name, hours in parts:
+            safe = repo_name.replace(',', ' ')
+            lines.append(f"    All Repos, {safe} {hours:.2f}")
+        lines.append("```")
+        lines.append("")
+
     # Per-author schedule pies for top authors
     if author_sorted:
         lines.append("## Per-author schedule charts (top 5 by hours)")
@@ -336,6 +389,26 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
                 f = row.get("files",0)
                 lines.append(f"| {mth} | {c} | {a} | {d} | {f} | {bar(c, max_c)} |")
             lines.append("")
+
+    # Write CSV exports
+    # 1) Global monthly totals
+    monthly_csv = OUTPUT_DIR / "_git_eval_monthly_totals.csv"
+    with monthly_csv.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["month", "hours", "commits", "added", "deleted"])
+        for m in sorted(month_totals_hours.keys()):
+            w.writerow([m, f"{month_totals_hours[m]:.2f}", month_totals_commits.get(m, 0), month_totals_added.get(m, 0), month_totals_deleted.get(m, 0)])
+    # 2) Author schedule aggregates
+    authors_csv = OUTPUT_DIR / "_git_eval_authors_schedule.csv"
+    with authors_csv.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["author", "estimated_hours", "commits", "weekends_active_days", "weekdays_active_days", "days_night_active", "days_daytime_active", "days_both", "repos_count"])
+        for a in author_sorted:
+            w.writerow([
+                a["author"], f"{a["estimated_hours"]:.2f}", a["commits_total"],
+                a.get("weekends_active_days", 0), a.get("weekdays_active_days", 0), a.get("days_night_active", 0),
+                a.get("days_daytime_active", 0), a.get("days_both", 0), len(a.get("repos", []))
+            ])
 
     md = "\n".join(lines) + "\n"
     payload = {
