@@ -20,14 +20,26 @@ Repo: `/home/quantium/labs/oriane/orn-platform-clusters`
 | Lines added (sum) | 573 |
 | Lines deleted (sum) | 18 |
 | Files touched (sum of numstat rows) | 24 |
-| Estimated hours (session-based) | 12.5 |
+| Estimated hours (session-based) | 6.35 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 1 |
+| Weekday days active | 4 |
+| Night days active | 3 |
+| Daytime days active | 3 |
+| Days with both day & night activity | 0 |
+| Day-only days | 3 |
+| Night-only days | 3 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| Thibaut Hadjean <thibaut@oriane.xyz> | 7 | 11.0 | 571 | 18 | 23 | 5 | 2025-08-08T18:57:50+02:00 | 2025-08-17T02:55:58+02:00 | 84.14 | 10.0 | ★★★★★ |
-| thibaut-oriane <thibaut@oriane.xyz> | 1 | 1.5 | 2 | 0 | 1 | 1 | 2025-08-08T18:43:11+02:00 | 2025-08-08T18:43:11+02:00 | 2.0 | 2.0 | ★☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| Thibaut Hadjean <thibaut@oriane.xyz> | 7 | 5.6 | 1 | 3 | 3 | 0 | 571 | 18 | 23 | 5 | 2025-08-08T18:57:50+02:00 | 2025-08-17T02:55:58+02:00 | 84.14 | 10.0 | ★★★★★ |
+| thibaut-oriane <thibaut@oriane.xyz> | 1 | 0.75 | 0 | 0 | 1 | 0 | 2 | 0 | 1 | 1 | 2025-08-08T18:43:11+02:00 | 2025-08-08T18:43:11+02:00 | 2.0 | 2.0 | ★☆☆☆☆ |
 
 ## Commits by author
 
@@ -59,11 +71,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

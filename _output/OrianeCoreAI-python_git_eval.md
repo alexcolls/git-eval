@@ -20,15 +20,27 @@ Repo: `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python`
 | Lines added (sum) | 11720 |
 | Lines deleted (sum) | 12182 |
 | Files touched (sum of numstat rows) | 299 |
-| Estimated hours (session-based) | 95.76 |
+| Estimated hours (session-based) | 55.15 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 4 |
+| Weekday days active | 8 |
+| Night days active | 3 |
+| Daytime days active | 11 |
+| Days with both day & night activity | 3 |
+| Day-only days | 8 |
+| Night-only days | 0 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| Alex Colls <alex.colls@innocv.com> | 49 | 59.08 | 8554 | 11121 | 198 | 5 | 2024-12-20T21:14:08+01:00 | 2025-01-26T20:04:17+01:00 | 401.53 | 17.0 | ★★★★★ |
-| quantium-rock <alexcollsoutumuro@gmail.com> | 28 | 33.68 | 3165 | 1061 | 100 | 7 | 2025-02-08T11:42:39+01:00 | 2025-03-18T12:44:10+01:00 | 150.93 | 8.0 | ★★★☆☆ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 3 | 3.0 | 1 | 0 | 1 | 2 | 2024-12-20T17:39:28+01:00 | 2025-01-26T16:18:16+01:00 | 0.33 | 0.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| Alex Colls <alex.colls@innocv.com> | 49 | 35.51 | 3 | 2 | 4 | 2 | 8554 | 11121 | 198 | 5 | 2024-12-20T21:14:08+01:00 | 2025-01-26T20:04:17+01:00 | 401.53 | 17.0 | ★★★★★ |
+| quantium-rock <alexcollsoutumuro@gmail.com> | 28 | 18.14 | 1 | 1 | 6 | 1 | 3165 | 1061 | 100 | 7 | 2025-02-08T11:42:39+01:00 | 2025-03-18T12:44:10+01:00 | 150.93 | 8.0 | ★★★☆☆ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 3 | 1.5 | 1 | 0 | 2 | 0 | 1 | 0 | 1 | 2 | 2024-12-20T17:39:28+01:00 | 2025-01-26T16:18:16+01:00 | 0.33 | 0.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -62,11 +74,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

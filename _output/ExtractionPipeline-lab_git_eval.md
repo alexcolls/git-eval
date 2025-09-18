@@ -20,15 +20,27 @@ Repo: `/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab`
 | Lines added (sum) | 4897360 |
 | Lines deleted (sum) | 396945 |
 | Files touched (sum of numstat rows) | 24813 |
-| Estimated hours (session-based) | 341.92 |
+| Estimated hours (session-based) | 220.66 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 4 |
+| Weekday days active | 25 |
+| Night days active | 9 |
+| Daytime days active | 20 |
+| Days with both day & night activity | 3 |
+| Day-only days | 17 |
+| Night-only days | 6 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 126 | 334.72 | 4896791 | 396581 | 24800 | 27 | 2025-05-16T12:40:00+02:00 | 2025-07-18T16:25:42+02:00 | 42010.89 | 379.5 | ★★★★★ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 3 | 4.5 | 35 | 1 | 3 | 3 | 2025-05-16T12:29:52+02:00 | 2025-07-28T16:47:30+02:00 | 12.0 | 2.0 | ☆☆☆☆☆ |
-| alexcolls <alexcollsoutumuro@gmail.com> | 1 | 2.7 | 534 | 363 | 10 | 1 | 2025-07-05T20:13:29+02:00 | 2025-07-05T20:13:29+02:00 | 897.0 | 897.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 126 | 217.01 | 3 | 9 | 19 | 3 | 4896791 | 396581 | 24800 | 27 | 2025-05-16T12:40:00+02:00 | 2025-07-18T16:25:42+02:00 | 42010.89 | 379.5 | ★★★★★ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 3 | 2.25 | 0 | 0 | 3 | 0 | 35 | 1 | 3 | 3 | 2025-05-16T12:29:52+02:00 | 2025-07-28T16:47:30+02:00 | 12.0 | 2.0 | ☆☆☆☆☆ |
+| alexcolls <alexcollsoutumuro@gmail.com> | 1 | 1.4 | 1 | 0 | 0 | 0 | 534 | 363 | 10 | 1 | 2025-07-05T20:13:29+02:00 | 2025-07-05T20:13:29+02:00 | 897.0 | 897.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -62,11 +74,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

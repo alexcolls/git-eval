@@ -20,18 +20,30 @@ Repo: `/home/quantium/labs/oriane/orn-experience-app`
 | Lines added (sum) | 89459 |
 | Lines deleted (sum) | 63918 |
 | Files touched (sum of numstat rows) | 1796 |
-| Estimated hours (session-based) | 400.6 |
+| Estimated hours (session-based) | 227.67 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 7 |
+| Weekday days active | 33 |
+| Night days active | 15 |
+| Daytime days active | 35 |
+| Days with both day & night activity | 11 |
+| Day-only days | 24 |
+| Night-only days | 4 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 203 | 338.6 | 81439 | 44470 | 1662 | 36 | 2025-05-20T20:30:06+02:00 | 2025-09-12T04:04:02+02:00 | 620.24 | 84.0 | ★★★★★ |
-| JRosSx91 <hazee.1491@gmail.com> | 24 | 36.97 | 7206 | 823 | 98 | 10 | 2025-05-30T12:05:02+02:00 | 2025-06-11T23:38:19+02:00 | 334.54 | 83.5 | ★☆☆☆☆ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 8 | 10.68 | 18 | 2641 | 4 | 4 | 2025-05-20T19:47:54+02:00 | 2025-06-11T21:11:06+02:00 | 332.38 | 1.0 | ☆☆☆☆☆ |
-| alexcolls <alexcollsoutumuro@gmail.com> | 1 | 5.92 | 52 | 15718 | 4 | 1 | 2025-07-05T19:58:57+02:00 | 2025-07-05T19:58:57+02:00 | 15770.0 | 15770.0 | ☆☆☆☆☆ |
-| Thibaut Hadjean <sasha.hadjean@gmail.com> | 2 | 5.44 | 744 | 266 | 28 | 2 | 2025-09-04T18:04:29+02:00 | 2025-09-05T11:13:31+02:00 | 505.0 | 505.0 | ☆☆☆☆☆ |
-| Iván Gómez <123682394+JRosSx91@users.noreply.github.com> | 2 | 3.0 | 0 | 0 | 0 | 2 | 2025-05-30T15:52:56+02:00 | 2025-06-06T23:06:34+02:00 | 0.0 | 0.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 203 | 195.52 | 4 | 11 | 30 | 7 | 81439 | 44470 | 1662 | 36 | 2025-05-20T20:30:06+02:00 | 2025-09-12T04:04:02+02:00 | 620.24 | 84.0 | ★★★★★ |
+| JRosSx91 <hazee.1491@gmail.com> | 24 | 19.33 | 3 | 5 | 6 | 3 | 7206 | 823 | 98 | 10 | 2025-05-30T12:05:02+02:00 | 2025-06-11T23:38:19+02:00 | 334.54 | 83.5 | ☆☆☆☆☆ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 8 | 5.54 | 0 | 0 | 3 | 0 | 18 | 2641 | 4 | 4 | 2025-05-20T19:47:54+02:00 | 2025-06-11T21:11:06+02:00 | 332.38 | 1.0 | ☆☆☆☆☆ |
+| alexcolls <alexcollsoutumuro@gmail.com> | 1 | 3.01 | 1 | 0 | 1 | 0 | 52 | 15718 | 4 | 1 | 2025-07-05T19:58:57+02:00 | 2025-07-05T19:58:57+02:00 | 15770.0 | 15770.0 | ☆☆☆☆☆ |
+| Thibaut Hadjean <sasha.hadjean@gmail.com> | 2 | 2.77 | 0 | 0 | 2 | 0 | 744 | 266 | 28 | 2 | 2025-09-04T18:04:29+02:00 | 2025-09-05T11:13:31+02:00 | 505.0 | 505.0 | ☆☆☆☆☆ |
+| Iván Gómez <123682394+JRosSx91@users.noreply.github.com> | 2 | 1.5 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 2 | 2025-05-30T15:52:56+02:00 | 2025-06-06T23:06:34+02:00 | 0.0 | 0.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -71,11 +83,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

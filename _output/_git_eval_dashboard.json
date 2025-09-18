@@ -16,7 +16,14 @@
         "added_lines_total": 120376,
         "deleted_lines_total": 88133,
         "files_changed_total": 1668,
-        "estimated_hours_total": 647.2
+        "estimated_hours_total": 343.36,
+        "weekends_active_days": 26,
+        "weekdays_active_days": 75,
+        "days_daytime_active": 86,
+        "days_night_active": 28,
+        "days_day_only": 68,
+        "days_night_only": 10,
+        "days_both": 18
       },
       "current_loc": {
         "lines": 31093,
@@ -37,7 +44,14 @@
             "avg_commit_size": 573.8,
             "median_commit_size": 48.0,
             "sessions": 97.0,
-            "estimated_hours": 290.25
+            "estimated_hours": 154.85,
+            "weekends_active_days": 13,
+            "weekdays_active_days": 51,
+            "days_night_active": 13,
+            "days_daytime_active": 55,
+            "days_both": 7,
+            "days_day_only": 48,
+            "days_night_only": 6
           },
           {
             "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
@@ -52,7 +66,14 @@
             "avg_commit_size": 560.06,
             "median_commit_size": 58.0,
             "sessions": 83.0,
-            "estimated_hours": 267.36
+            "estimated_hours": 142.31,
+            "weekends_active_days": 12,
+            "weekdays_active_days": 40,
+            "days_night_active": 13,
+            "days_daytime_active": 42,
+            "days_both": 9,
+            "days_day_only": 33,
+            "days_night_only": 4
           },
           {
             "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
@@ -67,7 +88,14 @@
             "avg_commit_size": 0.03,
             "median_commit_size": 0.0,
             "sessions": 26.0,
-            "estimated_hours": 40.0
+            "estimated_hours": 20.4,
+            "weekends_active_days": 4,
+            "weekdays_active_days": 18,
+            "days_night_active": 2,
+            "days_daytime_active": 18,
+            "days_both": 0,
+            "days_day_only": 18,
+            "days_night_only": 2
           },
           {
             "author": "Alex Colls <alex.colls@innocv.com>",
@@ -82,7 +110,14 @@
             "avg_commit_size": 45.13,
             "median_commit_size": 8.0,
             "sessions": 13.0,
-            "estimated_hours": 28.09
+            "estimated_hours": 14.84,
+            "weekends_active_days": 4,
+            "weekdays_active_days": 5,
+            "days_night_active": 2,
+            "days_daytime_active": 7,
+            "days_both": 1,
+            "days_day_only": 6,
+            "days_night_only": 1
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -97,7 +132,14 @@
             "avg_commit_size": 0.0,
             "median_commit_size": 0.0,
             "sessions": 14.0,
-            "estimated_hours": 21.5
+            "estimated_hours": 10.95,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 11,
+            "days_night_active": 2,
+            "days_daytime_active": 12,
+            "days_both": 2,
+            "days_day_only": 10,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -190,7 +232,14 @@
         "added_lines_total": 84119,
         "deleted_lines_total": 59776,
         "files_changed_total": 1552,
-        "estimated_hours_total": 590.43
+        "estimated_hours_total": 320.67,
+        "weekends_active_days": 21,
+        "weekdays_active_days": 68,
+        "days_daytime_active": 80,
+        "days_night_active": 21,
+        "days_day_only": 64,
+        "days_night_only": 5,
+        "days_both": 16
       },
       "current_loc": {
         "lines": 23470,
@@ -211,7 +260,14 @@
             "avg_commit_size": 523.1,
             "median_commit_size": 17.5,
             "sessions": 89.0,
-            "estimated_hours": 290.23
+            "estimated_hours": 158.83,
+            "weekends_active_days": 10,
+            "weekdays_active_days": 50,
+            "days_night_active": 13,
+            "days_daytime_active": 53,
+            "days_both": 8,
+            "days_day_only": 45,
+            "days_night_only": 5
           },
           {
             "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
@@ -226,7 +282,14 @@
             "avg_commit_size": 167.73,
             "median_commit_size": 21.0,
             "sessions": 67.0,
-            "estimated_hours": 223.93
+            "estimated_hours": 122.65,
+            "weekends_active_days": 6,
+            "weekdays_active_days": 34,
+            "days_night_active": 9,
+            "days_daytime_active": 36,
+            "days_both": 6,
+            "days_day_only": 30,
+            "days_night_only": 3
           },
           {
             "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
@@ -241,7 +304,14 @@
             "avg_commit_size": 0.03,
             "median_commit_size": 0.0,
             "sessions": 25.0,
-            "estimated_hours": 39.5
+            "estimated_hours": 20.1,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 21,
+            "days_night_active": 2,
+            "days_daytime_active": 19,
+            "days_both": 0,
+            "days_day_only": 19,
+            "days_night_only": 2
           },
           {
             "author": "Alex Colls <alex.colls@innocv.com>",
@@ -256,7 +326,14 @@
             "avg_commit_size": 94.63,
             "median_commit_size": 8.0,
             "sessions": 11.0,
-            "estimated_hours": 21.77
+            "estimated_hours": 11.59,
+            "weekends_active_days": 5,
+            "weekdays_active_days": 3,
+            "days_night_active": 1,
+            "days_daytime_active": 7,
+            "days_both": 1,
+            "days_day_only": 6,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -271,7 +348,14 @@
             "avg_commit_size": 0.0,
             "median_commit_size": 0.0,
             "sessions": 10.0,
-            "estimated_hours": 15.0
+            "estimated_hours": 7.5,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 10,
+            "days_night_active": 1,
+            "days_daytime_active": 8,
+            "days_both": 0,
+            "days_day_only": 8,
+            "days_night_only": 1
           }
         ],
         "monthly": [
@@ -343,7 +427,14 @@
         "added_lines_total": 89459,
         "deleted_lines_total": 63918,
         "files_changed_total": 1796,
-        "estimated_hours_total": 400.6
+        "estimated_hours_total": 227.67,
+        "weekends_active_days": 7,
+        "weekdays_active_days": 33,
+        "days_daytime_active": 35,
+        "days_night_active": 15,
+        "days_day_only": 24,
+        "days_night_only": 4,
+        "days_both": 11
       },
       "current_loc": {
         "lines": 25828,
@@ -364,7 +455,14 @@
             "avg_commit_size": 620.24,
             "median_commit_size": 84.0,
             "sessions": 71.0,
-            "estimated_hours": 338.6
+            "estimated_hours": 195.52,
+            "weekends_active_days": 4,
+            "weekdays_active_days": 32,
+            "days_night_active": 11,
+            "days_daytime_active": 30,
+            "days_both": 7,
+            "days_day_only": 23,
+            "days_night_only": 4
           },
           {
             "author": "JRosSx91 <hazee.1491@gmail.com>",
@@ -379,7 +477,14 @@
             "avg_commit_size": 334.54,
             "median_commit_size": 83.5,
             "sessions": 16.0,
-            "estimated_hours": 36.97
+            "estimated_hours": 19.33,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 7,
+            "days_night_active": 5,
+            "days_daytime_active": 6,
+            "days_both": 3,
+            "days_day_only": 3,
+            "days_night_only": 2
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -394,7 +499,14 @@
             "avg_commit_size": 332.38,
             "median_commit_size": 1.0,
             "sessions": 5.0,
-            "estimated_hours": 10.68
+            "estimated_hours": 5.54,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 4,
+            "days_night_active": 0,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 0
           },
           {
             "author": "alexcolls <alexcollsoutumuro@gmail.com>",
@@ -409,7 +521,14 @@
             "avg_commit_size": 15770.0,
             "median_commit_size": 15770.0,
             "sessions": 1.0,
-            "estimated_hours": 5.92
+            "estimated_hours": 3.01,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           },
           {
             "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
@@ -424,7 +543,14 @@
             "avg_commit_size": 505.0,
             "median_commit_size": 505.0,
             "sessions": 2.0,
-            "estimated_hours": 5.44
+            "estimated_hours": 2.77,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 0,
+            "days_daytime_active": 2,
+            "days_both": 0,
+            "days_day_only": 2,
+            "days_night_only": 0
           },
           {
             "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
@@ -439,7 +565,14 @@
             "avg_commit_size": 0.0,
             "median_commit_size": 0.0,
             "sessions": 2.0,
-            "estimated_hours": 3.0
+            "estimated_hours": 1.5,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 1,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 1
           }
         ],
         "monthly": [
@@ -497,7 +630,14 @@
         "added_lines_total": 4897360,
         "deleted_lines_total": 396945,
         "files_changed_total": 24813,
-        "estimated_hours_total": 341.92
+        "estimated_hours_total": 220.66,
+        "weekends_active_days": 4,
+        "weekdays_active_days": 25,
+        "days_daytime_active": 20,
+        "days_night_active": 9,
+        "days_day_only": 17,
+        "days_night_only": 6,
+        "days_both": 3
       },
       "current_loc": {
         "lines": 5705980,
@@ -518,7 +658,14 @@
             "avg_commit_size": 42010.89,
             "median_commit_size": 379.5,
             "sessions": 45.0,
-            "estimated_hours": 334.72
+            "estimated_hours": 217.01,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 24,
+            "days_night_active": 9,
+            "days_daytime_active": 19,
+            "days_both": 3,
+            "days_day_only": 16,
+            "days_night_only": 6
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -533,7 +680,14 @@
             "avg_commit_size": 12.0,
             "median_commit_size": 2.0,
             "sessions": 3.0,
-            "estimated_hours": 4.5
+            "estimated_hours": 2.25,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 3,
+            "days_night_active": 0,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 0
           },
           {
             "author": "alexcolls <alexcollsoutumuro@gmail.com>",
@@ -548,7 +702,14 @@
             "avg_commit_size": 897.0,
             "median_commit_size": 897.0,
             "sessions": 1.0,
-            "estimated_hours": 2.7
+            "estimated_hours": 1.4,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -592,7 +753,14 @@
         "added_lines_total": 72067,
         "deleted_lines_total": 36305,
         "files_changed_total": 1865,
-        "estimated_hours_total": 240.43
+        "estimated_hours_total": 147.34,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 18,
+        "days_daytime_active": 16,
+        "days_night_active": 7,
+        "days_day_only": 11,
+        "days_night_only": 2,
+        "days_both": 5
       },
       "current_loc": {
         "lines": 27137,
@@ -613,7 +781,14 @@
             "avg_commit_size": 1480.91,
             "median_commit_size": 191.0,
             "sessions": 23.0,
-            "estimated_hours": 213.56
+            "estimated_hours": 133.45,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 11,
+            "days_night_active": 3,
+            "days_daytime_active": 11,
+            "days_both": 3,
+            "days_day_only": 8,
+            "days_night_only": 0
           },
           {
             "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
@@ -628,7 +803,14 @@
             "avg_commit_size": 276.94,
             "median_commit_size": 48.0,
             "sessions": 13.0,
-            "estimated_hours": 26.87
+            "estimated_hours": 13.89,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 11,
+            "days_night_active": 6,
+            "days_daytime_active": 6,
+            "days_both": 0,
+            "days_day_only": 6,
+            "days_night_only": 6
           }
         ],
         "monthly": [
@@ -665,7 +847,14 @@
         "added_lines_total": 175711,
         "deleted_lines_total": 145169,
         "files_changed_total": 1568,
-        "estimated_hours_total": 166.13
+        "estimated_hours_total": 111.0,
+        "weekends_active_days": 3,
+        "weekdays_active_days": 10,
+        "days_daytime_active": 8,
+        "days_night_active": 6,
+        "days_day_only": 4,
+        "days_night_only": 2,
+        "days_both": 4
       },
       "current_loc": {
         "lines": 30411,
@@ -686,7 +875,14 @@
             "avg_commit_size": 4715.75,
             "median_commit_size": 586.0,
             "sessions": 26.0,
-            "estimated_hours": 163.13
+            "estimated_hours": 109.5,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 9,
+            "days_night_active": 6,
+            "days_daytime_active": 8,
+            "days_both": 4,
+            "days_day_only": 4,
+            "days_night_only": 2
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -701,7 +897,14 @@
             "avg_commit_size": 104.5,
             "median_commit_size": 104.5,
             "sessions": 2.0,
-            "estimated_hours": 3.0
+            "estimated_hours": 1.5,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -738,7 +941,14 @@
         "added_lines_total": 65134,
         "deleted_lines_total": 8386,
         "files_changed_total": 1026,
-        "estimated_hours_total": 105.14
+        "estimated_hours_total": 69.96,
+        "weekends_active_days": 3,
+        "weekdays_active_days": 7,
+        "days_daytime_active": 5,
+        "days_night_active": 5,
+        "days_day_only": 2,
+        "days_night_only": 2,
+        "days_both": 3
       },
       "current_loc": {
         "lines": 45982,
@@ -759,7 +969,14 @@
             "avg_commit_size": 1289.79,
             "median_commit_size": 178.0,
             "sessions": 19.0,
-            "estimated_hours": 100.64
+            "estimated_hours": 67.71,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 6,
+            "days_night_active": 5,
+            "days_daytime_active": 5,
+            "days_both": 3,
+            "days_day_only": 2,
+            "days_night_only": 2
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -774,7 +991,14 @@
             "avg_commit_size": 0.5,
             "median_commit_size": 0.0,
             "sessions": 3.0,
-            "estimated_hours": 4.5
+            "estimated_hours": 2.25,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 2,
+            "days_night_active": 1,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 1
           }
         ],
         "monthly": [
@@ -811,7 +1035,14 @@
         "added_lines_total": 73047,
         "deleted_lines_total": 38067,
         "files_changed_total": 1136,
-        "estimated_hours_total": 103.61
+        "estimated_hours_total": 62.86,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 7,
+        "days_daytime_active": 5,
+        "days_night_active": 6,
+        "days_day_only": 2,
+        "days_night_only": 3,
+        "days_both": 3
       },
       "current_loc": {
         "lines": 258569,
@@ -832,7 +1063,14 @@
             "avg_commit_size": 2469.16,
             "median_commit_size": 162.0,
             "sessions": 16.0,
-            "estimated_hours": 100.61
+            "estimated_hours": 61.36,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 6,
+            "days_night_active": 6,
+            "days_daytime_active": 5,
+            "days_both": 3,
+            "days_day_only": 2,
+            "days_night_only": 3
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -847,7 +1085,14 @@
             "avg_commit_size": 1.0,
             "median_commit_size": 1.0,
             "sessions": 2.0,
-            "estimated_hours": 3.0
+            "estimated_hours": 1.5,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -857,6 +1102,107 @@
             "added": 73047,
             "deleted": 38067,
             "files": 1136
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+        "commits_total": 26,
+        "merges_total": 1,
+        "non_merges_total": 25,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:23:42+02:00",
+        "last_commit": "2025-09-10T23:16:55+02:00",
+        "active_days": 7,
+        "span_days": 56,
+        "avg_commits_per_day": 0.4643,
+        "added_lines_total": 111265,
+        "deleted_lines_total": 96151,
+        "files_changed_total": 780,
+        "estimated_hours_total": 59.19,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 5,
+        "days_daytime_active": 4,
+        "days_night_active": 4,
+        "days_day_only": 2,
+        "days_night_only": 2,
+        "days_both": 2
+      },
+      "current_loc": {
+        "lines": 244685,
+        "files": 156
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 25,
+            "merges_total": 1,
+            "added_total": 111056,
+            "deleted_total": 96151,
+            "files_changed_total": 778,
+            "first_commit": "2025-07-19T10:40:39+02:00",
+            "last_commit": "2025-09-10T23:16:55+02:00",
+            "active_days": 6,
+            "avg_commit_size": 8288.28,
+            "median_commit_size": 242.0,
+            "sessions": 9.0,
+            "estimated_hours": 58.44,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 4,
+            "days_night_active": 4,
+            "days_daytime_active": 4,
+            "days_both": 2,
+            "days_day_only": 2,
+            "days_night_only": 2
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 209,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-07-17T21:23:42+02:00",
+            "last_commit": "2025-07-17T21:23:42+02:00",
+            "active_days": 1,
+            "avg_commit_size": 209.0,
+            "median_commit_size": 209.0,
+            "sessions": 1.0,
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 23,
+            "added": 106839,
+            "deleted": 91292,
+            "files": 588
+          },
+          {
+            "month": "2025-08",
+            "commits": 1,
+            "added": 4387,
+            "deleted": 4394,
+            "files": 189
+          },
+          {
+            "month": "2025-09",
+            "commits": 2,
+            "added": 39,
+            "deleted": 465,
+            "files": 3
           }
         ]
       }
@@ -877,7 +1223,14 @@
         "added_lines_total": 11720,
         "deleted_lines_total": 12182,
         "files_changed_total": 299,
-        "estimated_hours_total": 95.76
+        "estimated_hours_total": 55.15,
+        "weekends_active_days": 4,
+        "weekdays_active_days": 8,
+        "days_daytime_active": 11,
+        "days_night_active": 3,
+        "days_day_only": 8,
+        "days_night_only": 0,
+        "days_both": 3
       },
       "current_loc": {
         "lines": 3853,
@@ -898,7 +1251,14 @@
             "avg_commit_size": 401.53,
             "median_commit_size": 17.0,
             "sessions": 7.0,
-            "estimated_hours": 59.08
+            "estimated_hours": 35.51,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 2,
+            "days_night_active": 2,
+            "days_daytime_active": 4,
+            "days_both": 2,
+            "days_day_only": 2,
+            "days_night_only": 0
           },
           {
             "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
@@ -913,7 +1273,14 @@
             "avg_commit_size": 150.93,
             "median_commit_size": 8.0,
             "sessions": 10.0,
-            "estimated_hours": 33.68
+            "estimated_hours": 18.14,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 6,
+            "days_night_active": 1,
+            "days_daytime_active": 6,
+            "days_both": 1,
+            "days_day_only": 5,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -928,7 +1295,14 @@
             "avg_commit_size": 0.33,
             "median_commit_size": 0.0,
             "sessions": 2.0,
-            "estimated_hours": 3.0
+            "estimated_hours": 1.5,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 2,
+            "days_both": 0,
+            "days_day_only": 2,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -979,7 +1353,14 @@
         "added_lines_total": 1245928,
         "deleted_lines_total": 1241311,
         "files_changed_total": 11410,
-        "estimated_hours_total": 86.3
+        "estimated_hours_total": 53.95,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 9,
+        "days_daytime_active": 9,
+        "days_night_active": 3,
+        "days_day_only": 8,
+        "days_night_only": 2,
+        "days_both": 1
       },
       "current_loc": {
         "lines": 226041,
@@ -1000,7 +1381,14 @@
             "avg_commit_size": 67217.89,
             "median_commit_size": 41.0,
             "sessions": 15.0,
-            "estimated_hours": 83.3
+            "estimated_hours": 52.45,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 9,
+            "days_night_active": 3,
+            "days_daytime_active": 9,
+            "days_both": 1,
+            "days_day_only": 8,
+            "days_night_only": 2
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1015,7 +1403,14 @@
             "avg_commit_size": 88.5,
             "median_commit_size": 88.5,
             "sessions": 2.0,
-            "estimated_hours": 3.0
+            "estimated_hours": 1.5,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1037,81 +1432,88 @@
       }
     },
     {
-      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
+      "repo": "/home/quantium/labs/oriane/orn-search-api",
       "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
-        "commits_total": 26,
-        "merges_total": 1,
-        "non_merges_total": 25,
+        "repo_path": "/home/quantium/labs/oriane/orn-search-api",
+        "commits_total": 178,
+        "merges_total": 0,
+        "non_merges_total": 178,
         "unique_authors": 1,
-        "first_commit": "2025-07-17T21:23:42+02:00",
-        "last_commit": "2025-09-10T23:16:55+02:00",
-        "active_days": 7,
-        "span_days": 56,
-        "avg_commits_per_day": 0.4643,
-        "added_lines_total": 111265,
-        "deleted_lines_total": 96151,
-        "files_changed_total": 780,
-        "estimated_hours_total": 85.34
+        "first_commit": "2025-09-10T11:55:06+02:00",
+        "last_commit": "2025-09-12T20:12:32+02:00",
+        "active_days": 3,
+        "span_days": 3,
+        "avg_commits_per_day": 59.3333,
+        "added_lines_total": 91334,
+        "deleted_lines_total": 75729,
+        "files_changed_total": 687,
+        "estimated_hours_total": 45.85,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 3,
+        "days_night_active": 2,
+        "days_day_only": 1,
+        "days_night_only": 0,
+        "days_both": 2
       },
       "current_loc": {
-        "lines": 244685,
-        "files": 156
+        "lines": 243254,
+        "files": 103
       },
       "breakdowns": {
         "authors": [
           {
             "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 25,
-            "merges_total": 1,
-            "added_total": 111056,
-            "deleted_total": 96151,
-            "files_changed_total": 778,
-            "first_commit": "2025-07-19T10:40:39+02:00",
-            "last_commit": "2025-09-10T23:16:55+02:00",
-            "active_days": 6,
-            "avg_commit_size": 8288.28,
-            "median_commit_size": 242.0,
+            "commits_total": 177,
+            "merges_total": 0,
+            "added_total": 90924,
+            "deleted_total": 75729,
+            "files_changed_total": 684,
+            "first_commit": "2025-09-10T21:51:14+02:00",
+            "last_commit": "2025-09-12T20:12:32+02:00",
+            "active_days": 3,
+            "avg_commit_size": 941.54,
+            "median_commit_size": 36.0,
             "sessions": 9.0,
-            "estimated_hours": 83.84
+            "estimated_hours": 45.0,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 3,
+            "days_night_active": 2,
+            "days_daytime_active": 2,
+            "days_both": 1,
+            "days_day_only": 1,
+            "days_night_only": 1
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
             "commits_total": 1,
             "merges_total": 0,
-            "added_total": 209,
+            "added_total": 410,
             "deleted_total": 0,
-            "files_changed_total": 2,
-            "first_commit": "2025-07-17T21:23:42+02:00",
-            "last_commit": "2025-07-17T21:23:42+02:00",
+            "files_changed_total": 3,
+            "first_commit": "2025-09-10T11:55:06+02:00",
+            "last_commit": "2025-09-10T11:55:06+02:00",
             "active_days": 1,
-            "avg_commit_size": 209.0,
-            "median_commit_size": 209.0,
+            "avg_commit_size": 410.0,
+            "median_commit_size": 410.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.85,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
           {
-            "month": "2025-07",
-            "commits": 23,
-            "added": 106839,
-            "deleted": 91292,
-            "files": 588
-          },
-          {
-            "month": "2025-08",
-            "commits": 1,
-            "added": 4387,
-            "deleted": 4394,
-            "files": 189
-          },
-          {
             "month": "2025-09",
-            "commits": 2,
-            "added": 39,
-            "deleted": 465,
-            "files": 3
+            "commits": 178,
+            "added": 91334,
+            "deleted": 75729,
+            "files": 687
           }
         ]
       }
@@ -1132,7 +1534,14 @@
         "added_lines_total": 296055,
         "deleted_lines_total": 148163,
         "files_changed_total": 887,
-        "estimated_hours_total": 65.46
+        "estimated_hours_total": 39.32,
+        "weekends_active_days": 3,
+        "weekdays_active_days": 7,
+        "days_daytime_active": 10,
+        "days_night_active": 0,
+        "days_day_only": 10,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 1683,
@@ -1153,7 +1562,14 @@
             "avg_commit_size": 10825.8,
             "median_commit_size": 45.0,
             "sessions": 11.0,
-            "estimated_hours": 60.18
+            "estimated_hours": 36.48,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 7,
+            "days_night_active": 0,
+            "days_daytime_active": 10,
+            "days_both": 0,
+            "days_day_only": 10,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1168,7 +1584,14 @@
             "avg_commit_size": 60.0,
             "median_commit_size": 2.0,
             "sessions": 2.0,
-            "estimated_hours": 5.27
+            "estimated_hours": 2.84,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 2,
+            "days_both": 0,
+            "days_day_only": 2,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1190,6 +1613,93 @@
       }
     },
     {
+      "repo": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
+        "commits_total": 10,
+        "merges_total": 0,
+        "non_merges_total": 10,
+        "unique_authors": 1,
+        "first_commit": "2025-06-18T16:29:57+02:00",
+        "last_commit": "2025-06-25T09:20:23+02:00",
+        "active_days": 4,
+        "span_days": 8,
+        "avg_commits_per_day": 1.25,
+        "added_lines_total": 18012,
+        "deleted_lines_total": 12860,
+        "files_changed_total": 495,
+        "estimated_hours_total": 34.9,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 4,
+        "days_daytime_active": 4,
+        "days_night_active": 0,
+        "days_day_only": 4,
+        "days_night_only": 0,
+        "days_both": 0
+      },
+      "current_loc": {
+        "lines": 45700,
+        "files": 224
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 9,
+            "merges_total": 0,
+            "added_total": 17817,
+            "deleted_total": 12860,
+            "files_changed_total": 493,
+            "first_commit": "2025-06-18T18:16:41+02:00",
+            "last_commit": "2025-06-25T09:20:23+02:00",
+            "active_days": 4,
+            "avg_commit_size": 3408.56,
+            "median_commit_size": 107.0,
+            "sessions": 4.0,
+            "estimated_hours": 34.15,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 4,
+            "days_night_active": 0,
+            "days_daytime_active": 4,
+            "days_both": 0,
+            "days_day_only": 4,
+            "days_night_only": 0
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 195,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-06-18T16:29:57+02:00",
+            "last_commit": "2025-06-18T16:29:57+02:00",
+            "active_days": 1,
+            "avg_commit_size": 195.0,
+            "median_commit_size": 195.0,
+            "sessions": 1.0,
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-06",
+            "commits": 10,
+            "added": 18012,
+            "deleted": 12860,
+            "files": 495
+          }
+        ]
+      }
+    },
+    {
       "repo": "/home/quantium/labs/oriane/_deprecated/SSCD-model",
       "metrics": {
         "repo_path": "/home/quantium/labs/oriane/_deprecated/SSCD-model",
@@ -1205,7 +1715,14 @@
         "added_lines_total": 60464,
         "deleted_lines_total": 763,
         "files_changed_total": 127,
-        "estimated_hours_total": 62.59
+        "estimated_hours_total": 32.97,
+        "weekends_active_days": 4,
+        "weekdays_active_days": 10,
+        "days_daytime_active": 8,
+        "days_night_active": 4,
+        "days_day_only": 7,
+        "days_night_only": 3,
+        "days_both": 1
       },
       "current_loc": {
         "lines": 4251223,
@@ -1226,7 +1743,14 @@
             "avg_commit_size": 1453.6,
             "median_commit_size": 16.0,
             "sessions": 19.0,
-            "estimated_hours": 61.09
+            "estimated_hours": 32.22,
+            "weekends_active_days": 4,
+            "weekdays_active_days": 10,
+            "days_night_active": 4,
+            "days_daytime_active": 8,
+            "days_both": 1,
+            "days_day_only": 7,
+            "days_night_only": 3
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1241,7 +1765,14 @@
             "avg_commit_size": 176.0,
             "median_commit_size": 176.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 1,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 1
           }
         ],
         "monthly": [
@@ -1263,138 +1794,6 @@
       }
     },
     {
-      "repo": "/home/quantium/labs/oriane/orn-search-api",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/orn-search-api",
-        "commits_total": 178,
-        "merges_total": 0,
-        "non_merges_total": 178,
-        "unique_authors": 1,
-        "first_commit": "2025-09-10T11:55:06+02:00",
-        "last_commit": "2025-09-12T20:12:32+02:00",
-        "active_days": 3,
-        "span_days": 3,
-        "avg_commits_per_day": 59.3333,
-        "added_lines_total": 91334,
-        "deleted_lines_total": 75729,
-        "files_changed_total": 687,
-        "estimated_hours_total": 61.61
-      },
-      "current_loc": {
-        "lines": 243254,
-        "files": 103
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 177,
-            "merges_total": 0,
-            "added_total": 90924,
-            "deleted_total": 75729,
-            "files_changed_total": 684,
-            "first_commit": "2025-09-10T21:51:14+02:00",
-            "last_commit": "2025-09-12T20:12:32+02:00",
-            "active_days": 3,
-            "avg_commit_size": 941.54,
-            "median_commit_size": 36.0,
-            "sessions": 9.0,
-            "estimated_hours": 60.0
-          },
-          {
-            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
-            "commits_total": 1,
-            "merges_total": 0,
-            "added_total": 410,
-            "deleted_total": 0,
-            "files_changed_total": 3,
-            "first_commit": "2025-09-10T11:55:06+02:00",
-            "last_commit": "2025-09-10T11:55:06+02:00",
-            "active_days": 1,
-            "avg_commit_size": 410.0,
-            "median_commit_size": 410.0,
-            "sessions": 1.0,
-            "estimated_hours": 1.61
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-09",
-            "commits": 178,
-            "added": 91334,
-            "deleted": 75729,
-            "files": 687
-          }
-        ]
-      }
-    },
-    {
-      "repo": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
-        "commits_total": 10,
-        "merges_total": 0,
-        "non_merges_total": 10,
-        "unique_authors": 1,
-        "first_commit": "2025-06-18T16:29:57+02:00",
-        "last_commit": "2025-06-25T09:20:23+02:00",
-        "active_days": 4,
-        "span_days": 8,
-        "avg_commits_per_day": 1.25,
-        "added_lines_total": 18012,
-        "deleted_lines_total": 12860,
-        "files_changed_total": 495,
-        "estimated_hours_total": 59.53
-      },
-      "current_loc": {
-        "lines": 45700,
-        "files": 224
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 9,
-            "merges_total": 0,
-            "added_total": 17817,
-            "deleted_total": 12860,
-            "files_changed_total": 493,
-            "first_commit": "2025-06-18T18:16:41+02:00",
-            "last_commit": "2025-06-25T09:20:23+02:00",
-            "active_days": 4,
-            "avg_commit_size": 3408.56,
-            "median_commit_size": 107.0,
-            "sessions": 4.0,
-            "estimated_hours": 58.03
-          },
-          {
-            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
-            "commits_total": 1,
-            "merges_total": 0,
-            "added_total": 195,
-            "deleted_total": 0,
-            "files_changed_total": 2,
-            "first_commit": "2025-06-18T16:29:57+02:00",
-            "last_commit": "2025-06-18T16:29:57+02:00",
-            "active_days": 1,
-            "avg_commit_size": 195.0,
-            "median_commit_size": 195.0,
-            "sessions": 1.0,
-            "estimated_hours": 1.5
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-06",
-            "commits": 10,
-            "added": 18012,
-            "deleted": 12860,
-            "files": 495
-          }
-        ]
-      }
-    },
-    {
       "repo": "/home/quantium/labs/oriane/orn-acquisition-lambdas",
       "metrics": {
         "repo_path": "/home/quantium/labs/oriane/orn-acquisition-lambdas",
@@ -1410,7 +1809,14 @@
         "added_lines_total": 12005,
         "deleted_lines_total": 2138,
         "files_changed_total": 117,
-        "estimated_hours_total": 54.2
+        "estimated_hours_total": 29.98,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 4,
+        "days_night_active": 2,
+        "days_day_only": 2,
+        "days_night_only": 0,
+        "days_both": 2
       },
       "current_loc": {
         "lines": 9867,
@@ -1431,7 +1837,14 @@
             "avg_commit_size": 348.38,
             "median_commit_size": 134.5,
             "sessions": 8.0,
-            "estimated_hours": 52.7
+            "estimated_hours": 29.23,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 3,
+            "days_night_active": 2,
+            "days_daytime_active": 3,
+            "days_both": 2,
+            "days_day_only": 1,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1446,7 +1859,14 @@
             "avg_commit_size": 208.0,
             "median_commit_size": 208.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1483,7 +1903,14 @@
         "added_lines_total": 101585,
         "deleted_lines_total": 99564,
         "files_changed_total": 45,
-        "estimated_hours_total": 52.48
+        "estimated_hours_total": 27.04,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 4,
+        "days_daytime_active": 5,
+        "days_night_active": 1,
+        "days_day_only": 5,
+        "days_night_only": 1,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 2305,
@@ -1504,7 +1931,14 @@
             "avg_commit_size": 11824.24,
             "median_commit_size": 100.0,
             "sessions": 7.0,
-            "estimated_hours": 50.98
+            "estimated_hours": 26.29,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 4,
+            "days_night_active": 1,
+            "days_daytime_active": 5,
+            "days_both": 0,
+            "days_day_only": 5,
+            "days_night_only": 1
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1519,7 +1953,14 @@
             "avg_commit_size": 137.0,
             "median_commit_size": 137.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1541,6 +1982,93 @@
       }
     },
     {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
+        "commits_total": 23,
+        "merges_total": 1,
+        "non_merges_total": 22,
+        "unique_authors": 1,
+        "first_commit": "2025-07-17T21:25:58+02:00",
+        "last_commit": "2025-07-28T22:21:14+02:00",
+        "active_days": 10,
+        "span_days": 12,
+        "avg_commits_per_day": 1.9167,
+        "added_lines_total": 20596,
+        "deleted_lines_total": 8057,
+        "files_changed_total": 369,
+        "estimated_hours_total": 25.9,
+        "weekends_active_days": 3,
+        "weekdays_active_days": 7,
+        "days_daytime_active": 5,
+        "days_night_active": 3,
+        "days_day_only": 4,
+        "days_night_only": 2,
+        "days_both": 1
+      },
+      "current_loc": {
+        "lines": 242529,
+        "files": 89
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 22,
+            "merges_total": 1,
+            "added_total": 20387,
+            "deleted_total": 8057,
+            "files_changed_total": 367,
+            "first_commit": "2025-07-18T10:38:29+02:00",
+            "last_commit": "2025-07-28T22:21:14+02:00",
+            "active_days": 9,
+            "avg_commit_size": 1292.91,
+            "median_commit_size": 79.5,
+            "sessions": 13.0,
+            "estimated_hours": 25.15,
+            "weekends_active_days": 3,
+            "weekdays_active_days": 6,
+            "days_night_active": 3,
+            "days_daytime_active": 5,
+            "days_both": 1,
+            "days_day_only": 4,
+            "days_night_only": 2
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 209,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-07-17T21:25:58+02:00",
+            "last_commit": "2025-07-17T21:25:58+02:00",
+            "active_days": 1,
+            "avg_commit_size": 209.0,
+            "median_commit_size": 209.0,
+            "sessions": 1.0,
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-07",
+            "commits": 23,
+            "added": 20596,
+            "deleted": 8057,
+            "files": 369
+          }
+        ]
+      }
+    },
+    {
       "repo": "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
       "metrics": {
         "repo_path": "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
@@ -1556,7 +2084,14 @@
         "added_lines_total": 8760,
         "deleted_lines_total": 1715,
         "files_changed_total": 84,
-        "estimated_hours_total": 46.48
+        "estimated_hours_total": 24.6,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 9,
+        "days_daytime_active": 10,
+        "days_night_active": 1,
+        "days_day_only": 10,
+        "days_night_only": 1,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 8381,
@@ -1577,7 +2112,14 @@
             "avg_commit_size": 289.8,
             "median_commit_size": 15.0,
             "sessions": 13.0,
-            "estimated_hours": 43.48
+            "estimated_hours": 23.1,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 8,
+            "days_night_active": 1,
+            "days_daytime_active": 9,
+            "days_both": 0,
+            "days_day_only": 9,
+            "days_night_only": 1
           },
           {
             "author": "JRosSx91 <hazee.1491@gmail.com>",
@@ -1592,7 +2134,14 @@
             "avg_commit_size": 194.0,
             "median_commit_size": 194.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1607,7 +2156,14 @@
             "avg_commit_size": 138.0,
             "median_commit_size": 138.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1636,72 +2192,6 @@
       }
     },
     {
-      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
-        "commits_total": 23,
-        "merges_total": 1,
-        "non_merges_total": 22,
-        "unique_authors": 1,
-        "first_commit": "2025-07-17T21:25:58+02:00",
-        "last_commit": "2025-07-28T22:21:14+02:00",
-        "active_days": 10,
-        "span_days": 12,
-        "avg_commits_per_day": 1.9167,
-        "added_lines_total": 20596,
-        "deleted_lines_total": 8057,
-        "files_changed_total": 369,
-        "estimated_hours_total": 41.01
-      },
-      "current_loc": {
-        "lines": 242529,
-        "files": 89
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 22,
-            "merges_total": 1,
-            "added_total": 20387,
-            "deleted_total": 8057,
-            "files_changed_total": 367,
-            "first_commit": "2025-07-18T10:38:29+02:00",
-            "last_commit": "2025-07-28T22:21:14+02:00",
-            "active_days": 9,
-            "avg_commit_size": 1292.91,
-            "median_commit_size": 79.5,
-            "sessions": 13.0,
-            "estimated_hours": 39.51
-          },
-          {
-            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
-            "commits_total": 1,
-            "merges_total": 0,
-            "added_total": 209,
-            "deleted_total": 0,
-            "files_changed_total": 2,
-            "first_commit": "2025-07-17T21:25:58+02:00",
-            "last_commit": "2025-07-17T21:25:58+02:00",
-            "active_days": 1,
-            "avg_commit_size": 209.0,
-            "median_commit_size": 209.0,
-            "sessions": 1.0,
-            "estimated_hours": 1.5
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-07",
-            "commits": 23,
-            "added": 20596,
-            "deleted": 8057,
-            "files": 369
-          }
-        ]
-      }
-    },
-    {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
       "metrics": {
         "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
@@ -1717,7 +2207,14 @@
         "added_lines_total": 21119,
         "deleted_lines_total": 14561,
         "files_changed_total": 302,
-        "estimated_hours_total": 38.64
+        "estimated_hours_total": 24.29,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 2,
+        "days_daytime_active": 2,
+        "days_night_active": 1,
+        "days_day_only": 1,
+        "days_night_only": 0,
+        "days_both": 1
       },
       "current_loc": {
         "lines": 6558,
@@ -1738,7 +2235,14 @@
             "avg_commit_size": 7135.8,
             "median_commit_size": 6101.0,
             "sessions": 3.0,
-            "estimated_hours": 37.14
+            "estimated_hours": 23.54,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 1,
+            "days_daytime_active": 2,
+            "days_both": 1,
+            "days_day_only": 1,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1753,7 +2257,14 @@
             "avg_commit_size": 1.0,
             "median_commit_size": 1.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1783,7 +2294,14 @@
         "added_lines_total": 697960,
         "deleted_lines_total": 254972,
         "files_changed_total": 5099,
-        "estimated_hours_total": 26.53
+        "estimated_hours_total": 18.44,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 3,
+        "days_night_active": 0,
+        "days_day_only": 3,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 588490,
@@ -1804,7 +2322,14 @@
             "avg_commit_size": 95275.6,
             "median_commit_size": 44.0,
             "sessions": 6.0,
-            "estimated_hours": 25.03
+            "estimated_hours": 17.69,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 3,
+            "days_night_active": 0,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1819,7 +2344,14 @@
             "avg_commit_size": 176.0,
             "median_commit_size": 176.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1829,6 +2361,158 @@
             "added": 697960,
             "deleted": 254972,
             "files": 5099
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
+        "commits_total": 6,
+        "merges_total": 1,
+        "non_merges_total": 5,
+        "unique_authors": 1,
+        "first_commit": "2025-03-04T23:11:23+01:00",
+        "last_commit": "2025-03-05T00:18:00+01:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 3.0,
+        "added_lines_total": 301105,
+        "deleted_lines_total": 1,
+        "files_changed_total": 842,
+        "estimated_hours_total": 15.75,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 2,
+        "days_daytime_active": 0,
+        "days_night_active": 1,
+        "days_day_only": 0,
+        "days_night_only": 1,
+        "days_both": 0
+      },
+      "current_loc": {
+        "lines": 318129,
+        "files": 838
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 4,
+            "merges_total": 1,
+            "added_total": 301102,
+            "deleted_total": 1,
+            "files_changed_total": 840,
+            "first_commit": "2025-03-04T23:58:27+01:00",
+            "last_commit": "2025-03-05T00:18:00+01:00",
+            "active_days": 2,
+            "avg_commit_size": 75275.75,
+            "median_commit_size": 2.5,
+            "sessions": 1.0,
+            "estimated_hours": 15.0,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 1,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 1
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 3,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-03-04T23:11:23+01:00",
+            "last_commit": "2025-03-05T00:01:08+01:00",
+            "active_days": 2,
+            "avg_commit_size": 1.5,
+            "median_commit_size": 1.5,
+            "sessions": 1.0,
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 1,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 1
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-03",
+            "commits": 6,
+            "added": 301105,
+            "deleted": 1,
+            "files": 842
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
+        "commits_total": 2,
+        "merges_total": 0,
+        "non_merges_total": 2,
+        "unique_authors": 1,
+        "first_commit": "2025-05-16T12:17:02+02:00",
+        "last_commit": "2025-05-16T12:34:35+02:00",
+        "active_days": 1,
+        "span_days": 1,
+        "avg_commits_per_day": 2.0,
+        "added_lines_total": 247837,
+        "deleted_lines_total": 0,
+        "files_changed_total": 440,
+        "estimated_hours_total": 15.0,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 1,
+        "days_daytime_active": 1,
+        "days_night_active": 0,
+        "days_day_only": 1,
+        "days_night_only": 0,
+        "days_both": 0
+      },
+      "current_loc": {
+        "lines": 516183,
+        "files": 439
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 247837,
+            "deleted_total": 0,
+            "files_changed_total": 440,
+            "first_commit": "2025-05-16T12:17:02+02:00",
+            "last_commit": "2025-05-16T12:34:35+02:00",
+            "active_days": 1,
+            "avg_commit_size": 123918.5,
+            "median_commit_size": 123918.5,
+            "sessions": 1.0,
+            "estimated_hours": 15.0,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-05",
+            "commits": 2,
+            "added": 247837,
+            "deleted": 0,
+            "files": 440
           }
         ]
       }
@@ -1849,7 +2533,14 @@
         "added_lines_total": 1707,
         "deleted_lines_total": 174,
         "files_changed_total": 52,
-        "estimated_hours_total": 23.36
+        "estimated_hours_total": 12.79,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 3,
+        "days_night_active": 1,
+        "days_day_only": 3,
+        "days_night_only": 1,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 1002,
@@ -1870,7 +2561,14 @@
             "avg_commit_size": 76.35,
             "median_commit_size": 16.0,
             "sessions": 4.0,
-            "estimated_hours": 19.4
+            "estimated_hours": 10.7,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 3,
+            "days_night_active": 1,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 1
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1885,7 +2583,14 @@
             "avg_commit_size": 88.5,
             "median_commit_size": 88.5,
             "sessions": 2.0,
-            "estimated_hours": 3.96
+            "estimated_hours": 2.09,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1915,7 +2620,14 @@
         "added_lines_total": 52436,
         "deleted_lines_total": 193,
         "files_changed_total": 29,
-        "estimated_hours_total": 22.29
+        "estimated_hours_total": 11.55,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 3,
+        "days_night_active": 0,
+        "days_day_only": 3,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 52243,
@@ -1936,7 +2648,14 @@
             "avg_commit_size": 6556.25,
             "median_commit_size": 305.0,
             "sessions": 4.0,
-            "estimated_hours": 19.29
+            "estimated_hours": 10.05,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 3,
+            "days_night_active": 0,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -1951,7 +2670,14 @@
             "avg_commit_size": 89.5,
             "median_commit_size": 89.5,
             "sessions": 2.0,
-            "estimated_hours": 3.0
+            "estimated_hours": 1.5,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 0,
+            "days_daytime_active": 2,
+            "days_both": 0,
+            "days_day_only": 2,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -1961,72 +2687,6 @@
             "added": 52436,
             "deleted": 193,
             "files": 29
-          }
-        ]
-      }
-    },
-    {
-      "repo": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
-        "commits_total": 6,
-        "merges_total": 1,
-        "non_merges_total": 5,
-        "unique_authors": 1,
-        "first_commit": "2025-03-04T23:11:23+01:00",
-        "last_commit": "2025-03-05T00:18:00+01:00",
-        "active_days": 2,
-        "span_days": 2,
-        "avg_commits_per_day": 3.0,
-        "added_lines_total": 301105,
-        "deleted_lines_total": 1,
-        "files_changed_total": 842,
-        "estimated_hours_total": 21.5
-      },
-      "current_loc": {
-        "lines": 318129,
-        "files": 838
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 4,
-            "merges_total": 1,
-            "added_total": 301102,
-            "deleted_total": 1,
-            "files_changed_total": 840,
-            "first_commit": "2025-03-04T23:58:27+01:00",
-            "last_commit": "2025-03-05T00:18:00+01:00",
-            "active_days": 2,
-            "avg_commit_size": 75275.75,
-            "median_commit_size": 2.5,
-            "sessions": 1.0,
-            "estimated_hours": 20.0
-          },
-          {
-            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
-            "commits_total": 2,
-            "merges_total": 0,
-            "added_total": 3,
-            "deleted_total": 0,
-            "files_changed_total": 2,
-            "first_commit": "2025-03-04T23:11:23+01:00",
-            "last_commit": "2025-03-05T00:01:08+01:00",
-            "active_days": 2,
-            "avg_commit_size": 1.5,
-            "median_commit_size": 1.5,
-            "sessions": 1.0,
-            "estimated_hours": 1.5
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-03",
-            "commits": 6,
-            "added": 301105,
-            "deleted": 1,
-            "files": 842
           }
         ]
       }
@@ -2047,7 +2707,14 @@
         "added_lines_total": 34683,
         "deleted_lines_total": 0,
         "files_changed_total": 144,
-        "estimated_hours_total": 20.0
+        "estimated_hours_total": 11.22,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 1,
+        "days_daytime_active": 1,
+        "days_night_active": 0,
+        "days_day_only": 1,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 258049,
@@ -2068,7 +2735,14 @@
             "avg_commit_size": 34683.0,
             "median_commit_size": 34683.0,
             "sessions": 1.0,
-            "estimated_hours": 20.0
+            "estimated_hours": 11.22,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2078,57 +2752,6 @@
             "added": 34683,
             "deleted": 0,
             "files": 144
-          }
-        ]
-      }
-    },
-    {
-      "repo": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
-        "commits_total": 2,
-        "merges_total": 0,
-        "non_merges_total": 2,
-        "unique_authors": 1,
-        "first_commit": "2025-05-16T12:17:02+02:00",
-        "last_commit": "2025-05-16T12:34:35+02:00",
-        "active_days": 1,
-        "span_days": 1,
-        "avg_commits_per_day": 2.0,
-        "added_lines_total": 247837,
-        "deleted_lines_total": 0,
-        "files_changed_total": 440,
-        "estimated_hours_total": 20.0
-      },
-      "current_loc": {
-        "lines": 516183,
-        "files": 439
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 2,
-            "merges_total": 0,
-            "added_total": 247837,
-            "deleted_total": 0,
-            "files_changed_total": 440,
-            "first_commit": "2025-05-16T12:17:02+02:00",
-            "last_commit": "2025-05-16T12:34:35+02:00",
-            "active_days": 1,
-            "avg_commit_size": 123918.5,
-            "median_commit_size": 123918.5,
-            "sessions": 1.0,
-            "estimated_hours": 20.0
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-05",
-            "commits": 2,
-            "added": 247837,
-            "deleted": 0,
-            "files": 440
           }
         ]
       }
@@ -2149,7 +2772,14 @@
         "added_lines_total": 718,
         "deleted_lines_total": 138,
         "files_changed_total": 59,
-        "estimated_hours_total": 19.95
+        "estimated_hours_total": 10.39,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 7,
+        "days_daytime_active": 3,
+        "days_night_active": 5,
+        "days_day_only": 3,
+        "days_night_only": 5,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 580,
@@ -2170,7 +2800,14 @@
             "avg_commit_size": 61.0,
             "median_commit_size": 17.0,
             "sessions": 10.0,
-            "estimated_hours": 18.45
+            "estimated_hours": 9.64,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 7,
+            "days_night_active": 5,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 5
           },
           {
             "author": "thibaut-oriane <thibaut@oriane.xyz>",
@@ -2185,7 +2822,14 @@
             "avg_commit_size": 2.0,
             "median_commit_size": 2.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2222,7 +2866,14 @@
         "added_lines_total": 10649,
         "deleted_lines_total": 111,
         "files_changed_total": 65,
-        "estimated_hours_total": 16.31
+        "estimated_hours_total": 8.36,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 4,
+        "days_night_active": 0,
+        "days_day_only": 4,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 343704,
@@ -2243,7 +2894,14 @@
             "avg_commit_size": 2689.75,
             "median_commit_size": 2131.5,
             "sessions": 3.0,
-            "estimated_hours": 14.81
+            "estimated_hours": 7.61,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 2,
+            "days_night_active": 0,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -2258,7 +2916,14 @@
             "avg_commit_size": 1.0,
             "median_commit_size": 1.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2295,7 +2960,14 @@
         "added_lines_total": 29351,
         "deleted_lines_total": 2,
         "files_changed_total": 10,
-        "estimated_hours_total": 13.46
+        "estimated_hours_total": 6.93,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 0,
+        "days_daytime_active": 1,
+        "days_night_active": 1,
+        "days_day_only": 1,
+        "days_night_only": 1,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 29284,
@@ -2316,7 +2988,14 @@
             "avg_commit_size": 5835.6,
             "median_commit_size": 66.0,
             "sessions": 3.0,
-            "estimated_hours": 11.96
+            "estimated_hours": 6.18,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 0,
+            "days_night_active": 1,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 1
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -2331,7 +3010,14 @@
             "avg_commit_size": 175.0,
             "median_commit_size": 175.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2341,72 +3027,6 @@
             "added": 29351,
             "deleted": 2,
             "files": 10
-          }
-        ]
-      }
-    },
-    {
-      "repo": "/home/quantium/labs/oriane/orn-platform-clusters",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/orn-platform-clusters",
-        "commits_total": 8,
-        "merges_total": 0,
-        "non_merges_total": 8,
-        "unique_authors": 1,
-        "first_commit": "2025-08-08T18:43:11+02:00",
-        "last_commit": "2025-08-17T02:55:58+02:00",
-        "active_days": 5,
-        "span_days": 10,
-        "avg_commits_per_day": 0.8,
-        "added_lines_total": 573,
-        "deleted_lines_total": 18,
-        "files_changed_total": 24,
-        "estimated_hours_total": 12.5
-      },
-      "current_loc": {
-        "lines": 555,
-        "files": 16
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
-            "commits_total": 7,
-            "merges_total": 0,
-            "added_total": 571,
-            "deleted_total": 18,
-            "files_changed_total": 23,
-            "first_commit": "2025-08-08T18:57:50+02:00",
-            "last_commit": "2025-08-17T02:55:58+02:00",
-            "active_days": 5,
-            "avg_commit_size": 84.14,
-            "median_commit_size": 10.0,
-            "sessions": 6.0,
-            "estimated_hours": 11.0
-          },
-          {
-            "author": "thibaut-oriane <thibaut@oriane.xyz>",
-            "commits_total": 1,
-            "merges_total": 0,
-            "added_total": 2,
-            "deleted_total": 0,
-            "files_changed_total": 1,
-            "first_commit": "2025-08-08T18:43:11+02:00",
-            "last_commit": "2025-08-08T18:43:11+02:00",
-            "active_days": 1,
-            "avg_commit_size": 2.0,
-            "median_commit_size": 2.0,
-            "sessions": 1.0,
-            "estimated_hours": 1.5
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-08",
-            "commits": 8,
-            "added": 573,
-            "deleted": 18,
-            "files": 24
           }
         ]
       }
@@ -2427,7 +3047,14 @@
         "added_lines_total": 1590,
         "deleted_lines_total": 447,
         "files_changed_total": 27,
-        "estimated_hours_total": 12.4
+        "estimated_hours_total": 6.6,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 2,
+        "days_daytime_active": 3,
+        "days_night_active": 1,
+        "days_day_only": 2,
+        "days_night_only": 0,
+        "days_both": 1
       },
       "current_loc": {
         "lines": 1195,
@@ -2448,7 +3075,14 @@
             "avg_commit_size": 232.75,
             "median_commit_size": 150.5,
             "sessions": 3.0,
-            "estimated_hours": 10.9
+            "estimated_hours": 5.85,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 1,
+            "days_night_active": 1,
+            "days_daytime_active": 2,
+            "days_both": 1,
+            "days_day_only": 1,
+            "days_night_only": 0
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -2463,7 +3097,14 @@
             "avg_commit_size": 175.0,
             "median_commit_size": 175.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2485,6 +3126,93 @@
       }
     },
     {
+      "repo": "/home/quantium/labs/oriane/orn-platform-clusters",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/orn-platform-clusters",
+        "commits_total": 8,
+        "merges_total": 0,
+        "non_merges_total": 8,
+        "unique_authors": 1,
+        "first_commit": "2025-08-08T18:43:11+02:00",
+        "last_commit": "2025-08-17T02:55:58+02:00",
+        "active_days": 5,
+        "span_days": 10,
+        "avg_commits_per_day": 0.8,
+        "added_lines_total": 573,
+        "deleted_lines_total": 18,
+        "files_changed_total": 24,
+        "estimated_hours_total": 6.35,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 4,
+        "days_daytime_active": 3,
+        "days_night_active": 3,
+        "days_day_only": 3,
+        "days_night_only": 3,
+        "days_both": 0
+      },
+      "current_loc": {
+        "lines": 555,
+        "files": 16
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
+            "commits_total": 7,
+            "merges_total": 0,
+            "added_total": 571,
+            "deleted_total": 18,
+            "files_changed_total": 23,
+            "first_commit": "2025-08-08T18:57:50+02:00",
+            "last_commit": "2025-08-17T02:55:58+02:00",
+            "active_days": 5,
+            "avg_commit_size": 84.14,
+            "median_commit_size": 10.0,
+            "sessions": 6.0,
+            "estimated_hours": 5.6,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 4,
+            "days_night_active": 3,
+            "days_daytime_active": 3,
+            "days_both": 0,
+            "days_day_only": 3,
+            "days_night_only": 3
+          },
+          {
+            "author": "thibaut-oriane <thibaut@oriane.xyz>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 2,
+            "deleted_total": 0,
+            "files_changed_total": 1,
+            "first_commit": "2025-08-08T18:43:11+02:00",
+            "last_commit": "2025-08-08T18:43:11+02:00",
+            "active_days": 1,
+            "avg_commit_size": 2.0,
+            "median_commit_size": 2.0,
+            "sessions": 1.0,
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-08",
+            "commits": 8,
+            "added": 573,
+            "deleted": 18,
+            "files": 24
+          }
+        ]
+      }
+    },
+    {
       "repo": "/home/quantium/labs/oriane/orn-platform-applications",
       "metrics": {
         "repo_path": "/home/quantium/labs/oriane/orn-platform-applications",
@@ -2500,7 +3228,14 @@
         "added_lines_total": 851,
         "deleted_lines_total": 6,
         "files_changed_total": 40,
-        "estimated_hours_total": 10.35
+        "estimated_hours_total": 5.28,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 3,
+        "days_daytime_active": 2,
+        "days_night_active": 1,
+        "days_day_only": 2,
+        "days_night_only": 1,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 845,
@@ -2521,7 +3256,14 @@
             "avg_commit_size": 213.75,
             "median_commit_size": 5.5,
             "sessions": 3.0,
-            "estimated_hours": 8.85
+            "estimated_hours": 4.53,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 3,
+            "days_night_active": 1,
+            "days_daytime_active": 2,
+            "days_both": 0,
+            "days_day_only": 2,
+            "days_night_only": 1
           },
           {
             "author": "thibaut-oriane <thibaut@oriane.xyz>",
@@ -2536,7 +3278,14 @@
             "avg_commit_size": 2.0,
             "median_commit_size": 2.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2566,7 +3315,14 @@
         "added_lines_total": 796,
         "deleted_lines_total": 140,
         "files_changed_total": 15,
-        "estimated_hours_total": 8.63
+        "estimated_hours_total": 4.56,
+        "weekends_active_days": 1,
+        "weekdays_active_days": 2,
+        "days_daytime_active": 1,
+        "days_night_active": 2,
+        "days_day_only": 1,
+        "days_night_only": 2,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 656,
@@ -2587,7 +3343,14 @@
             "avg_commit_size": 126.83,
             "median_commit_size": 77.5,
             "sessions": 3.0,
-            "estimated_hours": 7.13
+            "estimated_hours": 3.81,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 2,
+            "days_night_active": 1,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 1
           },
           {
             "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -2602,7 +3365,14 @@
             "avg_commit_size": 175.0,
             "median_commit_size": 175.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 1,
+            "days_daytime_active": 0,
+            "days_both": 0,
+            "days_day_only": 0,
+            "days_night_only": 1
           }
         ],
         "monthly": [
@@ -2624,72 +3394,6 @@
       }
     },
     {
-      "repo": "/home/quantium/labs/oriane/_deprecated/SAM-model",
-      "metrics": {
-        "repo_path": "/home/quantium/labs/oriane/_deprecated/SAM-model",
-        "commits_total": 3,
-        "merges_total": 0,
-        "non_merges_total": 3,
-        "unique_authors": 1,
-        "first_commit": "2025-04-05T13:09:44+02:00",
-        "last_commit": "2025-04-06T11:55:00+02:00",
-        "active_days": 2,
-        "span_days": 2,
-        "avg_commits_per_day": 1.5,
-        "added_lines_total": 382,
-        "deleted_lines_total": 0,
-        "files_changed_total": 5,
-        "estimated_hours_total": 4.5
-      },
-      "current_loc": {
-        "lines": 443,
-        "files": 5
-      },
-      "breakdowns": {
-        "authors": [
-          {
-            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
-            "commits_total": 2,
-            "merges_total": 0,
-            "added_total": 207,
-            "deleted_total": 0,
-            "files_changed_total": 3,
-            "first_commit": "2025-04-05T17:15:33+02:00",
-            "last_commit": "2025-04-06T11:55:00+02:00",
-            "active_days": 2,
-            "avg_commit_size": 103.5,
-            "median_commit_size": 103.5,
-            "sessions": 2.0,
-            "estimated_hours": 3.0
-          },
-          {
-            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
-            "commits_total": 1,
-            "merges_total": 0,
-            "added_total": 175,
-            "deleted_total": 0,
-            "files_changed_total": 2,
-            "first_commit": "2025-04-05T13:09:44+02:00",
-            "last_commit": "2025-04-05T13:09:44+02:00",
-            "active_days": 1,
-            "avg_commit_size": 175.0,
-            "median_commit_size": 175.0,
-            "sessions": 1.0,
-            "estimated_hours": 1.5
-          }
-        ],
-        "monthly": [
-          {
-            "month": "2025-04",
-            "commits": 3,
-            "added": 382,
-            "deleted": 0,
-            "files": 5
-          }
-        ]
-      }
-    },
-    {
       "repo": "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
       "metrics": {
         "repo_path": "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
@@ -2705,7 +3409,14 @@
         "added_lines_total": 449,
         "deleted_lines_total": 3,
         "files_changed_total": 10,
-        "estimated_hours_total": 4.3
+        "estimated_hours_total": 2.35,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 0,
+        "days_daytime_active": 2,
+        "days_night_active": 0,
+        "days_day_only": 2,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 446,
@@ -2726,7 +3437,14 @@
             "avg_commit_size": 59.67,
             "median_commit_size": 2.0,
             "sessions": 1.0,
-            "estimated_hours": 2.54
+            "estimated_hours": 1.42,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           },
           {
             "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
@@ -2741,7 +3459,14 @@
             "avg_commit_size": 273.0,
             "median_commit_size": 273.0,
             "sessions": 1.0,
-            "estimated_hours": 1.76
+            "estimated_hours": 0.93,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2751,6 +3476,93 @@
             "added": 449,
             "deleted": 3,
             "files": 10
+          }
+        ]
+      }
+    },
+    {
+      "repo": "/home/quantium/labs/oriane/_deprecated/SAM-model",
+      "metrics": {
+        "repo_path": "/home/quantium/labs/oriane/_deprecated/SAM-model",
+        "commits_total": 3,
+        "merges_total": 0,
+        "non_merges_total": 3,
+        "unique_authors": 1,
+        "first_commit": "2025-04-05T13:09:44+02:00",
+        "last_commit": "2025-04-06T11:55:00+02:00",
+        "active_days": 2,
+        "span_days": 2,
+        "avg_commits_per_day": 1.5,
+        "added_lines_total": 382,
+        "deleted_lines_total": 0,
+        "files_changed_total": 5,
+        "estimated_hours_total": 2.25,
+        "weekends_active_days": 2,
+        "weekdays_active_days": 0,
+        "days_daytime_active": 2,
+        "days_night_active": 0,
+        "days_day_only": 2,
+        "days_night_only": 0,
+        "days_both": 0
+      },
+      "current_loc": {
+        "lines": 443,
+        "files": 5
+      },
+      "breakdowns": {
+        "authors": [
+          {
+            "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+            "commits_total": 2,
+            "merges_total": 0,
+            "added_total": 207,
+            "deleted_total": 0,
+            "files_changed_total": 3,
+            "first_commit": "2025-04-05T17:15:33+02:00",
+            "last_commit": "2025-04-06T11:55:00+02:00",
+            "active_days": 2,
+            "avg_commit_size": 103.5,
+            "median_commit_size": 103.5,
+            "sessions": 2.0,
+            "estimated_hours": 1.5,
+            "weekends_active_days": 2,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 2,
+            "days_both": 0,
+            "days_day_only": 2,
+            "days_night_only": 0
+          },
+          {
+            "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+            "commits_total": 1,
+            "merges_total": 0,
+            "added_total": 175,
+            "deleted_total": 0,
+            "files_changed_total": 2,
+            "first_commit": "2025-04-05T13:09:44+02:00",
+            "last_commit": "2025-04-05T13:09:44+02:00",
+            "active_days": 1,
+            "avg_commit_size": 175.0,
+            "median_commit_size": 175.0,
+            "sessions": 1.0,
+            "estimated_hours": 0.75,
+            "weekends_active_days": 1,
+            "weekdays_active_days": 0,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "2025-04",
+            "commits": 3,
+            "added": 382,
+            "deleted": 0,
+            "files": 5
           }
         ]
       }
@@ -2771,7 +3583,14 @@
         "added_lines_total": 1,
         "deleted_lines_total": 0,
         "files_changed_total": 1,
-        "estimated_hours_total": 1.5
+        "estimated_hours_total": 0.75,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 1,
+        "days_daytime_active": 1,
+        "days_night_active": 0,
+        "days_day_only": 1,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 1,
@@ -2792,7 +3611,14 @@
             "avg_commit_size": 1.0,
             "median_commit_size": 1.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2822,7 +3648,14 @@
         "added_lines_total": 175,
         "deleted_lines_total": 0,
         "files_changed_total": 2,
-        "estimated_hours_total": 1.5
+        "estimated_hours_total": 0.75,
+        "weekends_active_days": 0,
+        "weekdays_active_days": 1,
+        "days_daytime_active": 1,
+        "days_night_active": 0,
+        "days_day_only": 1,
+        "days_night_only": 0,
+        "days_both": 0
       },
       "current_loc": {
         "lines": 175,
@@ -2843,7 +3676,14 @@
             "avg_commit_size": 175.0,
             "median_commit_size": 175.0,
             "sessions": 1.0,
-            "estimated_hours": 1.5
+            "estimated_hours": 0.75,
+            "weekends_active_days": 0,
+            "weekdays_active_days": 1,
+            "days_night_active": 0,
+            "days_daytime_active": 1,
+            "days_both": 0,
+            "days_day_only": 1,
+            "days_night_only": 0
           }
         ],
         "monthly": [
@@ -2896,7 +3736,7 @@
         "/home/quantium/labs/oriane/orn-search-api"
       ],
       "commits_total": 1489,
-      "estimated_hours": 2579.760000000001,
+      "estimated_hours": 1559.2400000000005,
       "added_total": 8822338,
       "deleted_total": 2664061,
       "files_changed_total": 55405,
@@ -2911,7 +3751,7 @@
         "/home/quantium/labs/oriane/orn-experience-app"
       ],
       "commits_total": 418,
-      "estimated_hours": 618.95,
+      "estimated_hours": 333.76,
       "added_total": 114157,
       "deleted_total": 108822,
       "files_changed_total": 1853,
@@ -2925,7 +3765,7 @@
         "/home/quantium/labs/oriane/orn-admin-web"
       ],
       "commits_total": 91,
-      "estimated_hours": 108.94,
+      "estimated_hours": 61.94,
       "added_total": 11054,
       "deleted_total": 11457,
       "files_changed_total": 315,
@@ -2966,7 +3806,7 @@
         "/home/quantium/labs/oriane/orn-search-api"
       ],
       "commits_total": 86,
-      "estimated_hours": 108.56,
+      "estimated_hours": 55.19,
       "added_total": 4243,
       "deleted_total": 2653,
       "files_changed_total": 69,
@@ -2980,7 +3820,7 @@
         "/home/quantium/labs/oriane/orn-experience-app"
       ],
       "commits_total": 69,
-      "estimated_hours": 82.5,
+      "estimated_hours": 42.0,
       "added_total": 2,
       "deleted_total": 0,
       "files_changed_total": 2,
@@ -2994,7 +3834,7 @@
         "/home/quantium/labs/oriane/orn-processor-etls"
       ],
       "commits_total": 33,
-      "estimated_hours": 50.760000000000005,
+      "estimated_hours": 26.3,
       "added_total": 3572,
       "deleted_total": 3000,
       "files_changed_total": 166,
@@ -3007,7 +3847,7 @@
         "/home/quantium/labs/oriane/orn-platform-clusters"
       ],
       "commits_total": 11,
-      "estimated_hours": 19.85,
+      "estimated_hours": 10.129999999999999,
       "added_total": 1420,
       "deleted_total": 24,
       "files_changed_total": 62,
@@ -3020,7 +3860,7 @@
         "/home/quantium/labs/oriane/orn-experience-app"
       ],
       "commits_total": 2,
-      "estimated_hours": 8.620000000000001,
+      "estimated_hours": 4.41,
       "added_total": 586,
       "deleted_total": 16081,
       "files_changed_total": 14,
@@ -3035,7 +3875,7 @@
         "/home/quantium/labs/oriane/orn-processor-applications"
       ],
       "commits_total": 4,
-      "estimated_hours": 6.0,
+      "estimated_hours": 3.0,
       "added_total": 7,
       "deleted_total": 0,
       "files_changed_total": 4,

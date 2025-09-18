@@ -20,14 +20,26 @@ Repo: `/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda`
 | Lines added (sum) | 1590 |
 | Lines deleted (sum) | 447 |
 | Files touched (sum of numstat rows) | 27 |
-| Estimated hours (session-based) | 12.4 |
+| Estimated hours (session-based) | 6.6 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 1 |
+| Weekday days active | 2 |
+| Night days active | 1 |
+| Daytime days active | 3 |
+| Days with both day & night activity | 1 |
+| Day-only days | 2 |
+| Night-only days | 0 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 8 | 10.9 | 1415 | 447 | 25 | 2 | 2025-05-04T19:43:45+02:00 | 2025-05-07T11:12:41+02:00 | 232.75 | 150.5 | ★★★★★ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 1 | 1.5 | 175 | 0 | 2 | 1 | 2025-04-30T12:08:09+02:00 | 2025-04-30T12:08:09+02:00 | 175.0 | 175.0 | ★☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 8 | 5.85 | 1 | 1 | 2 | 1 | 1415 | 447 | 25 | 2 | 2025-05-04T19:43:45+02:00 | 2025-05-07T11:12:41+02:00 | 232.75 | 150.5 | ★★★★★ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 1 | 0.75 | 0 | 0 | 1 | 0 | 175 | 0 | 2 | 1 | 2025-04-30T12:08:09+02:00 | 2025-04-30T12:08:09+02:00 | 175.0 | 175.0 | ★☆☆☆☆ |
 
 ## Commits by author
 
@@ -59,11 +71,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

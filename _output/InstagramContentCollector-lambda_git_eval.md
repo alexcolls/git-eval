@@ -20,15 +20,27 @@ Repo: `/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda`
 | Lines added (sum) | 8760 |
 | Lines deleted (sum) | 1715 |
 | Files touched (sum of numstat rows) | 84 |
-| Estimated hours (session-based) | 46.48 |
+| Estimated hours (session-based) | 24.6 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 2 |
+| Weekday days active | 9 |
+| Night days active | 1 |
+| Daytime days active | 10 |
+| Days with both day & night activity | 0 |
+| Day-only days | 10 |
+| Night-only days | 1 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 35 | 43.48 | 8540 | 1603 | 81 | 10 | 2025-03-21T15:43:06+01:00 | 2025-05-27T20:23:56+02:00 | 289.8 | 15.0 | ★★★★★ |
-| JRosSx91 <hazee.1491@gmail.com> | 1 | 1.5 | 82 | 112 | 1 | 1 | 2025-03-24T18:06:43+01:00 | 2025-03-24T18:06:43+01:00 | 194.0 | 194.0 | ☆☆☆☆☆ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 1 | 1.5 | 138 | 0 | 2 | 1 | 2025-03-21T10:39:55+01:00 | 2025-03-21T10:39:55+01:00 | 138.0 | 138.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 35 | 23.1 | 2 | 1 | 9 | 0 | 8540 | 1603 | 81 | 10 | 2025-03-21T15:43:06+01:00 | 2025-05-27T20:23:56+02:00 | 289.8 | 15.0 | ★★★★★ |
+| JRosSx91 <hazee.1491@gmail.com> | 1 | 0.75 | 0 | 0 | 1 | 0 | 82 | 112 | 1 | 1 | 2025-03-24T18:06:43+01:00 | 2025-03-24T18:06:43+01:00 | 194.0 | 194.0 | ☆☆☆☆☆ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 1 | 0.75 | 0 | 0 | 1 | 0 | 138 | 0 | 2 | 1 | 2025-03-21T10:39:55+01:00 | 2025-03-21T10:39:55+01:00 | 138.0 | 138.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -62,11 +74,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

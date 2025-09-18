@@ -20,14 +20,26 @@ Repo: `/home/quantium/labs/oriane/orn-acquisition-lambdas`
 | Lines added (sum) | 12005 |
 | Lines deleted (sum) | 2138 |
 | Files touched (sum of numstat rows) | 117 |
-| Estimated hours (session-based) | 54.2 |
+| Estimated hours (session-based) | 29.98 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 1 |
+| Weekday days active | 3 |
+| Night days active | 2 |
+| Daytime days active | 4 |
+| Days with both day & night activity | 2 |
+| Day-only days | 2 |
+| Night-only days | 0 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 40 | 52.7 | 11797 | 2138 | 115 | 3 | 2025-09-03T12:23:42+02:00 | 2025-09-09T22:07:44+02:00 | 348.38 | 134.5 | ★★★★★ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 1 | 1.5 | 208 | 0 | 2 | 1 | 2025-08-17T12:42:10+02:00 | 2025-08-17T12:42:10+02:00 | 208.0 | 208.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 40 | 29.23 | 0 | 2 | 3 | 2 | 11797 | 2138 | 115 | 3 | 2025-09-03T12:23:42+02:00 | 2025-09-09T22:07:44+02:00 | 348.38 | 134.5 | ★★★★★ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 1 | 0.75 | 1 | 0 | 1 | 0 | 208 | 0 | 2 | 1 | 2025-08-17T12:42:10+02:00 | 2025-08-17T12:42:10+02:00 | 208.0 | 208.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -59,11 +71,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

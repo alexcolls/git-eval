@@ -20,13 +20,25 @@ Repo: `/home/quantium/labs/oriane/_deprecated/opencv-cuda`
 | Lines added (sum) | 247837 |
 | Lines deleted (sum) | 0 |
 | Files touched (sum of numstat rows) | 440 |
-| Estimated hours (session-based) | 20.0 |
+| Estimated hours (session-based) | 15.0 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 0 |
+| Weekday days active | 1 |
+| Night days active | 0 |
+| Daytime days active | 1 |
+| Days with both day & night activity | 0 |
+| Day-only days | 1 |
+| Night-only days | 0 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 2 | 20.0 | 247837 | 0 | 440 | 1 | 2025-05-16T12:17:02+02:00 | 2025-05-16T12:34:35+02:00 | 123918.5 | 123918.5 | ★★★★★ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 2 | 15.0 | 0 | 0 | 1 | 0 | 247837 | 0 | 440 | 1 | 2025-05-16T12:17:02+02:00 | 2025-05-16T12:34:35+02:00 | 123918.5 | 123918.5 | ★★★★★ |
 
 ## Commits by author
 
@@ -56,11 +68,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

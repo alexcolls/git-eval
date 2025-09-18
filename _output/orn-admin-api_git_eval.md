@@ -20,17 +20,29 @@ Repo: `/home/quantium/labs/oriane/orn-admin-api`
 | Lines added (sum) | 120376 |
 | Lines deleted (sum) | 88133 |
 | Files touched (sum of numstat rows) | 1668 |
-| Estimated hours (session-based) | 647.2 |
+| Estimated hours (session-based) | 343.36 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 26 |
+| Weekday days active | 75 |
+| Night days active | 28 |
+| Daytime days active | 86 |
+| Days with both day & night activity | 18 |
+| Day-only days | 68 |
+| Night-only days | 10 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| JRosSx91 <hazee.1491@gmail.com> | 181 | 290.25 | 45383 | 58475 | 916 | 64 | 2024-12-10T10:10:29+01:00 | 2025-05-28T11:48:20+02:00 | 573.8 | 48.0 | ★★★★★ |
-| quantium-rock <alexcollsoutumuro@gmail.com> | 185 | 267.36 | 74139 | 29473 | 675 | 52 | 2025-02-08T22:27:14+01:00 | 2025-09-09T20:49:10+02:00 | 560.06 | 58.0 | ★★★★★ |
-| Iván Gómez <123682394+JRosSx91@users.noreply.github.com> | 34 | 40.0 | 1 | 0 | 1 | 22 | 2024-12-10T09:59:05+01:00 | 2025-05-23T11:22:44+02:00 | 0.03 | 0.0 | ★☆☆☆☆ |
-| Alex Colls <alex.colls@innocv.com> | 23 | 28.09 | 853 | 185 | 76 | 9 | 2024-12-28T20:48:05+01:00 | 2025-02-14T08:16:36+01:00 | 45.13 | 8.0 | ☆☆☆☆☆ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 18 | 21.5 | 0 | 0 | 0 | 12 | 2024-12-28T18:53:45+01:00 | 2025-05-28T11:55:25+02:00 | 0.0 | 0.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| JRosSx91 <hazee.1491@gmail.com> | 181 | 154.85 | 13 | 13 | 55 | 7 | 45383 | 58475 | 916 | 64 | 2024-12-10T10:10:29+01:00 | 2025-05-28T11:48:20+02:00 | 573.8 | 48.0 | ★★★★★ |
+| quantium-rock <alexcollsoutumuro@gmail.com> | 185 | 142.31 | 12 | 13 | 42 | 9 | 74139 | 29473 | 675 | 52 | 2025-02-08T22:27:14+01:00 | 2025-09-09T20:49:10+02:00 | 560.06 | 58.0 | ★★★★★ |
+| Iván Gómez <123682394+JRosSx91@users.noreply.github.com> | 34 | 20.4 | 4 | 2 | 18 | 0 | 1 | 0 | 1 | 22 | 2024-12-10T09:59:05+01:00 | 2025-05-23T11:22:44+02:00 | 0.03 | 0.0 | ★☆☆☆☆ |
+| Alex Colls <alex.colls@innocv.com> | 23 | 14.84 | 4 | 2 | 7 | 1 | 853 | 185 | 76 | 9 | 2024-12-28T20:48:05+01:00 | 2025-02-14T08:16:36+01:00 | 45.13 | 8.0 | ☆☆☆☆☆ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 18 | 10.95 | 1 | 2 | 12 | 2 | 0 | 0 | 0 | 12 | 2024-12-28T18:53:45+01:00 | 2025-05-28T11:55:25+02:00 | 0.0 | 0.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -68,11 +80,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

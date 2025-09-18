@@ -20,14 +20,26 @@ Repo: `/home/quantium/labs/oriane/orn-processor-applications`
 | Lines added (sum) | 718 |
 | Lines deleted (sum) | 138 |
 | Files touched (sum of numstat rows) | 59 |
-| Estimated hours (session-based) | 19.95 |
+| Estimated hours (session-based) | 10.39 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 1 |
+| Weekday days active | 7 |
+| Night days active | 5 |
+| Daytime days active | 3 |
+| Days with both day & night activity | 0 |
+| Day-only days | 3 |
+| Night-only days | 5 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| Thibaut Hadjean <sasha.hadjean@gmail.com> | 14 | 18.45 | 716 | 138 | 58 | 8 | 2025-08-08T21:12:46+02:00 | 2025-09-02T20:50:08+02:00 | 61.0 | 17.0 | ★★★★★ |
-| thibaut-oriane <thibaut@oriane.xyz> | 1 | 1.5 | 2 | 0 | 1 | 1 | 2025-08-08T20:11:09+02:00 | 2025-08-08T20:11:09+02:00 | 2.0 | 2.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| Thibaut Hadjean <sasha.hadjean@gmail.com> | 14 | 9.64 | 1 | 5 | 3 | 0 | 716 | 138 | 58 | 8 | 2025-08-08T21:12:46+02:00 | 2025-09-02T20:50:08+02:00 | 61.0 | 17.0 | ★★★★★ |
+| thibaut-oriane <thibaut@oriane.xyz> | 1 | 0.75 | 0 | 0 | 0 | 0 | 2 | 0 | 1 | 1 | 2025-08-08T20:11:09+02:00 | 2025-08-08T20:11:09+02:00 | 2.0 | 2.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -59,11 +71,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 

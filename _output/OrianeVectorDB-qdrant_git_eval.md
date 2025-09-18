@@ -20,14 +20,26 @@ Repo: `/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant`
 | Lines added (sum) | 73047 |
 | Lines deleted (sum) | 38067 |
 | Files touched (sum of numstat rows) | 1136 |
-| Estimated hours (session-based) | 103.61 |
+| Estimated hours (session-based) | 62.86 |
+
+## Schedule footprint
+
+| Metric | Count |
+|---|---:|
+| Weekend days active (Sat/Sun) | 2 |
+| Weekday days active | 7 |
+| Night days active | 6 |
+| Daytime days active | 5 |
+| Days with both day & night activity | 3 |
+| Day-only days | 2 |
+| Night-only days | 3 |
 
 ## Developer leaderboard
 
-| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
-|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
-| quantium-rock <alexcollsoutumuro@gmail.com> | 45 | 100.61 | 73045 | 38067 | 1135 | 8 | 2025-07-19T23:24:03+02:00 | 2025-07-30T10:39:45+02:00 | 2469.16 | 162.0 | ★★★★★ |
-| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 2 | 3.0 | 2 | 0 | 1 | 2 | 2025-07-17T21:54:02+02:00 | 2025-07-27T17:35:17+02:00 | 1.0 | 1.0 | ☆☆☆☆☆ |
+| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:
+| quantium-rock <alexcollsoutumuro@gmail.com> | 45 | 61.36 | 2 | 6 | 5 | 3 | 73045 | 38067 | 1135 | 8 | 2025-07-19T23:24:03+02:00 | 2025-07-30T10:39:45+02:00 | 2469.16 | 162.0 | ★★★★★ |
+| Alex Colls Outumuro <alexcollsoutumuro@gmail.com> | 2 | 1.5 | 1 | 0 | 1 | 0 | 2 | 0 | 1 | 2 | 2025-07-17T21:54:02+02:00 | 2025-07-27T17:35:17+02:00 | 1.0 | 1.0 | ☆☆☆☆☆ |
 
 ## Commits by author
 
@@ -59,11 +71,11 @@ Parameters:
 |---|---:|
 | SESSION_GAP_MINUTES | 90 |
 | MAX_HOURS_PER_DAY | 10.0 |
-| MIN_SESSION_MINUTES | 45.0 |
-| MINUTES_PER_COMMIT_BASE | 15.0 |
-| MINUTES_PER_100_LINES | 12.0 |
-| MINUTES_PER_FILE | 3.0 |
-| CALIBRATION_FACTOR | 2.0 |
+| MIN_SESSION_MINUTES | 30.0 |
+| MINUTES_PER_COMMIT_BASE | 12.0 |
+| MINUTES_PER_100_LINES | 8.0 |
+| MINUTES_PER_FILE | 2.0 |
+| CALIBRATION_FACTOR | 1.5 |
 
 ## Monthly activity
 
