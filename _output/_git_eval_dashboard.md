@@ -285,6 +285,28 @@ pie title Weekend vs Weekday — Iván Gómez <123682394+JRosSx91@users.noreply.
     "Weekday" : 41
 ```
 
+## Monthly hours (ASCII sparkline)
+
+### Top repos
+```
+Months: 2024-12, 2025-01, 2025-02, 2025-03, 2025-04, 2025-05, 2025-06, 2025-07, 2025-08, 2025-09
+orn-admin-api            ▇▃▅█▇█▂▁▂▄  (311.8h)
+orn-admin-web            ▄▃▅▄█▃▁▁▁▂  (296.1h)
+orn-experience-app       ▁▁▁▁▁▃█▄▃▂  (230.9h)
+ExtractionPipeline-lab   ▁▁▁▁▁▅▂█▁▁  (1456.0h)
+orn-processor-etls       ▁▁▁▁▁▁▁▁█▁  (158.9h)
+```
+
+### Top authors
+```
+Months: 2024-12, 2025-01, 2025-02, 2025-03, 2025-04, 2025-05, 2025-06, 2025-07, 2025-08, 2025-09
+quantium-rock <alexcollsoutumuro@gmail.com> ▁▁▁▄▅▄▂█▂▂  (3980.3h)
+JRosSx91 <hazee.1491@gmail.com> █▄█▅▄▄▂▁▁▁  (318.5h)
+Alex Colls <alex.colls@innocv.com> ▂█▂▁▁▁▁▁▁▁  (57.9h)
+Alex Colls Outumuro <alexcollsoutumuro@gmail.com> ▂▁▁█▅▃▃▄▁▁  (37.1h)
+Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁▁▁▁  (20.8h)
+```
+
 ## Per-repo breakdowns
 
 ### orn-admin-api

@@ -256,6 +256,138 @@
           "month": "2025-09",
           "hours": 27.47
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-02",
+          "hours": 0.87
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 27.44
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 39.24
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 26.48
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 8.85
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.85
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 6.4
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 27.47
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2024-12",
+          "hours": 1.2
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 2.1
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 1.2
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 0.9
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2024-12",
+          "hours": 47.52
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-01",
+          "hours": 5.42
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-02",
+          "hours": 30.95
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-03",
+          "hours": 23.8
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-04",
+          "hours": 8.1
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-05",
+          "hours": 30.04
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2024-12",
+          "hours": 0.97
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-02",
+          "hours": 2.4
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-03",
+          "hours": 5.1
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-04",
+          "hours": 1.5
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-05",
+          "hours": 0.3
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2024-12",
+          "hours": 1.9
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2025-01",
+          "hours": 7.74
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2025-02",
+          "hours": 3.08
+        }
       ]
     },
     {
@@ -480,6 +612,108 @@
         {
           "month": "2025-09",
           "hours": 8.52
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 21.4
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 69.9
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 19.28
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 8.52
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.6
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 1.2
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 1.5
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2024-12",
+          "hours": 32.29
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-01",
+          "hours": 23.48
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-02",
+          "hours": 48.35
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-03",
+          "hours": 21.84
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-04",
+          "hours": 25.03
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-05",
+          "hours": 3.0
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2024-12",
+          "hours": 2.77
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-02",
+          "hours": 3.3
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-03",
+          "hours": 1.8
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-04",
+          "hours": 2.1
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2024-12",
+          "hours": 2.43
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2025-01",
+          "hours": 5.42
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2025-02",
+          "hours": 1.93
         }
       ]
     },
@@ -706,6 +940,73 @@
           "month": "2025-09",
           "hours": 16.02
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 29.34
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 89.18
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 37.43
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 33.4
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 13.25
+        },
+        {
+          "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+          "month": "2025-09",
+          "hours": 2.77
+        },
+        {
+          "author": "alexcolls <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 3.01
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-05",
+          "hours": 3.5
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-06",
+          "hours": 14.57
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 0.38
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 3.44
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-05",
+          "hours": 0.3
+        },
+        {
+          "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
+          "month": "2025-06",
+          "hours": 0.3
+        }
       ]
     },
     {
@@ -843,6 +1144,43 @@
           "month": "2025-07",
           "hours": 881.89
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 0.52
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 0.3
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.38
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 510.08
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 63.2
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 880.11
+        },
+        {
+          "author": "alexcolls <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 1.4
+        }
       ]
     },
     {
@@ -946,6 +1284,23 @@
         {
           "month": "2025-09",
           "hours": 1.76
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+          "month": "2025-08",
+          "hours": 11.18
+        },
+        {
+          "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+          "month": "2025-09",
+          "hours": 1.76
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 145.94
         }
       ]
     },
@@ -1051,6 +1406,23 @@
           "month": "2025-08",
           "hours": 2.03
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 155.96
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 2.03
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.99
+        }
       ]
     },
     {
@@ -1155,6 +1527,23 @@
           "month": "2025-08",
           "hours": 0.6
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 95.23
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 0.6
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 1.28
+        }
       ]
     },
     {
@@ -1247,6 +1636,18 @@
         {
           "month": "2025-07",
           "hours": 96.8
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 96.12
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.68
         }
       ]
     },
@@ -1362,6 +1763,28 @@
         {
           "month": "2025-09",
           "hours": 1.2
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 57.21
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 11.62
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 1.2
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.69
         }
       ]
     },
@@ -1511,6 +1934,38 @@
           "month": "2025-03",
           "hours": 15.31
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-02",
+          "hours": 2.53
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 15.31
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2024-12",
+          "hours": 2.83
+        },
+        {
+          "author": "Alex Colls <alex.colls@innocv.com>",
+          "month": "2025-01",
+          "hours": 32.61
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2024-12",
+          "hours": 0.37
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-01",
+          "hours": 0.6
+        }
       ]
     },
     {
@@ -1615,6 +2070,23 @@
           "month": "2025-05",
           "hours": 16.45
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 616.26
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 16.45
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 1.04
+        }
       ]
     },
     {
@@ -1707,6 +2179,18 @@
         {
           "month": "2025-09",
           "hours": 134.59
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 133.74
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 0.85
         }
       ]
     },
@@ -1812,6 +2296,23 @@
           "month": "2025-04",
           "hours": 1.16
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 84.76
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 1.16
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 2.84
+        }
       ]
     },
     {
@@ -1904,6 +2405,18 @@
         {
           "month": "2025-06",
           "hours": 34.83
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 34.15
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-06",
+          "hours": 0.68
         }
       ]
     },
@@ -2009,6 +2522,23 @@
           "month": "2025-05",
           "hours": 7.58
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 22.59
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 7.58
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 0.67
+        }
       ]
     },
     {
@@ -2112,6 +2642,18 @@
         {
           "month": "2025-09",
           "hours": 29.23
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-09",
+          "hours": 29.23
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-08",
+          "hours": 0.69
         }
       ]
     },
@@ -2217,6 +2759,23 @@
           "month": "2025-04",
           "hours": 21.97
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 3.95
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 21.97
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.63
+        }
       ]
     },
     {
@@ -2309,6 +2868,18 @@
         {
           "month": "2025-07",
           "hours": 35.85
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 35.16
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.69
         }
       ]
     },
@@ -2447,6 +3018,33 @@
           "month": "2025-05",
           "hours": 1.9
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 13.02
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 6.28
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 1.9
+        },
+        {
+          "author": "JRosSx91 <hazee.1491@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.63
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.63
+        }
       ]
     },
     {
@@ -2539,6 +3137,18 @@
         {
           "month": "2025-07",
           "hours": 23.91
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 23.54
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-07",
+          "hours": 0.37
         }
       ]
     },
@@ -2633,6 +3243,18 @@
           "month": "2025-03",
           "hours": 286.16
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 285.5
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.67
+        }
       ]
     },
     {
@@ -2726,6 +3348,18 @@
           "month": "2025-03",
           "hours": 54.99
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 54.24
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.75
+        }
       ]
     },
     {
@@ -2794,6 +3428,13 @@
       },
       "monthly_hours": [
         {
+          "month": "2025-05",
+          "hours": 35.47
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
           "month": "2025-05",
           "hours": 35.47
         }
@@ -2890,6 +3531,18 @@
           "month": "2025-03",
           "hours": 12.79
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 10.7
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 2.09
+        }
       ]
     },
     {
@@ -2983,6 +3636,18 @@
           "month": "2025-03",
           "hours": 11.1
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 10.05
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 1.05
+        }
       ]
     },
     {
@@ -3051,6 +3716,13 @@
       },
       "monthly_hours": [
         {
+          "month": "2025-05",
+          "hours": 11.22
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
           "month": "2025-05",
           "hours": 11.22
         }
@@ -3158,6 +3830,23 @@
           "month": "2025-09",
           "hours": 1.0
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+          "month": "2025-08",
+          "hours": 7.86
+        },
+        {
+          "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
+          "month": "2025-09",
+          "hours": 1.0
+        },
+        {
+          "author": "thibaut-oriane <thibaut@oriane.xyz>",
+          "month": "2025-08",
+          "hours": 0.38
+        }
       ]
     },
     {
@@ -3262,6 +3951,23 @@
           "month": "2025-04",
           "hours": 5.04
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 2.56
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 5.04
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.37
+        }
       ]
     },
     {
@@ -3354,6 +4060,18 @@
         {
           "month": "2025-04",
           "hours": 6.47
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 5.81
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 0.66
         }
       ]
     },
@@ -3459,6 +4177,18 @@
           "month": "2025-05",
           "hours": 5.85
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-05",
+          "hours": 5.85
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 0.66
+        }
       ]
     },
     {
@@ -3552,6 +4282,18 @@
           "month": "2025-08",
           "hours": 4.48
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
+          "month": "2025-08",
+          "hours": 4.11
+        },
+        {
+          "author": "thibaut-oriane <thibaut@oriane.xyz>",
+          "month": "2025-08",
+          "hours": 0.38
+        }
       ]
     },
     {
@@ -3644,6 +4386,18 @@
         {
           "month": "2025-08",
           "hours": 4.23
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
+          "month": "2025-08",
+          "hours": 3.85
+        },
+        {
+          "author": "thibaut-oriane <thibaut@oriane.xyz>",
+          "month": "2025-08",
+          "hours": 0.38
         }
       ]
     },
@@ -3749,6 +4503,23 @@
           "month": "2025-04",
           "hours": 0.51
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 3.06
+        },
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 0.51
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-03",
+          "hours": 0.66
+        }
       ]
     },
     {
@@ -3841,6 +4612,18 @@
         {
           "month": "2025-04",
           "hours": 2.35
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 0.93
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 1.42
         }
       ]
     },
@@ -3935,6 +4718,18 @@
           "month": "2025-04",
           "hours": 1.81
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "quantium-rock <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 1.15
+        },
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
+          "month": "2025-04",
+          "hours": 0.66
+        }
       ]
     },
     {
@@ -4006,6 +4801,13 @@
           "month": "2025-09",
           "hours": 0.37
         }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "thibaut-oriane <thibaut@oriane.xyz>",
+          "month": "2025-09",
+          "hours": 0.37
+        }
       ]
     },
     {
@@ -4074,6 +4876,13 @@
       },
       "monthly_hours": [
         {
+          "month": "2025-05",
+          "hours": 0.66
+        }
+      ],
+      "author_monthly_hours": [
+        {
+          "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
           "month": "2025-05",
           "hours": 0.66
         }
