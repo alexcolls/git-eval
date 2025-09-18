@@ -35,43 +35,43 @@ pie title Top authors by estimated hours
 
 | Rank | Repository | Hours | Commits | Authors | First | Last | Added | Deleted | Files | Avg commits/day | LOC (files) | Weekends | Weekdays | Night days | Day days | Both |
 |---:|---|---:|---:|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | `/home/quantium/labs/oriane/orn-admin-api` | 343.36 | 441 | 4 | 2024-12-10T09:59:05+01:00 | 2025-09-09T20:49:10+02:00 | 120376 | 88133 | 1668 | 1.6095 | 31093 (141) | 26 | 75 | 28 | 86 | 18 |
-| 2 | `/home/quantium/labs/oriane/orn-admin-web` | 320.67 | 461 | 4 | 2024-12-11T12:55:53+01:00 | 2025-09-09T17:21:55+02:00 | 84119 | 59776 | 1552 | 1.6886 | 23470 (243) | 21 | 68 | 21 | 80 | 16 |
-| 3 | `/home/quantium/labs/oriane/orn-experience-app` | 227.67 | 240 | 4 | 2025-05-20T19:47:54+02:00 | 2025-09-12T04:04:02+02:00 | 89459 | 63918 | 1796 | 2.069 | 25828 (189) | 7 | 33 | 15 | 35 | 11 |
-| 4 | `/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab` | 220.66 | 130 | 1 | 2025-05-16T12:29:52+02:00 | 2025-07-28T16:47:30+02:00 | 4897360 | 396945 | 24813 | 1.7568 | 5705980 (14740) | 4 | 25 | 9 | 20 | 3 |
-| 5 | `/home/quantium/labs/oriane/orn-processor-etls` | 147.34 | 87 | 2 | 2025-08-06T09:35:48+02:00 | 2025-09-08T12:52:42+02:00 | 72067 | 36305 | 1865 | 2.5588 | 27137 (141) | 2 | 18 | 7 | 16 | 5 |
-| 6 | `/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi` | 111.0 | 70 | 1 | 2025-07-17T21:18:10+02:00 | 2025-08-06T06:55:32+02:00 | 175711 | 145169 | 1568 | 3.3333 | 30411 (182) | 3 | 10 | 6 | 8 | 4 |
-| 7 | `/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash` | 69.96 | 61 | 1 | 2025-07-17T21:42:59+02:00 | 2025-08-01T14:01:10+02:00 | 65134 | 8386 | 1026 | 3.8125 | 45982 (240) | 3 | 7 | 5 | 5 | 3 |
-| 8 | `/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant` | 62.86 | 47 | 1 | 2025-07-17T21:54:02+02:00 | 2025-07-30T10:39:45+02:00 | 73047 | 38067 | 1136 | 3.3571 | 258569 (249) | 2 | 7 | 6 | 5 | 3 |
-| 9 | `/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi` | 59.19 | 26 | 1 | 2025-07-17T21:23:42+02:00 | 2025-09-10T23:16:55+02:00 | 111265 | 96151 | 780 | 0.4643 | 244685 (156) | 2 | 5 | 4 | 4 | 2 |
-| 10 | `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python` | 55.15 | 80 | 2 | 2024-12-20T17:39:28+01:00 | 2025-03-18T12:44:10+01:00 | 11720 | 12182 | 299 | 0.8989 | 3853 (50) | 4 | 8 | 3 | 11 | 3 |
-| 11 | `/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda` | 53.95 | 39 | 1 | 2025-04-24T11:41:42+02:00 | 2025-05-12T17:21:01+02:00 | 1245928 | 1241311 | 11410 | 2.0526 | 226041 (59) | 2 | 9 | 3 | 9 | 1 |
-| 12 | `/home/quantium/labs/oriane/orn-search-api` | 45.85 | 178 | 1 | 2025-09-10T11:55:06+02:00 | 2025-09-12T20:12:32+02:00 | 91334 | 75729 | 687 | 59.3333 | 243254 (103) | 0 | 3 | 2 | 3 | 2 |
-| 13 | `/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda` | 39.32 | 47 | 1 | 2025-03-14T15:21:23+01:00 | 2025-04-30T11:50:16+02:00 | 296055 | 148163 | 887 | 0.9792 | 1683 (15) | 3 | 7 | 0 | 10 | 0 |
-| 14 | `/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction` | 34.9 | 10 | 1 | 2025-06-18T16:29:57+02:00 | 2025-06-25T09:20:23+02:00 | 18012 | 12860 | 495 | 1.25 | 45700 (224) | 0 | 4 | 0 | 4 | 0 |
-| 15 | `/home/quantium/labs/oriane/_deprecated/SSCD-model` | 32.97 | 43 | 1 | 2025-04-03T03:20:27+02:00 | 2025-05-28T00:55:26+02:00 | 60464 | 763 | 127 | 0.7679 | 4251223 (35) | 4 | 10 | 4 | 8 | 1 |
-| 16 | `/home/quantium/labs/oriane/orn-acquisition-lambdas` | 29.98 | 41 | 1 | 2025-08-17T12:42:10+02:00 | 2025-09-09T22:07:44+02:00 | 12005 | 2138 | 117 | 1.7083 | 9867 (39) | 1 | 3 | 2 | 4 | 2 |
-| 17 | `/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda` | 27.04 | 18 | 1 | 2025-03-26T08:53:24+01:00 | 2025-04-30T11:49:35+02:00 | 101585 | 99564 | 45 | 0.5 | 2305 (20) | 2 | 4 | 1 | 5 | 0 |
-| 18 | `/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python` | 25.9 | 23 | 1 | 2025-07-17T21:25:58+02:00 | 2025-07-28T22:21:14+02:00 | 20596 | 8057 | 369 | 1.9167 | 242529 (89) | 3 | 7 | 3 | 5 | 1 |
-| 19 | `/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda` | 24.6 | 37 | 2 | 2025-03-21T10:39:55+01:00 | 2025-05-27T20:23:56+02:00 | 8760 | 1715 | 84 | 0.5441 | 8381 (23) | 2 | 9 | 1 | 10 | 0 |
-| 20 | `/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash` | 24.29 | 6 | 1 | 2025-07-28T12:04:52+02:00 | 2025-07-29T17:56:29+02:00 | 21119 | 14561 | 302 | 3.0 | 6558 (48) | 0 | 2 | 1 | 2 | 1 |
-| 21 | `/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda` | 18.44 | 11 | 1 | 2025-03-14T11:20:34+01:00 | 2025-03-19T11:32:01+01:00 | 697960 | 254972 | 5099 | 1.8333 | 588490 (2870) | 0 | 3 | 0 | 3 | 0 |
-| 22 | `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo` | 15.75 | 6 | 1 | 2025-03-04T23:11:23+01:00 | 2025-03-05T00:18:00+01:00 | 301105 | 1 | 842 | 3.0 | 318129 (838) | 0 | 2 | 1 | 0 | 0 |
-| 23 | `/home/quantium/labs/oriane/_deprecated/opencv-cuda` | 15.0 | 2 | 1 | 2025-05-16T12:17:02+02:00 | 2025-05-16T12:34:35+02:00 | 247837 | 0 | 440 | 2.0 | 516183 (439) | 0 | 1 | 0 | 1 | 0 |
-| 24 | `/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda` | 12.79 | 24 | 1 | 2025-03-18T12:42:33+01:00 | 2025-03-30T22:42:37+02:00 | 1707 | 174 | 52 | 1.8462 | 1002 (12) | 1 | 3 | 1 | 3 | 0 |
-| 25 | `/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda` | 11.55 | 10 | 1 | 2025-03-20T14:45:37+01:00 | 2025-03-24T11:03:30+01:00 | 52436 | 193 | 29 | 2.0 | 52243 (13) | 0 | 3 | 0 | 3 | 0 |
-| 26 | `/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda` | 11.22 | 1 | 1 | 2025-05-16T12:32:12+02:00 | 2025-05-16T12:32:12+02:00 | 34683 | 0 | 144 | 1.0 | 258049 (143) | 0 | 1 | 0 | 1 | 0 |
-| 27 | `/home/quantium/labs/oriane/orn-processor-applications` | 10.39 | 15 | 2 | 2025-08-08T20:11:09+02:00 | 2025-09-02T20:50:08+02:00 | 718 | 138 | 59 | 0.5769 | 580 (18) | 1 | 7 | 5 | 3 | 0 |
-| 28 | `/home/quantium/labs/oriane/_deprecated/InstagramTests` | 8.36 | 5 | 1 | 2025-03-12T18:25:02+01:00 | 2025-04-06T11:48:48+02:00 | 10649 | 111 | 65 | 0.1923 | 343704 (62) | 1 | 3 | 0 | 4 | 0 |
-| 29 | `/home/quantium/labs/oriane/_deprecated/ViT-model` | 6.93 | 6 | 1 | 2025-04-05T13:09:07+02:00 | 2025-04-06T23:36:53+02:00 | 29351 | 2 | 10 | 3.0 | 29284 (6) | 2 | 0 | 1 | 1 | 0 |
-| 30 | `/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda` | 6.6 | 9 | 1 | 2025-04-30T12:08:09+02:00 | 2025-05-07T11:12:41+02:00 | 1590 | 447 | 27 | 1.125 | 1195 (15) | 1 | 2 | 1 | 3 | 1 |
-| 31 | `/home/quantium/labs/oriane/orn-platform-clusters` | 6.35 | 8 | 1 | 2025-08-08T18:43:11+02:00 | 2025-08-17T02:55:58+02:00 | 573 | 18 | 24 | 0.8 | 555 (16) | 1 | 4 | 3 | 3 | 0 |
-| 32 | `/home/quantium/labs/oriane/orn-platform-applications` | 5.28 | 5 | 1 | 2025-08-08T18:45:37+02:00 | 2025-08-15T19:23:22+02:00 | 851 | 6 | 40 | 0.625 | 845 (36) | 0 | 3 | 1 | 2 | 0 |
-| 33 | `/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda` | 4.56 | 7 | 1 | 2025-03-30T23:52:32+02:00 | 2025-04-03T03:54:49+02:00 | 796 | 140 | 15 | 1.4 | 656 (9) | 1 | 2 | 2 | 1 | 0 |
-| 34 | `/home/quantium/labs/oriane/_deprecated/ViT_SAM-model` | 2.35 | 4 | 1 | 2025-04-05T13:17:21+02:00 | 2025-04-06T12:07:44+02:00 | 449 | 3 | 10 | 2.0 | 446 (6) | 2 | 0 | 0 | 2 | 0 |
-| 35 | `/home/quantium/labs/oriane/_deprecated/SAM-model` | 2.25 | 3 | 1 | 2025-04-05T13:09:44+02:00 | 2025-04-06T11:55:00+02:00 | 382 | 0 | 5 | 1.5 | 443 (5) | 2 | 0 | 0 | 2 | 0 |
-| 36 | `/home/quantium/labs/oriane/orn-experience-applications` | 0.75 | 1 | 1 | 2025-09-11T10:09:35+02:00 | 2025-09-11T10:09:35+02:00 | 1 | 0 | 1 | 1.0 | 1 (1) | 0 | 1 | 0 | 1 | 0 |
-| 37 | `/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws` | 0.75 | 1 | 1 | 2025-05-23T15:07:15+02:00 | 2025-05-23T15:07:15+02:00 | 175 | 0 | 2 | 1.0 | 175 (2) | 0 | 1 | 0 | 1 | 0 |
+| 1 | `/home/quantium/labs/oriane/orn-admin-api` | 343.36 | 441 | 4 | 2024-12-10T09:59:05+01:00 | 2025-09-09T20:49:10+02:00 | 120376 | 88133 | 1668 | 1.6095 | 0 (0) | 26 | 75 | 28 | 86 | 18 |
+| 2 | `/home/quantium/labs/oriane/orn-admin-web` | 320.67 | 461 | 4 | 2024-12-11T12:55:53+01:00 | 2025-09-09T17:21:55+02:00 | 84119 | 59776 | 1552 | 1.6886 | 0 (0) | 21 | 68 | 21 | 80 | 16 |
+| 3 | `/home/quantium/labs/oriane/orn-experience-app` | 227.67 | 240 | 4 | 2025-05-20T19:47:54+02:00 | 2025-09-12T04:04:02+02:00 | 89459 | 63918 | 1796 | 2.069 | 0 (0) | 7 | 33 | 15 | 35 | 11 |
+| 4 | `/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab` | 220.66 | 130 | 1 | 2025-05-16T12:29:52+02:00 | 2025-07-28T16:47:30+02:00 | 4897360 | 396945 | 24813 | 1.7568 | 0 (0) | 4 | 25 | 9 | 20 | 3 |
+| 5 | `/home/quantium/labs/oriane/orn-processor-etls` | 147.34 | 87 | 2 | 2025-08-06T09:35:48+02:00 | 2025-09-08T12:52:42+02:00 | 72067 | 36305 | 1865 | 2.5588 | 0 (0) | 2 | 18 | 7 | 16 | 5 |
+| 6 | `/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi` | 111.0 | 70 | 1 | 2025-07-17T21:18:10+02:00 | 2025-08-06T06:55:32+02:00 | 175711 | 145169 | 1568 | 3.3333 | 0 (0) | 3 | 10 | 6 | 8 | 4 |
+| 7 | `/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash` | 69.96 | 61 | 1 | 2025-07-17T21:42:59+02:00 | 2025-08-01T14:01:10+02:00 | 65134 | 8386 | 1026 | 3.8125 | 0 (0) | 3 | 7 | 5 | 5 | 3 |
+| 8 | `/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant` | 62.86 | 47 | 1 | 2025-07-17T21:54:02+02:00 | 2025-07-30T10:39:45+02:00 | 73047 | 38067 | 1136 | 3.3571 | 0 (0) | 2 | 7 | 6 | 5 | 3 |
+| 9 | `/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi` | 59.19 | 26 | 1 | 2025-07-17T21:23:42+02:00 | 2025-09-10T23:16:55+02:00 | 111265 | 96151 | 780 | 0.4643 | 0 (0) | 2 | 5 | 4 | 4 | 2 |
+| 10 | `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python` | 55.15 | 80 | 2 | 2024-12-20T17:39:28+01:00 | 2025-03-18T12:44:10+01:00 | 11720 | 12182 | 299 | 0.8989 | 0 (0) | 4 | 8 | 3 | 11 | 3 |
+| 11 | `/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda` | 53.95 | 39 | 1 | 2025-04-24T11:41:42+02:00 | 2025-05-12T17:21:01+02:00 | 1245928 | 1241311 | 11410 | 2.0526 | 0 (0) | 2 | 9 | 3 | 9 | 1 |
+| 12 | `/home/quantium/labs/oriane/orn-search-api` | 45.85 | 178 | 1 | 2025-09-10T11:55:06+02:00 | 2025-09-12T20:12:32+02:00 | 91334 | 75729 | 687 | 59.3333 | 0 (0) | 0 | 3 | 2 | 3 | 2 |
+| 13 | `/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda` | 39.32 | 47 | 1 | 2025-03-14T15:21:23+01:00 | 2025-04-30T11:50:16+02:00 | 296055 | 148163 | 887 | 0.9792 | 0 (0) | 3 | 7 | 0 | 10 | 0 |
+| 14 | `/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction` | 34.9 | 10 | 1 | 2025-06-18T16:29:57+02:00 | 2025-06-25T09:20:23+02:00 | 18012 | 12860 | 495 | 1.25 | 0 (0) | 0 | 4 | 0 | 4 | 0 |
+| 15 | `/home/quantium/labs/oriane/_deprecated/SSCD-model` | 32.97 | 43 | 1 | 2025-04-03T03:20:27+02:00 | 2025-05-28T00:55:26+02:00 | 60464 | 763 | 127 | 0.7679 | 0 (0) | 4 | 10 | 4 | 8 | 1 |
+| 16 | `/home/quantium/labs/oriane/orn-acquisition-lambdas` | 29.98 | 41 | 1 | 2025-08-17T12:42:10+02:00 | 2025-09-09T22:07:44+02:00 | 12005 | 2138 | 117 | 1.7083 | 0 (0) | 1 | 3 | 2 | 4 | 2 |
+| 17 | `/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda` | 27.04 | 18 | 1 | 2025-03-26T08:53:24+01:00 | 2025-04-30T11:49:35+02:00 | 101585 | 99564 | 45 | 0.5 | 0 (0) | 2 | 4 | 1 | 5 | 0 |
+| 18 | `/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python` | 25.9 | 23 | 1 | 2025-07-17T21:25:58+02:00 | 2025-07-28T22:21:14+02:00 | 20596 | 8057 | 369 | 1.9167 | 0 (0) | 3 | 7 | 3 | 5 | 1 |
+| 19 | `/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda` | 24.6 | 37 | 2 | 2025-03-21T10:39:55+01:00 | 2025-05-27T20:23:56+02:00 | 8760 | 1715 | 84 | 0.5441 | 0 (0) | 2 | 9 | 1 | 10 | 0 |
+| 20 | `/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash` | 24.29 | 6 | 1 | 2025-07-28T12:04:52+02:00 | 2025-07-29T17:56:29+02:00 | 21119 | 14561 | 302 | 3.0 | 0 (0) | 0 | 2 | 1 | 2 | 1 |
+| 21 | `/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda` | 18.44 | 11 | 1 | 2025-03-14T11:20:34+01:00 | 2025-03-19T11:32:01+01:00 | 697960 | 254972 | 5099 | 1.8333 | 0 (0) | 0 | 3 | 0 | 3 | 0 |
+| 22 | `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo` | 15.75 | 6 | 1 | 2025-03-04T23:11:23+01:00 | 2025-03-05T00:18:00+01:00 | 301105 | 1 | 842 | 3.0 | 0 (0) | 0 | 2 | 1 | 0 | 0 |
+| 23 | `/home/quantium/labs/oriane/_deprecated/opencv-cuda` | 15.0 | 2 | 1 | 2025-05-16T12:17:02+02:00 | 2025-05-16T12:34:35+02:00 | 247837 | 0 | 440 | 2.0 | 0 (0) | 0 | 1 | 0 | 1 | 0 |
+| 24 | `/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda` | 12.79 | 24 | 1 | 2025-03-18T12:42:33+01:00 | 2025-03-30T22:42:37+02:00 | 1707 | 174 | 52 | 1.8462 | 0 (0) | 1 | 3 | 1 | 3 | 0 |
+| 25 | `/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda` | 11.55 | 10 | 1 | 2025-03-20T14:45:37+01:00 | 2025-03-24T11:03:30+01:00 | 52436 | 193 | 29 | 2.0 | 0 (0) | 0 | 3 | 0 | 3 | 0 |
+| 26 | `/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda` | 11.22 | 1 | 1 | 2025-05-16T12:32:12+02:00 | 2025-05-16T12:32:12+02:00 | 34683 | 0 | 144 | 1.0 | 0 (0) | 0 | 1 | 0 | 1 | 0 |
+| 27 | `/home/quantium/labs/oriane/orn-processor-applications` | 10.39 | 15 | 2 | 2025-08-08T20:11:09+02:00 | 2025-09-02T20:50:08+02:00 | 718 | 138 | 59 | 0.5769 | 0 (0) | 1 | 7 | 5 | 3 | 0 |
+| 28 | `/home/quantium/labs/oriane/_deprecated/InstagramTests` | 8.36 | 5 | 1 | 2025-03-12T18:25:02+01:00 | 2025-04-06T11:48:48+02:00 | 10649 | 111 | 65 | 0.1923 | 0 (0) | 1 | 3 | 0 | 4 | 0 |
+| 29 | `/home/quantium/labs/oriane/_deprecated/ViT-model` | 6.93 | 6 | 1 | 2025-04-05T13:09:07+02:00 | 2025-04-06T23:36:53+02:00 | 29351 | 2 | 10 | 3.0 | 0 (0) | 2 | 0 | 1 | 1 | 0 |
+| 30 | `/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda` | 6.6 | 9 | 1 | 2025-04-30T12:08:09+02:00 | 2025-05-07T11:12:41+02:00 | 1590 | 447 | 27 | 1.125 | 0 (0) | 1 | 2 | 1 | 3 | 1 |
+| 31 | `/home/quantium/labs/oriane/orn-platform-clusters` | 6.35 | 8 | 1 | 2025-08-08T18:43:11+02:00 | 2025-08-17T02:55:58+02:00 | 573 | 18 | 24 | 0.8 | 0 (0) | 1 | 4 | 3 | 3 | 0 |
+| 32 | `/home/quantium/labs/oriane/orn-platform-applications` | 5.28 | 5 | 1 | 2025-08-08T18:45:37+02:00 | 2025-08-15T19:23:22+02:00 | 851 | 6 | 40 | 0.625 | 0 (0) | 0 | 3 | 1 | 2 | 0 |
+| 33 | `/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda` | 4.56 | 7 | 1 | 2025-03-30T23:52:32+02:00 | 2025-04-03T03:54:49+02:00 | 796 | 140 | 15 | 1.4 | 0 (0) | 1 | 2 | 2 | 1 | 0 |
+| 34 | `/home/quantium/labs/oriane/_deprecated/ViT_SAM-model` | 2.35 | 4 | 1 | 2025-04-05T13:17:21+02:00 | 2025-04-06T12:07:44+02:00 | 449 | 3 | 10 | 2.0 | 0 (0) | 2 | 0 | 0 | 2 | 0 |
+| 35 | `/home/quantium/labs/oriane/_deprecated/SAM-model` | 2.25 | 3 | 1 | 2025-04-05T13:09:44+02:00 | 2025-04-06T11:55:00+02:00 | 382 | 0 | 5 | 1.5 | 0 (0) | 2 | 0 | 0 | 2 | 0 |
+| 36 | `/home/quantium/labs/oriane/orn-experience-applications` | 0.75 | 1 | 1 | 2025-09-11T10:09:35+02:00 | 2025-09-11T10:09:35+02:00 | 1 | 0 | 1 | 1.0 | 0 (0) | 0 | 1 | 0 | 1 | 0 |
+| 37 | `/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws` | 0.75 | 1 | 1 | 2025-05-23T15:07:15+02:00 | 2025-05-23T15:07:15+02:00 | 175 | 0 | 2 | 1.0 | 0 (0) | 0 | 1 | 0 | 1 | 0 |
 
 ## Hours per month — all repos
 
@@ -307,6 +307,36 @@ Alex Colls Outumuro <alexcollsoutumuro@gmail.com> ▂▁▁█▅▃▃▄▁▁
 Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁▁▁▁  (20.8h)
 ```
 
+![Monthly hours — top repos](charts/monthly_hours_repos.png)
+
+![Monthly hours — top authors](charts/monthly_hours_authors.png)
+
+## Daily hours (ASCII sparkline) — last 60 days
+
+### Top repos
+```
+Dates: 2025-06-25, 2025-06-26, 2025-06-27, 2025-06-30, 2025-07-01, 2025-07-05, 2025-07-06, 2025-07-07, 2025-07-08, 2025-07-09, 2025-07-10, 2025-07-14, 2025-07-15, 2025-07-16, 2025-07-17, 2025-07-18, 2025-07-19, 2025-07-20, 2025-07-21, 2025-07-22, 2025-07-23, 2025-07-24, 2025-07-25, 2025-07-27, 2025-07-28, 2025-07-29, 2025-07-30, 2025-08-01, 2025-08-06, 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12, 2025-08-13, 2025-08-14, 2025-08-15, 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19, 2025-08-20, 2025-08-21, 2025-08-25, 2025-08-26, 2025-08-27, 2025-08-28, 2025-08-29, 2025-08-30, 2025-09-01, 2025-09-02, 2025-09-03, 2025-09-04, 2025-09-05, 2025-09-06, 2025-09-07, 2025-09-08, 2025-09-09, 2025-09-10, 2025-09-11, 2025-09-12
+ExtractionPipeline-lab   ▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁  (921.1h)
+OrianePipeline-fastapi   ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▂▁▄█▃▃▁▄▂▅▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁  (159.0h)
+orn-processor-etls       ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▄▃▆▄▅█▂▄▁▁▃▄▅▆▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁  (158.9h)
+orn-search-api           ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▄█▂  (134.6h)
+OrianeDevOpsCLI-bash     ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▄█▁▁▁▄▁▆▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁  (97.1h)
+```
+
+### Top authors
+```
+Dates: 2025-06-25, 2025-06-26, 2025-06-27, 2025-06-30, 2025-07-01, 2025-07-05, 2025-07-06, 2025-07-07, 2025-07-08, 2025-07-09, 2025-07-10, 2025-07-14, 2025-07-15, 2025-07-16, 2025-07-17, 2025-07-18, 2025-07-19, 2025-07-20, 2025-07-21, 2025-07-22, 2025-07-23, 2025-07-24, 2025-07-25, 2025-07-27, 2025-07-28, 2025-07-29, 2025-07-30, 2025-08-01, 2025-08-06, 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12, 2025-08-13, 2025-08-14, 2025-08-15, 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19, 2025-08-20, 2025-08-21, 2025-08-25, 2025-08-26, 2025-08-27, 2025-08-28, 2025-08-29, 2025-08-30, 2025-09-01, 2025-09-02, 2025-09-03, 2025-09-04, 2025-09-05, 2025-09-06, 2025-09-07, 2025-09-08, 2025-09-09, 2025-09-10, 2025-09-11, 2025-09-12
+quantium-rock <alexcollsoutumuro@gmail.com> ▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁█▁▁▂▂▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁  (1848.4h)
+Thibaut Hadjean <sasha.hadjean@gmail.com> ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▂▃▁█▁▃▁▂▁▁▃▁▂▇▂▁▂▂▁▃▂▁▁▂▁▁▁▁  (24.6h)
+Thibaut Hadjean <thibaut@oriane.xyz> ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▃▂▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁  (8.0h)
+Alex Colls Outumuro <alexcollsoutumuro@gmail.com> ▁▁▁▂▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▂▁▁▁▄▃▁▁▁▁▁▁▁▁▁▁▁▁▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▁▁  (6.9h)
+alexcolls <alexcollsoutumuro@gmail.com> ▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁  (4.4h)
+```
+
+![Daily hours — top repos](charts/daily_hours_repos.png)
+
+![Daily hours — top authors](charts/daily_hours_authors.png)
+
 ## Per-repo breakdowns
 
 ### orn-admin-api
@@ -315,7 +345,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 343.36 | Commits: 441 | Authors: 4
 - First: 2024-12-10T09:59:05+01:00 | Last: 2025-09-09T20:49:10+02:00
 - Added: 120376 | Deleted: 88133 | Files: 1668
-- Current LOC: 31093 (files 141)
+- Current LOC: 0 (files 0)
 - Weekends: 26 | Weekdays: 75 | Night days: 28 | Day days: 86 | Both: 18
 
 #### Top authors in repo
@@ -349,7 +379,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 320.67 | Commits: 461 | Authors: 4
 - First: 2024-12-11T12:55:53+01:00 | Last: 2025-09-09T17:21:55+02:00
 - Added: 84119 | Deleted: 59776 | Files: 1552
-- Current LOC: 23470 (files 243)
+- Current LOC: 0 (files 0)
 - Weekends: 21 | Weekdays: 68 | Night days: 21 | Day days: 80 | Both: 16
 
 #### Top authors in repo
@@ -380,7 +410,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 227.67 | Commits: 240 | Authors: 4
 - First: 2025-05-20T19:47:54+02:00 | Last: 2025-09-12T04:04:02+02:00
 - Added: 89459 | Deleted: 63918 | Files: 1796
-- Current LOC: 25828 (files 189)
+- Current LOC: 0 (files 0)
 - Weekends: 7 | Weekdays: 33 | Night days: 15 | Day days: 35 | Both: 11
 
 #### Top authors in repo
@@ -409,7 +439,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 220.66 | Commits: 130 | Authors: 1
 - First: 2025-05-16T12:29:52+02:00 | Last: 2025-07-28T16:47:30+02:00
 - Added: 4897360 | Deleted: 396945 | Files: 24813
-- Current LOC: 5705980 (files 14740)
+- Current LOC: 0 (files 0)
 - Weekends: 4 | Weekdays: 25 | Night days: 9 | Day days: 20 | Both: 3
 
 #### Top authors in repo
@@ -434,7 +464,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 147.34 | Commits: 87 | Authors: 2
 - First: 2025-08-06T09:35:48+02:00 | Last: 2025-09-08T12:52:42+02:00
 - Added: 72067 | Deleted: 36305 | Files: 1865
-- Current LOC: 27137 (files 141)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 18 | Night days: 7 | Day days: 16 | Both: 5
 
 #### Top authors in repo
@@ -457,7 +487,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 111.0 | Commits: 70 | Authors: 1
 - First: 2025-07-17T21:18:10+02:00 | Last: 2025-08-06T06:55:32+02:00
 - Added: 175711 | Deleted: 145169 | Files: 1568
-- Current LOC: 30411 (files 182)
+- Current LOC: 0 (files 0)
 - Weekends: 3 | Weekdays: 10 | Night days: 6 | Day days: 8 | Both: 4
 
 #### Top authors in repo
@@ -480,7 +510,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 69.96 | Commits: 61 | Authors: 1
 - First: 2025-07-17T21:42:59+02:00 | Last: 2025-08-01T14:01:10+02:00
 - Added: 65134 | Deleted: 8386 | Files: 1026
-- Current LOC: 45982 (files 240)
+- Current LOC: 0 (files 0)
 - Weekends: 3 | Weekdays: 7 | Night days: 5 | Day days: 5 | Both: 3
 
 #### Top authors in repo
@@ -503,7 +533,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 62.86 | Commits: 47 | Authors: 1
 - First: 2025-07-17T21:54:02+02:00 | Last: 2025-07-30T10:39:45+02:00
 - Added: 73047 | Deleted: 38067 | Files: 1136
-- Current LOC: 258569 (files 249)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 7 | Night days: 6 | Day days: 5 | Both: 3
 
 #### Top authors in repo
@@ -525,7 +555,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 59.19 | Commits: 26 | Authors: 1
 - First: 2025-07-17T21:23:42+02:00 | Last: 2025-09-10T23:16:55+02:00
 - Added: 111265 | Deleted: 96151 | Files: 780
-- Current LOC: 244685 (files 156)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 5 | Night days: 4 | Day days: 4 | Both: 2
 
 #### Top authors in repo
@@ -549,7 +579,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 55.15 | Commits: 80 | Authors: 2
 - First: 2024-12-20T17:39:28+01:00 | Last: 2025-03-18T12:44:10+01:00
 - Added: 11720 | Deleted: 12182 | Files: 299
-- Current LOC: 3853 (files 50)
+- Current LOC: 0 (files 0)
 - Weekends: 4 | Weekdays: 8 | Night days: 3 | Day days: 11 | Both: 3
 
 #### Top authors in repo
@@ -575,7 +605,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 53.95 | Commits: 39 | Authors: 1
 - First: 2025-04-24T11:41:42+02:00 | Last: 2025-05-12T17:21:01+02:00
 - Added: 1245928 | Deleted: 1241311 | Files: 11410
-- Current LOC: 226041 (files 59)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 9 | Night days: 3 | Day days: 9 | Both: 1
 
 #### Top authors in repo
@@ -598,7 +628,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 45.85 | Commits: 178 | Authors: 1
 - First: 2025-09-10T11:55:06+02:00 | Last: 2025-09-12T20:12:32+02:00
 - Added: 91334 | Deleted: 75729 | Files: 687
-- Current LOC: 243254 (files 103)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 3 | Night days: 2 | Day days: 3 | Both: 2
 
 #### Top authors in repo
@@ -620,7 +650,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 39.32 | Commits: 47 | Authors: 1
 - First: 2025-03-14T15:21:23+01:00 | Last: 2025-04-30T11:50:16+02:00
 - Added: 296055 | Deleted: 148163 | Files: 887
-- Current LOC: 1683 (files 15)
+- Current LOC: 0 (files 0)
 - Weekends: 3 | Weekdays: 7 | Night days: 0 | Day days: 10 | Both: 0
 
 #### Top authors in repo
@@ -643,7 +673,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 34.9 | Commits: 10 | Authors: 1
 - First: 2025-06-18T16:29:57+02:00 | Last: 2025-06-25T09:20:23+02:00
 - Added: 18012 | Deleted: 12860 | Files: 495
-- Current LOC: 45700 (files 224)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 4 | Night days: 0 | Day days: 4 | Both: 0
 
 #### Top authors in repo
@@ -665,7 +695,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 32.97 | Commits: 43 | Authors: 1
 - First: 2025-04-03T03:20:27+02:00 | Last: 2025-05-28T00:55:26+02:00
 - Added: 60464 | Deleted: 763 | Files: 127
-- Current LOC: 4251223 (files 35)
+- Current LOC: 0 (files 0)
 - Weekends: 4 | Weekdays: 10 | Night days: 4 | Day days: 8 | Both: 1
 
 #### Top authors in repo
@@ -688,7 +718,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 29.98 | Commits: 41 | Authors: 1
 - First: 2025-08-17T12:42:10+02:00 | Last: 2025-09-09T22:07:44+02:00
 - Added: 12005 | Deleted: 2138 | Files: 117
-- Current LOC: 9867 (files 39)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 3 | Night days: 2 | Day days: 4 | Both: 2
 
 #### Top authors in repo
@@ -711,7 +741,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 27.04 | Commits: 18 | Authors: 1
 - First: 2025-03-26T08:53:24+01:00 | Last: 2025-04-30T11:49:35+02:00
 - Added: 101585 | Deleted: 99564 | Files: 45
-- Current LOC: 2305 (files 20)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 4 | Night days: 1 | Day days: 5 | Both: 0
 
 #### Top authors in repo
@@ -734,7 +764,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 25.9 | Commits: 23 | Authors: 1
 - First: 2025-07-17T21:25:58+02:00 | Last: 2025-07-28T22:21:14+02:00
 - Added: 20596 | Deleted: 8057 | Files: 369
-- Current LOC: 242529 (files 89)
+- Current LOC: 0 (files 0)
 - Weekends: 3 | Weekdays: 7 | Night days: 3 | Day days: 5 | Both: 1
 
 #### Top authors in repo
@@ -756,7 +786,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 24.6 | Commits: 37 | Authors: 2
 - First: 2025-03-21T10:39:55+01:00 | Last: 2025-05-27T20:23:56+02:00
 - Added: 8760 | Deleted: 1715 | Files: 84
-- Current LOC: 8381 (files 23)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 9 | Night days: 1 | Day days: 10 | Both: 0
 
 #### Top authors in repo
@@ -781,7 +811,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 24.29 | Commits: 6 | Authors: 1
 - First: 2025-07-28T12:04:52+02:00 | Last: 2025-07-29T17:56:29+02:00
 - Added: 21119 | Deleted: 14561 | Files: 302
-- Current LOC: 6558 (files 48)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 2 | Night days: 1 | Day days: 2 | Both: 1
 
 #### Top authors in repo
@@ -803,7 +833,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 18.44 | Commits: 11 | Authors: 1
 - First: 2025-03-14T11:20:34+01:00 | Last: 2025-03-19T11:32:01+01:00
 - Added: 697960 | Deleted: 254972 | Files: 5099
-- Current LOC: 588490 (files 2870)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 3 | Night days: 0 | Day days: 3 | Both: 0
 
 #### Top authors in repo
@@ -825,7 +855,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 15.75 | Commits: 6 | Authors: 1
 - First: 2025-03-04T23:11:23+01:00 | Last: 2025-03-05T00:18:00+01:00
 - Added: 301105 | Deleted: 1 | Files: 842
-- Current LOC: 318129 (files 838)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 2 | Night days: 1 | Day days: 0 | Both: 0
 
 #### Top authors in repo
@@ -847,7 +877,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 15.0 | Commits: 2 | Authors: 1
 - First: 2025-05-16T12:17:02+02:00 | Last: 2025-05-16T12:34:35+02:00
 - Added: 247837 | Deleted: 0 | Files: 440
-- Current LOC: 516183 (files 439)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 1 | Night days: 0 | Day days: 1 | Both: 0
 
 #### Top authors in repo
@@ -868,7 +898,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 12.79 | Commits: 24 | Authors: 1
 - First: 2025-03-18T12:42:33+01:00 | Last: 2025-03-30T22:42:37+02:00
 - Added: 1707 | Deleted: 174 | Files: 52
-- Current LOC: 1002 (files 12)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 3 | Night days: 1 | Day days: 3 | Both: 0
 
 #### Top authors in repo
@@ -890,7 +920,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 11.55 | Commits: 10 | Authors: 1
 - First: 2025-03-20T14:45:37+01:00 | Last: 2025-03-24T11:03:30+01:00
 - Added: 52436 | Deleted: 193 | Files: 29
-- Current LOC: 52243 (files 13)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 3 | Night days: 0 | Day days: 3 | Both: 0
 
 #### Top authors in repo
@@ -912,7 +942,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 11.22 | Commits: 1 | Authors: 1
 - First: 2025-05-16T12:32:12+02:00 | Last: 2025-05-16T12:32:12+02:00
 - Added: 34683 | Deleted: 0 | Files: 144
-- Current LOC: 258049 (files 143)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 1 | Night days: 0 | Day days: 1 | Both: 0
 
 #### Top authors in repo
@@ -933,7 +963,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 10.39 | Commits: 15 | Authors: 2
 - First: 2025-08-08T20:11:09+02:00 | Last: 2025-09-02T20:50:08+02:00
 - Added: 718 | Deleted: 138 | Files: 59
-- Current LOC: 580 (files 18)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 7 | Night days: 5 | Day days: 3 | Both: 0
 
 #### Top authors in repo
@@ -956,7 +986,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 8.36 | Commits: 5 | Authors: 1
 - First: 2025-03-12T18:25:02+01:00 | Last: 2025-04-06T11:48:48+02:00
 - Added: 10649 | Deleted: 111 | Files: 65
-- Current LOC: 343704 (files 62)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 3 | Night days: 0 | Day days: 4 | Both: 0
 
 #### Top authors in repo
@@ -979,7 +1009,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 6.93 | Commits: 6 | Authors: 1
 - First: 2025-04-05T13:09:07+02:00 | Last: 2025-04-06T23:36:53+02:00
 - Added: 29351 | Deleted: 2 | Files: 10
-- Current LOC: 29284 (files 6)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 0 | Night days: 1 | Day days: 1 | Both: 0
 
 #### Top authors in repo
@@ -1001,7 +1031,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 6.6 | Commits: 9 | Authors: 1
 - First: 2025-04-30T12:08:09+02:00 | Last: 2025-05-07T11:12:41+02:00
 - Added: 1590 | Deleted: 447 | Files: 27
-- Current LOC: 1195 (files 15)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 2 | Night days: 1 | Day days: 3 | Both: 1
 
 #### Top authors in repo
@@ -1024,7 +1054,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 6.35 | Commits: 8 | Authors: 1
 - First: 2025-08-08T18:43:11+02:00 | Last: 2025-08-17T02:55:58+02:00
 - Added: 573 | Deleted: 18 | Files: 24
-- Current LOC: 555 (files 16)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 4 | Night days: 3 | Day days: 3 | Both: 0
 
 #### Top authors in repo
@@ -1046,7 +1076,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 5.28 | Commits: 5 | Authors: 1
 - First: 2025-08-08T18:45:37+02:00 | Last: 2025-08-15T19:23:22+02:00
 - Added: 851 | Deleted: 6 | Files: 40
-- Current LOC: 845 (files 36)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 3 | Night days: 1 | Day days: 2 | Both: 0
 
 #### Top authors in repo
@@ -1068,7 +1098,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 4.56 | Commits: 7 | Authors: 1
 - First: 2025-03-30T23:52:32+02:00 | Last: 2025-04-03T03:54:49+02:00
 - Added: 796 | Deleted: 140 | Files: 15
-- Current LOC: 656 (files 9)
+- Current LOC: 0 (files 0)
 - Weekends: 1 | Weekdays: 2 | Night days: 2 | Day days: 1 | Both: 0
 
 #### Top authors in repo
@@ -1091,7 +1121,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 2.35 | Commits: 4 | Authors: 1
 - First: 2025-04-05T13:17:21+02:00 | Last: 2025-04-06T12:07:44+02:00
 - Added: 449 | Deleted: 3 | Files: 10
-- Current LOC: 446 (files 6)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 0 | Night days: 0 | Day days: 2 | Both: 0
 
 #### Top authors in repo
@@ -1113,7 +1143,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 2.25 | Commits: 3 | Authors: 1
 - First: 2025-04-05T13:09:44+02:00 | Last: 2025-04-06T11:55:00+02:00
 - Added: 382 | Deleted: 0 | Files: 5
-- Current LOC: 443 (files 5)
+- Current LOC: 0 (files 0)
 - Weekends: 2 | Weekdays: 0 | Night days: 0 | Day days: 2 | Both: 0
 
 #### Top authors in repo
@@ -1135,7 +1165,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 0.75 | Commits: 1 | Authors: 1
 - First: 2025-09-11T10:09:35+02:00 | Last: 2025-09-11T10:09:35+02:00
 - Added: 1 | Deleted: 0 | Files: 1
-- Current LOC: 1 (files 1)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 1 | Night days: 0 | Day days: 1 | Both: 0
 
 #### Top authors in repo
@@ -1156,7 +1186,7 @@ Iván Gómez <123682394+JRosSx91@users.noreply.github.com> ▅▁▇█▅▂▁
 - Hours: 0.75 | Commits: 1 | Authors: 1
 - First: 2025-05-23T15:07:15+02:00 | Last: 2025-05-23T15:07:15+02:00
 - Added: 175 | Deleted: 0 | Files: 2
-- Current LOC: 175 (files 2)
+- Current LOC: 0 (files 0)
 - Weekends: 0 | Weekdays: 1 | Night days: 0 | Day days: 1 | Both: 0
 
 #### Top authors in repo
