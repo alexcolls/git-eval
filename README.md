@@ -10,6 +10,9 @@ Configuration
 - GIT_EVAL_EXCLUDE_EXTS: comma-separated extensions to skip writing (default .csv,.txt,.json)
 - SESSION_GAP_MINUTES: gap to split sessions for hour estimation (default 90)
 - MAX_HOURS_PER_DAY: per-day cap when summing sessions (default 10)
+- TIMEZONE: optional IANA timezone name to normalize commit times (default: use commit timezones)
+- DAY_START_HOUR, DAY_END_HOUR: daytime window (default 8–20)
+- NIGHTS_START_HOUR, NIGHTS_END_HOUR: nighttime window (default 22–6, wrapping midnight)
 - INCLUDE_MERGES: 1 to include merge commits in stats (default 1)
 
 Usage

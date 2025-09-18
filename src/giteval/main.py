@@ -13,6 +13,10 @@ from datetime import datetime, timedelta, timezone, date
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 import statistics
+try:
+    from zoneinfo import ZoneInfo
+except Exception:
+    ZoneInfo = None  # type: ignore
 
 try:
     from dotenv import load_dotenv
@@ -50,6 +54,14 @@ class RepoMetrics:
     deleted_lines_total: int
     files_changed_total: int
     estimated_hours_total: float
+    # Schedule footprint
+    weekends_active_days: int
+    weekdays_active_days: int
+    days_daytime_active: int
+    days_night_active: int
+    days_day_only: int
+    days_night_only: int
+    days_both: int
 
 
 def run(cmd: List[str], cwd: Optional[str] = None) -> str:
@@ -101,6 +113,13 @@ def parse_git_log_with_numstat(work_tree: Path, include_merges: bool) -> List[Co
     out = run(args)
     commits: List[CommitNumstat] = []
     cur: Optional[CommitNumstat] = None
+    tz_name = os.getenv("TIMEZONE", "").strip()
+    tzinfo = None
+    if tz_name and ZoneInfo is not None:
+        try:
+            tzinfo = ZoneInfo(tz_name)
+        except Exception:
+            tzinfo = None
     for line in out.splitlines():
         if not line:
             continue
@@ -110,6 +129,8 @@ def parse_git_log_with_numstat(work_tree: Path, include_merges: bool) -> List[Co
             c_hash, a_name, a_email, a_iso, parents = parts
             is_merge = bool(parents.strip()) and len(parents.split()) >= 2
             d = datetime.fromisoformat(a_iso.replace("Z", "+00:00"))
+            if tzinfo is not None:
+                d = d.astimezone(tzinfo)
             cur = CommitNumstat(
                 hash=c_hash,
                 author_name=a_name,
@@ -157,6 +178,13 @@ def compute_metrics(commits: List[CommitNumstat]) -> RepoMetrics:
             deleted_lines_total=0,
             files_changed_total=0,
             estimated_hours_total=0.0,
+            weekends_active_days=0,
+            weekdays_active_days=0,
+            days_daytime_active=0,
+            days_night_active=0,
+            days_day_only=0,
+            days_night_only=0,
+            days_both=0,
         )
     commits_sorted = sorted(commits, key=lambda c: c.author_date)
     first = commits_sorted[0].author_date
@@ -172,6 +200,46 @@ def compute_metrics(commits: List[CommitNumstat]) -> RepoMetrics:
     deleted_lines_total = sum(c.deleted for c in commits_sorted)
     files_changed_total = sum(c.files_changed for c in commits_sorted)
     avg_commits_per_day = (commits_total / span_days) if span_days > 0 else 0.0
+
+    # Schedule footprint calculations
+    night_start = int(os.getenv("NIGHTS_START_HOUR", "22") or "22")
+    night_end = int(os.getenv("NIGHTS_END_HOUR", "6") or "6")
+    day_start = int(os.getenv("DAY_START_HOUR", "8") or "8")
+    day_end = int(os.getenv("DAY_END_HOUR", "20") or "20")
+
+    def is_night(hour: int) -> bool:
+        # Night window wraps across midnight: [night_start, 24) U [0, night_end)
+        return hour >= night_start or hour < night_end
+
+    day_flags: Dict[date, Dict[str, bool]] = defaultdict(lambda: {"day": False, "night": False})
+    # Weekend/weekday sets based on calendar dates with any activity
+    weekend_dates = set()
+    weekday_dates = set()
+
+    for c in commits_sorted:
+        dt = c.author_date
+        cal_day = dt.date()
+        if cal_day.weekday() >= 5:
+            weekend_dates.add(cal_day)
+        else:
+            weekday_dates.add(cal_day)
+        h = dt.hour
+        if is_night(h):
+            # Attribute night work to the previous calendar day if early morning
+            night_day = cal_day
+            if h < night_end:
+                night_day = (dt - timedelta(days=1)).date()
+            day_flags[night_day]["night"] = True
+        if day_start <= h < day_end:
+            day_flags[cal_day]["day"] = True
+
+    days_night_active = sum(1 for v in day_flags.values() if v["night"])
+    days_daytime_active = sum(1 for v in day_flags.values() if v["day"])
+    days_both = sum(1 for v in day_flags.values() if v["day"] and v["night"])
+    days_day_only = sum(1 for v in day_flags.values() if v["day"] and not v["night"])
+    days_night_only = sum(1 for v in day_flags.values() if v["night"] and not v["day"])
+    weekends_active_days = len(weekend_dates)
+    weekdays_active_days = len(weekday_dates)
 
     # Effort estimation using session + commit-weighted heuristic
     author_effort = _estimate_hours_per_author(commits_sorted)
@@ -192,6 +260,13 @@ def compute_metrics(commits: List[CommitNumstat]) -> RepoMetrics:
         deleted_lines_total=deleted_lines_total,
         files_changed_total=files_changed_total,
         estimated_hours_total=round(hours_total, 2),
+        weekends_active_days=weekends_active_days,
+        weekdays_active_days=weekdays_active_days,
+        days_daytime_active=days_daytime_active,
+        days_night_active=days_night_active,
+        days_day_only=days_day_only,
+        days_night_only=days_night_only,
+        days_both=days_both,
     )
 
 
@@ -220,6 +295,15 @@ def _author_details(commits: List[CommitNumstat]) -> List[Dict[str, object]]:
         per_author_commits[key].append(c)
     details: List[Dict[str, object]] = []
     effort = _estimate_hours_per_author(commits)
+
+    # Day/night windows
+    night_start = int(os.getenv("NIGHTS_START_HOUR", "22") or "22")
+    night_end = int(os.getenv("NIGHTS_END_HOUR", "6") or "6")
+    day_start = int(os.getenv("DAY_START_HOUR", "8") or "8")
+    day_end = int(os.getenv("DAY_END_HOUR", "20") or "20")
+    def is_night(hour: int) -> bool:
+        return hour >= night_start or hour < night_end
+
     for author, cs in per_author_commits.items():
         cs.sort(key=lambda x: x.author_date)
         commits_total = len(cs)
@@ -233,6 +317,32 @@ def _author_details(commits: List[CommitNumstat]) -> List[Dict[str, object]]:
         sizes = [c.added + c.deleted for c in cs]
         avg_size = round(sum(sizes) / commits_total, 2) if commits_total else 0.0
         med_size = float(statistics.median(sizes)) if sizes else 0.0
+
+        # Per-author schedule footprint
+        day_flags: Dict[date, Dict[str, bool]] = defaultdict(lambda: {"day": False, "night": False})
+        weekend_dates = set()
+        weekday_dates = set()
+        for c in cs:
+            dt = c.author_date
+            cal_day = dt.date()
+            if cal_day.weekday() >= 5:
+                weekend_dates.add(cal_day)
+            else:
+                weekday_dates.add(cal_day)
+            h = dt.hour
+            if is_night(h):
+                night_day = cal_day
+                if h < night_end:
+                    night_day = (dt - timedelta(days=1)).date()
+                day_flags[night_day]["night"] = True
+            if day_start <= h < day_end:
+                day_flags[cal_day]["day"] = True
+        days_night_active = sum(1 for v in day_flags.values() if v["night"])
+        days_daytime_active = sum(1 for v in day_flags.values() if v["day"])
+        days_both = sum(1 for v in day_flags.values() if v["day"] and v["night"])
+        days_day_only = sum(1 for v in day_flags.values() if v["day"] and not v["night"])
+        days_night_only = sum(1 for v in day_flags.values() if v["night"] and not v["day"])
+
         details.append({
             "author": author,
             "commits_total": commits_total,
@@ -247,6 +357,14 @@ def _author_details(commits: List[CommitNumstat]) -> List[Dict[str, object]]:
             "median_commit_size": med_size,
             "sessions": effort.get(author, {}).get("sessions", 0),
             "estimated_hours": round(effort.get(author, {}).get("hours", 0.0), 2),
+            # schedule
+            "weekends_active_days": len(weekend_dates),
+            "weekdays_active_days": len(weekday_dates),
+            "days_night_active": days_night_active,
+            "days_daytime_active": days_daytime_active,
+            "days_both": days_both,
+            "days_day_only": days_day_only,
+            "days_night_only": days_night_only,
         })
     # sort by estimated hours desc then commits desc
     details.sort(key=lambda d: (d["estimated_hours"], d["commits_total"]), reverse=True)
@@ -459,19 +577,33 @@ def _write_markdown_report(output_dir: Path, work_tree: Path, metrics: RepoMetri
     lines.append(f"| Estimated hours (session-based) | {metrics.estimated_hours_total} |")
     lines.append("")
 
+    # Schedule footprint
+    lines.append("## Schedule footprint")
+    lines.append("")
+    lines.append("| Metric | Count |")
+    lines.append("|---|---:|")
+    lines.append(f"| Weekend days active (Sat/Sun) | {metrics.weekends_active_days} |")
+    lines.append(f"| Weekday days active | {metrics.weekdays_active_days} |")
+    lines.append(f"| Night days active | {metrics.days_night_active} |")
+    lines.append(f"| Daytime days active | {metrics.days_daytime_active} |")
+    lines.append(f"| Days with both day & night activity | {metrics.days_both} |")
+    lines.append(f"| Day-only days | {metrics.days_day_only} |")
+    lines.append(f"| Night-only days | {metrics.days_night_only} |")
+    lines.append("")
+
     # Leaderboard
     if authors:
         total_hours = sum(a["estimated_hours"] for a in authors) or 1.0
         lines.append("## Developer leaderboard")
         lines.append("")
-        lines.append("| Developer | Commits | Hours | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |")
-        lines.append("|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:")
+        lines.append("| Developer | Commits | Hours | Wknd days | Night days | Day days | Both | Added | Deleted | Files | Active days | First | Last | Avg size | Median size | Stars |")
+        lines.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---:|---:|:--:")
         top_hours = max(a["estimated_hours"] for a in authors) if authors else 0
         for a in authors:
             stars = int(round((a["estimated_hours"] / top_hours) * 5)) if top_hours > 0 else 0
             star_bar = "★" * stars + "☆" * (5 - stars)
             lines.append(
-                f"| {md_escape(a['author'])} | {a['commits_total']} | {a['estimated_hours']} | {a['added_total']} | {a['deleted_total']} | {a['files_changed_total']} | {a['active_days']} | {md_escape(a['first_commit'])} | {md_escape(a['last_commit'])} | {a['avg_commit_size']} | {a['median_commit_size']} | {star_bar} |"
+                f"| {md_escape(a['author'])} | {a['commits_total']} | {a['estimated_hours']} | {a.get('weekends_active_days',0)} | {a.get('days_night_active',0)} | {a.get('days_daytime_active',0)} | {a.get('days_both',0)} | {a['added_total']} | {a['deleted_total']} | {a['files_changed_total']} | {a['active_days']} | {md_escape(a['first_commit'])} | {md_escape(a['last_commit'])} | {a['avg_commit_size']} | {a['median_commit_size']} | {star_bar} |"
             )
         lines.append("")
 
