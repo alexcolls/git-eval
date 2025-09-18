@@ -140,6 +140,49 @@ def _compute_monthly_hours_by_author(commits) -> Dict[str, Dict[str, float]]:
     return result
 
 
+def _compute_daily_hours(commits) -> Dict[str, float]:
+    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
+    per_commit_base = float(os.getenv("MINUTES_PER_COMMIT_BASE", "12") or "12")
+    per_100_lines = float(os.getenv("MINUTES_PER_100_LINES", "8") or "8")
+    per_file_min = float(os.getenv("MINUTES_PER_FILE", "2") or "2")
+    calibration = float(os.getenv("CALIBRATION_FACTOR", "1.5") or "1.5")
+    session_gap = timedelta(minutes=session_gap_minutes)
+
+    # group by author label
+    per_author: Dict[str, List] = {}
+    for c in commits:
+        key = (c.author_name or "Unknown").strip()
+        if c.author_email:
+            key = f"{key} <{c.author_email}>"
+        per_author.setdefault(key, []).append(c)
+
+    day_hours: Dict[str, float] = {}
+    for author, cs in per_author.items():
+        cs.sort(key=lambda x: x.author_date)
+        sessions: List[List] = []
+        cur: List = []
+        prev = None
+        for c in cs:
+            if prev is None or (c.author_date - prev) > session_gap:
+                if cur:
+                    sessions.append(cur)
+                cur = [c]
+            else:
+                cur.append(c)
+            prev = c.author_date
+        if cur:
+            sessions.append(cur)
+        for sess in sessions:
+            minutes = 0.0
+            for c in sess:
+                loc = max(0, (c.added or 0) + (c.deleted or 0))
+                minutes += per_commit_base + ((loc ** 0.5) / 10.0) * per_100_lines + (c.files_changed or 0) * per_file_min
+            d = sess[-1].author_date.date().isoformat()
+            day_hours[d] = day_hours.get(d, 0.0) + minutes
+    # apply calibration and convert to hours
+    return {d: round(v * calibration / 60.0, 2) for d, v in day_hours.items()}
+
+
 def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
     # Sort repos by estimated_hours_total desc
     per_repo_sorted = sorted(per_repo, key=lambda r: r["metrics"]["estimated_hours_total"], reverse=True)
@@ -549,6 +592,21 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
                 lines.append(f"| {mth} | {c} | {a} | {d} | {f} | {bar(c, max_c)} |")
             lines.append("")
 
+    # Daily hours across repos
+    day_totals_hours: Dict[str, float] = {}
+    day_totals_commits: Dict[str, int] = {}
+    day_totals_added: Dict[str, int] = {}
+    day_totals_deleted: Dict[str, int] = {}
+    for r in per_repo_sorted:
+        for row in r.get("daily_hours", []):
+            d = row.get("date")
+            h = float(row.get("hours", 0.0))
+            if not d:
+                continue
+            day_totals_hours[d] = day_totals_hours.get(d, 0.0) + h
+        # commits/lines by day from monthly only not available; approximate via daily from _aggregate_daily not provided here.
+        # Skipping fine-grained daily commits/adds/deletes aggregation for now.
+
     # Write CSV exports
     # 1) Global monthly totals
     monthly_csv = OUTPUT_DIR / "_git_eval_monthly_totals.csv"
@@ -557,7 +615,18 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
         w.writerow(["month", "hours", "commits", "added", "deleted"])
         for m in sorted(month_totals_hours.keys()):
             w.writerow([m, f"{month_totals_hours[m]:.2f}", month_totals_commits.get(m, 0), month_totals_added.get(m, 0), month_totals_deleted.get(m, 0)])
-    # 2) Author schedule aggregates
+    # 2) Global daily totals (hours)
+    daily_csv = OUTPUT_DIR / "_git_eval_daily_totals.csv"
+    with daily_csv.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["date", "hours", "is_weekend"])
+        for d in sorted(day_totals_hours.keys()):
+            # heuristic: weekend flag based on calendar weekday
+            from datetime import datetime as _dt
+            is_weekend = 1 if _dt.fromisoformat(d).weekday() >= 5 else 0
+            w.writerow([d, f"{day_totals_hours[d]:.2f}", is_weekend])
+
+    # 3) Author schedule aggregates
     authors_csv = OUTPUT_DIR / "_git_eval_authors_schedule.csv"
     with authors_csv.open("w", newline="") as f:
         w = csv.writer(f)
@@ -593,11 +662,14 @@ def main(argv: List[str] = None) -> int:
             continue
         metrics = compute_metrics(commits)
         metrics.repo_path = path.as_posix()
-        write_reports(OUTPUT_DIR, path, metrics, commits)
+        if os.getenv("DASHBOARD_ONLY", "0") not in {"1","true","True"}:
+            write_reports(OUTPUT_DIR, path, metrics, commits)
         curr_loc = _current_loc_snapshot(path)
-        # compute monthly hours for this repo
+        # compute monthly & daily hours for this repo
         monthly_hours_map = _compute_monthly_hours(commits)
         monthly_hours_list = [{"month": m, "hours": h} for m, h in sorted(monthly_hours_map.items())]
+        daily_hours_map = _compute_daily_hours(commits)
+        daily_hours_list = [{"date": d, "hours": h} for d, h in sorted(daily_hours_map.items())]
         # author monthly hours
         author_month_hours_map = _compute_monthly_hours_by_author(commits)
         author_month_hours_list = [
@@ -617,6 +689,7 @@ def main(argv: List[str] = None) -> int:
                 ],
             },
             "monthly_hours": monthly_hours_list,
+            "daily_hours": daily_hours_list,
             "author_monthly_hours": author_month_hours_list,
         }
         all_payloads.append(data)
