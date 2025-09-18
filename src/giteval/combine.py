@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import List, Dict, Tuple
 from dataclasses import asdict
 import json
+from datetime import timedelta
 
 from giteval.main import (
     parse_git_log_with_numstat,
@@ -40,6 +41,50 @@ def discover_repos(base: Path) -> List[Path]:
     return repos
 
 
+def _compute_monthly_hours(commits) -> Dict[str, float]:
+    # parameters
+    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
+    per_commit_base = float(os.getenv("MINUTES_PER_COMMIT_BASE", "12") or "12")
+    per_100_lines = float(os.getenv("MINUTES_PER_100_LINES", "8") or "8")
+    per_file_min = float(os.getenv("MINUTES_PER_FILE", "2") or "2")
+    calibration = float(os.getenv("CALIBRATION_FACTOR", "1.5") or "1.5")
+    session_gap = timedelta(minutes=session_gap_minutes)
+
+    # group by author label
+    per_author: Dict[str, List] = {}
+    for c in commits:
+        key = (c.author_name or "Unknown").strip()
+        if c.author_email:
+            key = f"{key} <{c.author_email}>"
+        per_author.setdefault(key, []).append(c)
+
+    month_minutes: Dict[str, float] = {}
+    for author, cs in per_author.items():
+        cs.sort(key=lambda x: x.author_date)
+        sessions: List[List] = []
+        cur: List = []
+        prev = None
+        for c in cs:
+            if prev is None or (c.author_date - prev) > session_gap:
+                if cur:
+                    sessions.append(cur)
+                cur = [c]
+            else:
+                cur.append(c)
+            prev = c.author_date
+        if cur:
+            sessions.append(cur)
+        for sess in sessions:
+            minutes = 0.0
+            for c in sess:
+                loc = max(0, (c.added or 0) + (c.deleted or 0))
+                minutes += per_commit_base + ((loc ** 0.5) / 10.0) * per_100_lines + (c.files_changed or 0) * per_file_min
+            month = sess[-1].author_date.strftime("%Y-%m")
+            month_minutes[month] = month_minutes.get(month, 0.0) + minutes
+    # apply calibration and convert to hours
+    return {m: round(v * calibration / 60.0, 2) for m, v in month_minutes.items()}
+
+
 def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
     # Sort repos by estimated_hours_total desc
     per_repo_sorted = sorted(per_repo, key=lambda r: r["metrics"]["estimated_hours_total"], reverse=True)
@@ -58,6 +103,12 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
                 "deleted_total": 0,
                 "files_changed_total": 0,
                 "active_days": 0,
+                # schedule aggregates
+                "weekends_active_days": 0,
+                "weekdays_active_days": 0,
+                "days_night_active": 0,
+                "days_daytime_active": 0,
+                "days_both": 0,
             })
             agg["repos"].add(r["repo"])  # type: ignore
             agg["commits_total"] += int(a.get("commits_total", 0))
@@ -66,6 +117,11 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
             agg["deleted_total"] += int(a.get("deleted_total", 0))
             agg["files_changed_total"] += int(a.get("files_changed_total", 0))
             agg["active_days"] += int(a.get("active_days", 0))
+            agg["weekends_active_days"] += int(a.get("weekends_active_days", 0))
+            agg["weekdays_active_days"] += int(a.get("weekdays_active_days", 0))
+            agg["days_night_active"] += int(a.get("days_night_active", 0))
+            agg["days_daytime_active"] += int(a.get("days_daytime_active", 0))
+            agg["days_both"] += int(a.get("days_both", 0))
     author_list = list(author_agg.values())
     for a in author_list:
         a["repos"] = sorted(list(a["repos"]))  # type: ignore
@@ -119,6 +175,66 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
         )
     lines.append("")
 
+    # Hours per month across repos (ASCII bar)
+    month_totals_hours: Dict[str, float] = {}
+    month_totals_commits: Dict[str, int] = {}
+    month_totals_added: Dict[str, int] = {}
+    month_totals_deleted: Dict[str, int] = {}
+    # compute monthly hours per repo and aggregate
+    per_repo_month_hours: Dict[str, Dict[str, float]] = {}
+    for r in per_repo_sorted:
+        mh = r.get("monthly_hours", [])
+        repo_name = Path(r["repo"]).name
+        repo_map: Dict[str, float] = {}
+        for row in mh:
+            m = row.get("month")
+            h = float(row.get("hours", 0.0))
+            if not m:
+                continue
+            month_totals_hours[m] = month_totals_hours.get(m, 0.0) + h
+            repo_map[m] = repo_map.get(m, 0.0) + h
+        per_repo_month_hours[repo_name] = repo_map
+        # commits/lines
+        for row in r.get("breakdowns", {}).get("monthly", []):
+            m = row.get("month")
+            if not m:
+                continue
+            month_totals_commits[m] = month_totals_commits.get(m, 0) + int(row.get("commits", 0))
+            month_totals_added[m] = month_totals_added.get(m, 0) + int(row.get("added", 0))
+            month_totals_deleted[m] = month_totals_deleted.get(m, 0) + int(row.get("deleted", 0))
+
+    if month_totals_hours:
+        lines.append("## Hours per month — all repos")
+        lines.append("")
+        lines.append("| Month | Hours | Chart |")
+        lines.append("|---|---:|:---|")
+        max_h = max(month_totals_hours.values()) if month_totals_hours else 1
+        def bar(n: float, max_n: float) -> str:
+            if max_n <= 0:
+                return ""
+            width = 40
+            filled = int(round((n / max_n) * width))
+            return "#" * max(1, filled) if n > 0 else ""
+        for m in sorted(month_totals_hours.keys()):
+            h = month_totals_hours[m]
+            lines.append(f"| {m} | {h:.2f} | {bar(h, max_h)} |")
+        lines.append("")
+        # Mermaid pies for top 3 months showing repo split
+        top_months = sorted(month_totals_hours.items(), key=lambda x: x[1], reverse=True)[:3]
+        for m, _h in top_months:
+            lines.append(f"```mermaid")
+            lines.append(f"pie title Hours by repo — {m}")
+            # gather top repos for that month
+            parts = []
+            for repo_name, mm in per_repo_month_hours.items():
+                v = mm.get(m, 0.0)
+                if v > 0:
+                    parts.append((repo_name, v))
+            for repo_name, v in sorted(parts, key=lambda x: x[1], reverse=True)[:10]:
+                lines.append(f'    "{repo_name}" : {v:.2f}')
+            lines.append("```")
+            lines.append("")
+
     # Author leaderboard
     if author_sorted:
         lines.append("## Developers by estimated hours (across repos)")
@@ -133,6 +249,37 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
                 f"| {i} | {a['author']} | {a['estimated_hours']:.2f} {star_bar} | {a['commits_total']} | {', '.join(a['repos'])} | {a['added_total']} | {a['deleted_total']} | {a['files_changed_total']} | {a['active_days']} |"
             )
         lines.append("")
+
+    # Top months across repos by hours/commits/lines
+    if month_totals_hours:
+        lines.append("## Top months across repos")
+        lines.append("")
+        lines.append("| Rank | Month | Hours | Commits | Added | Deleted |")
+        lines.append("|---:|---|---:|---:|---:|---:|")
+        months_all = set(month_totals_hours) | set(month_totals_commits)
+        top_sorted = sorted(months_all, key=lambda m: (month_totals_hours.get(m, 0.0), month_totals_commits.get(m, 0)), reverse=True)[:10]
+        for i, m in enumerate(top_sorted, 1):
+            lines.append(f"| {i} | {m} | {month_totals_hours.get(m,0.0):.2f} | {month_totals_commits.get(m,0)} | {month_totals_added.get(m,0)} | {month_totals_deleted.get(m,0)} |")
+        lines.append("")
+
+    # Per-author schedule pies for top authors
+    if author_sorted:
+        lines.append("## Per-author schedule charts (top 5 by hours)")
+        lines.append("")
+        for a in author_sorted[:5]:
+            label = a["author"].replace('"', '\\"')
+            lines.append("```mermaid")
+            lines.append(f"pie title Day vs Night — {label}")
+            lines.append(f'    "Day" : {a.get("days_daytime_active",0)}')
+            lines.append(f'    "Night" : {a.get("days_night_active",0)}')
+            lines.append("```")
+            lines.append("")
+            lines.append("```mermaid")
+            lines.append(f"pie title Weekend vs Weekday — {label}")
+            lines.append(f'    "Weekend" : {a.get("weekends_active_days",0)}')
+            lines.append(f'    "Weekday" : {a.get("weekdays_active_days",0)}')
+            lines.append("```")
+            lines.append("")
 
     # Per-repo breakdowns (from JSON content)
     lines.append("## Per-repo breakdowns")
@@ -216,6 +363,9 @@ def main(argv: List[str] = None) -> int:
         metrics.repo_path = path.as_posix()
         write_reports(OUTPUT_DIR, path, metrics, commits)
         curr_loc = _current_loc_snapshot(path)
+        # compute monthly hours for this repo
+        monthly_hours_map = _compute_monthly_hours(commits)
+        monthly_hours_list = [{"month": m, "hours": h} for m, h in sorted(monthly_hours_map.items())]
         data = {
             "repo": path.as_posix(),
             "metrics": asdict(metrics),
@@ -227,6 +377,7 @@ def main(argv: List[str] = None) -> int:
                     for (m, c, a, d, f) in _aggregate_monthly(commits)
                 ],
             },
+            "monthly_hours": monthly_hours_list,
         }
         all_payloads.append(data)
 
