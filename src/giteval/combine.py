@@ -803,9 +803,14 @@ def main(argv: List[str] = None) -> int:
             continue
         metrics = compute_metrics(commits)
         metrics.repo_path = path.as_posix()
-        if os.getenv("DASHBOARD_ONLY", "0") not in {"1","true","True"}:
+        dashboard_only = os.getenv("DASHBOARD_ONLY", "0") in {"1","true","True"}
+        if not dashboard_only:
             write_reports(OUTPUT_DIR, path, metrics, commits)
-        curr_loc = _current_loc_snapshot(path)
+        # current LOC snapshot can be very slow; skip when dashboard-only
+        if dashboard_only:
+            curr_loc = (0, 0)
+        else:
+            curr_loc = _current_loc_snapshot(path)
         # compute monthly & daily hours for this repo
         monthly_hours_map = _compute_monthly_hours(commits)
         monthly_hours_list = [{"month": m, "hours": h} for m, h in sorted(monthly_hours_map.items())]
