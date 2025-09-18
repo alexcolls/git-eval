@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on Keep a Changelog and this project adheres to Semantic Versioning.
 
+## [Unreleased]
+### Added
+- Multi-repo dashboard CLI `git-eval-multi` building a combined Markdown and JSON dashboard.
+- Default output directory set to `./_output` and new `GIT_EVAL_EXCLUDE_EXTS` env to control emitted formats (default excludes `.csv,.txt,.json`, keeping Markdown-only).
+- Enhanced effort model (session + commit-weighted, tunable via `.env`) and schedule footprint metrics (weekends/weekday, day/night, per-repo and per-author).
+- Timezone normalization via `TIMEZONE` and configurable day/night windows (`DAY_START_HOUR`, `DAY_END_HOUR`, `NIGHTS_START_HOUR`, `NIGHTS_END_HOUR`).
+- Dashboard charts:
+  - Top repos by hours (pie)
+  - Top authors by hours (pie)
+  - Hours per month across repos with ASCII bars and per-month repo split pies
+  - Stacked monthly commits for top 5 repos (Mermaid xychart-beta)
+  - Treemap-like hours by repo (Mermaid sankey-beta)
+- Per-repo Markdown now includes: developer leaderboard with per-author schedule footprint and monthly activity table.
+- CSV exports (written to `OUTPUT_DIR`):
+  - `_git_eval_monthly_totals.csv` (month, hours, commits, added, deleted)
+  - `_git_eval_authors_schedule.csv` (per-author: hours, commits, weekend/weekday, day/night, repos_count)
+- Default `TIMEZONE=Europe/Madrid` in `.env.sample`.
+
+### Changed
+- Combined dashboard is generated directly from in-memory analysis without relying on per-repo JSON presence.
+
+### Notes
+- Mermaid xychart-beta and sankey-beta features may require modern Mermaid renderers.
+
 ## [0.1.0] - 2025-09-17
 ### Added
 - Poetry project with CLI entry point `git-eval` and `run.sh` helper to run without Poetry.
