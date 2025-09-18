@@ -158,6 +158,42 @@ pie title Hours by repo — 2025-05
 | 9 | 2024-12 | 92.28 | 125 | 29265 | 16667 |
 | 10 | 2025-01 | 75.26 | 130 | 9291 | 12592 |
 
+## Monthly commits — stacked (top 5 repos)
+
+```mermaid
+xychart-beta
+    title Monthly commits — stacked (top 5 repos)
+    x-axis [2024-12, 2025-01, 2025-02, 2025-03, 2025-04, 2025-05, 2025-06, 2025-07, 2025-08, 2025-09]
+    stacked
+    series "orn-admin-web" [58, 56, 63, 70, 159, 36, 0, 0, 0, 19]
+    series "orn-admin-api" [64, 25, 58, 108, 79, 50, 11, 2, 10, 34]
+    series "orn-experience-app" [0, 0, 0, 0, 0, 24, 105, 39, 53, 19]
+    series "orn-search-api" [0, 0, 0, 0, 0, 0, 0, 0, 0, 178]
+    series "ExtractionPipeline-lab" [0, 0, 0, 0, 0, 38, 35, 57, 0, 0]
+```
+
+## Hours by repo — treemap-like
+
+```mermaid
+sankey-beta
+    title Hours by repo (top 15)
+    All Repos, orn-admin-api 343.36
+    All Repos, orn-admin-web 320.67
+    All Repos, orn-experience-app 227.67
+    All Repos, ExtractionPipeline-lab 220.66
+    All Repos, orn-processor-etls 147.34
+    All Repos, OrianePipeline-fastapi 111.00
+    All Repos, OrianeDevOpsCLI-bash 69.96
+    All Repos, OrianeVectorDB-qdrant 62.86
+    All Repos, OrianeSearch-fastapi 59.19
+    All Repos, OrianeCoreAI-python 55.15
+    All Repos, VideoFramesSceneExtractor-lambda 53.95
+    All Repos, orn-search-api 45.85
+    All Repos, VideoFramesExtractor-lambda 39.32
+    All Repos, EmbeddingsExtraction 34.90
+    All Repos, SSCD-model 32.97
+```
+
 ## Per-author schedule charts (top 5 by hours)
 
 ```mermaid
