@@ -183,6 +183,49 @@ def _compute_daily_hours(commits) -> Dict[str, float]:
     return {d: round(v * calibration / 60.0, 2) for d, v in day_hours.items()}
 
 
+def _compute_daily_hours_by_author(commits) -> Dict[str, Dict[str, float]]:
+    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
+    per_commit_base = float(os.getenv("MINUTES_PER_COMMIT_BASE", "12") or "12")
+    per_100_lines = float(os.getenv("MINUTES_PER_100_LINES", "8") or "8")
+    per_file_min = float(os.getenv("MINUTES_PER_FILE", "2") or "2")
+    calibration = float(os.getenv("CALIBRATION_FACTOR", "1.5") or "1.5")
+    session_gap = timedelta(minutes=session_gap_minutes)
+
+    per_author: Dict[str, List] = {}
+    for c in commits:
+        key = (c.author_name or "Unknown").strip()
+        if c.author_email:
+            key = f"{key} <{c.author_email}>"
+        per_author.setdefault(key, []).append(c)
+
+    result: Dict[str, Dict[str, float]] = {}
+    for author, cs in per_author.items():
+        cs.sort(key=lambda x: x.author_date)
+        sessions: List[List] = []
+        cur: List = []
+        prev = None
+        for c in cs:
+            if prev is None or (c.author_date - prev) > session_gap:
+                if cur:
+                    sessions.append(cur)
+                cur = [c]
+            else:
+                cur.append(c)
+            prev = c.author_date
+        if cur:
+            sessions.append(cur)
+        day_minutes: Dict[str, float] = {}
+        for sess in sessions:
+            minutes = 0.0
+            for c in sess:
+                loc = max(0, (c.added or 0) + (c.deleted or 0))
+                minutes += per_commit_base + ((loc ** 0.5) / 10.0) * per_100_lines + (c.files_changed or 0) * per_file_min
+            d = sess[-1].author_date.date().isoformat()
+            day_minutes[d] = day_minutes.get(d, 0.0) + minutes
+        result[author] = {d: round(v * calibration / 60.0, 2) for d, v in day_minutes.items()}
+    return result
+
+
 def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
     # Sort repos by estimated_hours_total desc
     per_repo_sorted = sorted(per_repo, key=lambda r: r["metrics"]["estimated_hours_total"], reverse=True)
@@ -536,6 +579,104 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
         except Exception:
             pass
 
+    # Daily hours (ASCII) — last 60 days, top repos and authors
+    # Build per-repo daily hours
+    all_dates: set = set()
+    repo_daily_map: Dict[str, Dict[str, float]] = {}
+    for r in per_repo_sorted:
+        name = Path(r["repo"]).name
+        mm: Dict[str, float] = {}
+        for row in r.get("daily_hours", []):
+            d = row.get("date")
+            h = float(row.get("hours", 0.0))
+            if not d:
+                continue
+            mm[d] = mm.get(d, 0.0) + h
+            all_dates.add(d)
+        repo_daily_map[name] = mm
+    # Build per-author daily hours
+    author_daily_map: Dict[str, Dict[str, float]] = {}
+    for r in per_repo_sorted:
+        for row in r.get("author_daily_hours", []):
+            a = row.get("author")
+            d = row.get("date")
+            h = float(row.get("hours", 0.0))
+            if not a or not d:
+                continue
+            author_daily_map.setdefault(a, {})
+            author_daily_map[a][d] = author_daily_map[a].get(d, 0.0) + h
+            all_dates.add(d)
+    if all_dates:
+        last_dates = sorted(all_dates)[-60:]
+        lines.append("## Daily hours (ASCII sparkline) — last 60 days")
+        lines.append("")
+        # Top repos by total daily hours in window
+        repo_totals = []
+        for name, mm in repo_daily_map.items():
+            total = sum(mm.get(d, 0.0) for d in last_dates)
+            repo_totals.append((name, total))
+        top_repo_names = [n for n, _ in sorted(repo_totals, key=lambda x: x[1], reverse=True)[:5]]
+        lines.append("### Top repos")
+        lines.append("```")
+        lines.append("Dates: " + ", ".join(last_dates))
+        for name in top_repo_names:
+            series = [repo_daily_map.get(name, {}).get(d, 0.0) for d in last_dates]
+            lines.append(f"{name:<24} {sparkline(series)}  ({sum(series):.1f}h)")
+        lines.append("```")
+        lines.append("")
+        # Top authors by total daily hours in window
+        author_totals = []
+        for a, mm in author_daily_map.items():
+            total = sum(mm.get(d, 0.0) for d in last_dates)
+            author_totals.append((a, total))
+        top_author_names = [n for n, _ in sorted(author_totals, key=lambda x: x[1], reverse=True)[:5]]
+        lines.append("### Top authors")
+        lines.append("```")
+        lines.append("Dates: " + ", ".join(last_dates))
+        for a in top_author_names:
+            series = [author_daily_map.get(a, {}).get(d, 0.0) for d in last_dates]
+            lines.append(f"{a:<24} {sparkline(series)}  ({sum(series):.1f}h)")
+        lines.append("```")
+        lines.append("")
+        # Optional PNG for daily
+        if HAS_MPL:
+            try:
+                fig, ax = plt.subplots(figsize=(10, 4))
+                for name in top_repo_names:
+                    series = [repo_daily_map.get(name, {}).get(d, 0.0) for d in last_dates]
+                    ax.plot(range(len(last_dates)), series, marker="o", label=name)
+                ax.set_xticks(range(len(last_dates)))
+                ax.set_xticklabels(last_dates, rotation=45, ha="right", fontsize=7)
+                ax.set_ylabel("Hours")
+                ax.set_title("Daily hours — top repos (last 60 days)")
+                ax.legend(loc="upper left", fontsize=7, ncol=2)
+                fig.tight_layout()
+                repos_daily_png = charts_dir / "daily_hours_repos.png"
+                fig.savefig(repos_daily_png, dpi=120)
+                plt.close(fig)
+                lines.append(f"![Daily hours — top repos](charts/{repos_daily_png.name})")
+                lines.append("")
+            except Exception:
+                pass
+            try:
+                fig, ax = plt.subplots(figsize=(10, 4))
+                for a in top_author_names:
+                    series = [author_daily_map.get(a, {}).get(d, 0.0) for d in last_dates]
+                    ax.plot(range(len(last_dates)), series, marker="o", label=a)
+                ax.set_xticks(range(len(last_dates)))
+                ax.set_xticklabels(last_dates, rotation=45, ha="right", fontsize=7)
+                ax.set_ylabel("Hours")
+                ax.set_title("Daily hours — top authors (last 60 days)")
+                ax.legend(loc="upper left", fontsize=7, ncol=2)
+                fig.tight_layout()
+                authors_daily_png = charts_dir / "daily_hours_authors.png"
+                fig.savefig(authors_daily_png, dpi=120)
+                plt.close(fig)
+                lines.append(f"![Daily hours — top authors](charts/{authors_daily_png.name})")
+                lines.append("")
+            except Exception:
+                pass
+
     # Per-repo breakdowns (from JSON content)
     lines.append("## Per-repo breakdowns")
     lines.append("")
@@ -677,6 +818,13 @@ def main(argv: List[str] = None) -> int:
             for a, mm in author_month_hours_map.items()
             for m, h in mm.items()
         ]
+        # author daily hours
+        author_day_hours_map = _compute_daily_hours_by_author(commits)
+        author_day_hours_list = [
+            {"author": a, "date": d, "hours": h}
+            for a, dd in author_day_hours_map.items()
+            for d, h in dd.items()
+        ]
         data = {
             "repo": path.as_posix(),
             "metrics": asdict(metrics),
@@ -691,6 +839,7 @@ def main(argv: List[str] = None) -> int:
             "monthly_hours": monthly_hours_list,
             "daily_hours": daily_hours_list,
             "author_monthly_hours": author_month_hours_list,
+            "author_daily_hours": author_day_hours_list,
         }
         all_payloads.append(data)
 
