@@ -73,6 +73,62 @@ pie title Top authors by estimated hours
 | 36 | `/home/quantium/labs/oriane/orn-experience-applications` | 0.75 | 1 | 1 | 2025-09-11T10:09:35+02:00 | 2025-09-11T10:09:35+02:00 | 1 | 0 | 1 | 1.0 | 1 (1) | 0 | 1 | 0 | 1 | 0 |
 | 37 | `/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws` | 0.75 | 1 | 1 | 2025-05-23T15:07:15+02:00 | 2025-05-23T15:07:15+02:00 | 175 | 0 | 2 | 1.0 | 175 (2) | 0 | 1 | 0 | 1 | 0 |
 
+## Hours per month — all repos
+
+| Month | Hours | Chart |
+|---|---:|:---|
+| 2024-12 | 92.28 | ### |
+| 2025-01 | 75.26 | ## |
+| 2025-02 | 93.42 | ### |
+| 2025-03 | 597.56 | ################# |
+| 2025-04 | 835.07 | ######################## |
+| 2025-05 | 704.75 | #################### |
+| 2025-06 | 214.67 | ###### |
+| 2025-07 | 1391.11 | ######################################## |
+| 2025-08 | 228.81 | ####### |
+| 2025-09 | 220.16 | ###### |
+
+```mermaid
+pie title Hours by repo — 2025-07
+    "ExtractionPipeline-lab" : 881.89
+    "OrianePipeline-fastapi" : 156.95
+    "OrianeVectorDB-qdrant" : 96.80
+    "OrianeDevOpsCLI-bash" : 96.51
+    "OrianeSearch-fastapi" : 57.90
+    "orn-experience-app" : 40.45
+    "OrianeExtractionSDK-python" : 35.85
+    "OrianeInfra-bash" : 23.91
+    "orn-admin-api" : 0.85
+```
+
+```mermaid
+pie title Hours by repo — 2025-04
+    "VideoFramesSceneExtractor-lambda" : 617.30
+    "orn-admin-web" : 98.23
+    "orn-admin-api" : 50.04
+    "SSCD-model" : 23.25
+    "VideoFramesExtractorBulk-lambda" : 21.97
+    "ViT-model" : 6.47
+    "InstagramContentCollector-lambda" : 6.28
+    "InstagramTests" : 5.04
+    "ViT_SAM-model" : 2.35
+    "SAM-model" : 1.81
+```
+
+```mermaid
+pie title Hours by repo — 2025-05
+    "ExtractionPipeline-lab" : 510.60
+    "orn-admin-api" : 57.72
+    "opencv-cuda" : 35.47
+    "orn-experience-app" : 33.52
+    "orn-admin-web" : 23.78
+    "VideoFramesSceneExtractor-lambda" : 16.45
+    "VideoCropper-lambda" : 11.22
+    "SSCD-model" : 7.58
+    "FramesEmbeddingsExtractor-lambda" : 5.85
+    "InstagramContentCollector-lambda" : 1.90
+```
+
 ## Developers by estimated hours (across repos)
 
 | Rank | Developer | Hours | Commits | Repos | Added | Deleted | Files | Active days |
@@ -86,6 +142,83 @@ pie title Top authors by estimated hours
 | 7 | Thibaut Hadjean <thibaut@oriane.xyz> | 10.13 ☆☆☆☆☆ | 11 | /home/quantium/labs/oriane/orn-platform-applications, /home/quantium/labs/oriane/orn-platform-clusters | 1420 | 24 | 62 | 8 |
 | 8 | alexcolls <alexcollsoutumuro@gmail.com> | 4.41 ☆☆☆☆☆ | 2 | /home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab, /home/quantium/labs/oriane/orn-experience-app | 586 | 16081 | 14 | 2 |
 | 9 | thibaut-oriane <thibaut@oriane.xyz> | 3.00 ☆☆☆☆☆ | 4 | /home/quantium/labs/oriane/orn-experience-applications, /home/quantium/labs/oriane/orn-platform-applications, /home/quantium/labs/oriane/orn-platform-clusters, /home/quantium/labs/oriane/orn-processor-applications | 7 | 0 | 4 | 4 |
+
+## Top months across repos
+
+| Rank | Month | Hours | Commits | Added | Deleted |
+|---:|---|---:|---:|---:|---:|
+| 1 | 2025-07 | 1391.11 | 326 | 4861723 | 331936 |
+| 2 | 2025-04 | 835.07 | 334 | 1461155 | 1371258 |
+| 3 | 2025-05 | 704.75 | 193 | 758423 | 398585 |
+| 4 | 2025-03 | 597.56 | 333 | 1396087 | 416587 |
+| 5 | 2025-08 | 228.81 | 178 | 84353 | 59495 |
+| 6 | 2025-09 | 220.16 | 297 | 125443 | 97903 |
+| 7 | 2025-06 | 214.67 | 161 | 179830 | 57132 |
+| 8 | 2025-02 | 93.42 | 126 | 51809 | 43943 |
+| 9 | 2024-12 | 92.28 | 125 | 29265 | 16667 |
+| 10 | 2025-01 | 75.26 | 130 | 9291 | 12592 |
+
+## Per-author schedule charts (top 5 by hours)
+
+```mermaid
+pie title Day vs Night — quantium-rock <alexcollsoutumuro@gmail.com>
+    "Day" : 244
+    "Night" : 89
+```
+
+```mermaid
+pie title Weekend vs Weekday — quantium-rock <alexcollsoutumuro@gmail.com>
+    "Weekend" : 61
+    "Weekday" : 246
+```
+
+```mermaid
+pie title Day vs Night — JRosSx91 <hazee.1491@gmail.com>
+    "Day" : 115
+    "Night" : 31
+```
+
+```mermaid
+pie title Weekend vs Weekday — JRosSx91 <hazee.1491@gmail.com>
+    "Weekend" : 26
+    "Weekday" : 109
+```
+
+```mermaid
+pie title Day vs Night — Alex Colls <alex.colls@innocv.com>
+    "Day" : 18
+    "Night" : 5
+```
+
+```mermaid
+pie title Weekend vs Weekday — Alex Colls <alex.colls@innocv.com>
+    "Weekend" : 12
+    "Weekday" : 10
+```
+
+```mermaid
+pie title Day vs Night — Alex Colls Outumuro <alexcollsoutumuro@gmail.com>
+    "Day" : 49
+    "Night" : 7
+```
+
+```mermaid
+pie title Weekend vs Weekday — Alex Colls Outumuro <alexcollsoutumuro@gmail.com>
+    "Weekend" : 11
+    "Weekday" : 52
+```
+
+```mermaid
+pie title Day vs Night — Iván Gómez <123682394+JRosSx91@users.noreply.github.com>
+    "Day" : 38
+    "Night" : 5
+```
+
+```mermaid
+pie title Weekend vs Weekday — Iván Gómez <123682394+JRosSx91@users.noreply.github.com>
+    "Weekend" : 6
+    "Weekday" : 41
+```
 
 ## Per-repo breakdowns
 

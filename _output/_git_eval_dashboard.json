@@ -214,7 +214,49 @@
             "files": 112
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2024-12",
+          "hours": 51.59
+        },
+        {
+          "month": "2025-01",
+          "hours": 13.16
+        },
+        {
+          "month": "2025-02",
+          "hours": 37.3
+        },
+        {
+          "month": "2025-03",
+          "hours": 58.44
+        },
+        {
+          "month": "2025-04",
+          "hours": 50.04
+        },
+        {
+          "month": "2025-05",
+          "hours": 57.72
+        },
+        {
+          "month": "2025-06",
+          "hours": 8.85
+        },
+        {
+          "month": "2025-07",
+          "hours": 0.85
+        },
+        {
+          "month": "2025-08",
+          "hours": 6.4
+        },
+        {
+          "month": "2025-09",
+          "hours": 27.47
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-admin-web",
@@ -409,7 +451,37 @@
             "files": 29
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2024-12",
+          "hours": 37.49
+        },
+        {
+          "month": "2025-01",
+          "hours": 28.89
+        },
+        {
+          "month": "2025-02",
+          "hours": 53.59
+        },
+        {
+          "month": "2025-03",
+          "hours": 45.64
+        },
+        {
+          "month": "2025-04",
+          "hours": 98.23
+        },
+        {
+          "month": "2025-05",
+          "hours": 23.78
+        },
+        {
+          "month": "2025-09",
+          "hours": 8.52
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-experience-app",
@@ -612,7 +684,29 @@
             "files": 97
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-05",
+          "hours": 33.52
+        },
+        {
+          "month": "2025-06",
+          "hours": 107.49
+        },
+        {
+          "month": "2025-07",
+          "hours": 40.45
+        },
+        {
+          "month": "2025-08",
+          "hours": 33.4
+        },
+        {
+          "month": "2025-09",
+          "hours": 16.02
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab",
@@ -735,7 +829,21 @@
             "files": 15266
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-05",
+          "hours": 510.6
+        },
+        {
+          "month": "2025-06",
+          "hours": 63.5
+        },
+        {
+          "month": "2025-07",
+          "hours": 881.89
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-processor-etls",
@@ -829,7 +937,17 @@
             "files": 16
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-08",
+          "hours": 157.12
+        },
+        {
+          "month": "2025-09",
+          "hours": 1.76
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi",
@@ -923,7 +1041,17 @@
             "files": 22
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-07",
+          "hours": 156.95
+        },
+        {
+          "month": "2025-08",
+          "hours": 2.03
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash",
@@ -1017,7 +1145,17 @@
             "files": 2
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-07",
+          "hours": 96.51
+        },
+        {
+          "month": "2025-08",
+          "hours": 0.6
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant",
@@ -1104,7 +1242,13 @@
             "files": 1136
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-07",
+          "hours": 96.8
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi",
@@ -1205,7 +1349,21 @@
             "files": 3
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-07",
+          "hours": 57.9
+        },
+        {
+          "month": "2025-08",
+          "hours": 11.62
+        },
+        {
+          "month": "2025-09",
+          "hours": 1.2
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python",
@@ -1335,7 +1493,25 @@
             "files": 90
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2024-12",
+          "hours": 3.2
+        },
+        {
+          "month": "2025-01",
+          "hours": 33.21
+        },
+        {
+          "month": "2025-02",
+          "hours": 2.53
+        },
+        {
+          "month": "2025-03",
+          "hours": 15.31
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/VideoFramesSceneExtractor-lambda",
@@ -1429,7 +1605,17 @@
             "files": 173
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-04",
+          "hours": 617.3
+        },
+        {
+          "month": "2025-05",
+          "hours": 16.45
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-search-api",
@@ -1516,7 +1702,13 @@
             "files": 687
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-09",
+          "hours": 134.59
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractor-lambda",
@@ -1610,7 +1802,17 @@
             "files": 3
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 87.6
+        },
+        {
+          "month": "2025-04",
+          "hours": 1.16
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction",
@@ -1697,7 +1899,13 @@
             "files": 495
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-06",
+          "hours": 34.83
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/SSCD-model",
@@ -1791,7 +1999,17 @@
             "files": 30
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-04",
+          "hours": 23.25
+        },
+        {
+          "month": "2025-05",
+          "hours": 7.58
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-acquisition-lambdas",
@@ -1885,7 +2103,17 @@
             "files": 115
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-08",
+          "hours": 0.69
+        },
+        {
+          "month": "2025-09",
+          "hours": 29.23
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda",
@@ -1979,7 +2207,17 @@
             "files": 22
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 4.58
+        },
+        {
+          "month": "2025-04",
+          "hours": 21.97
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python",
@@ -2066,7 +2304,13 @@
             "files": 369
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-07",
+          "hours": 35.85
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda",
@@ -2189,7 +2433,21 @@
             "files": 7
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 14.29
+        },
+        {
+          "month": "2025-04",
+          "hours": 6.28
+        },
+        {
+          "month": "2025-05",
+          "hours": 1.9
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash",
@@ -2276,7 +2534,13 @@
             "files": 302
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-07",
+          "hours": 23.91
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloader-lambda",
@@ -2363,7 +2627,13 @@
             "files": 5099
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 286.16
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo",
@@ -2450,7 +2720,13 @@
             "files": 842
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 54.99
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/opencv-cuda",
@@ -2515,7 +2791,13 @@
             "files": 440
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-05",
+          "hours": 35.47
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda",
@@ -2602,7 +2884,13 @@
             "files": 52
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 12.79
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda",
@@ -2689,7 +2977,13 @@
             "files": 29
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 11.1
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda",
@@ -2754,7 +3048,13 @@
             "files": 144
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-05",
+          "hours": 11.22
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-processor-applications",
@@ -2848,7 +3148,17 @@
             "files": 5
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-08",
+          "hours": 8.24
+        },
+        {
+          "month": "2025-09",
+          "hours": 1.0
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/InstagramTests",
@@ -2942,7 +3252,17 @@
             "files": 51
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 2.93
+        },
+        {
+          "month": "2025-04",
+          "hours": 5.04
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/ViT-model",
@@ -3029,7 +3349,13 @@
             "files": 10
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-04",
+          "hours": 6.47
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda",
@@ -3123,7 +3449,17 @@
             "files": 25
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-04",
+          "hours": 0.66
+        },
+        {
+          "month": "2025-05",
+          "hours": 5.85
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-platform-clusters",
@@ -3210,7 +3546,13 @@
             "files": 24
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-08",
+          "hours": 4.48
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-platform-applications",
@@ -3297,7 +3639,13 @@
             "files": 40
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-08",
+          "hours": 4.23
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/FramesComparer-lambda",
@@ -3391,7 +3739,17 @@
             "files": 2
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-03",
+          "hours": 3.73
+        },
+        {
+          "month": "2025-04",
+          "hours": 0.51
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/ViT_SAM-model",
@@ -3478,7 +3836,13 @@
             "files": 10
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-04",
+          "hours": 2.35
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/SAM-model",
@@ -3565,7 +3929,13 @@
             "files": 5
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-04",
+          "hours": 1.81
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/orn-experience-applications",
@@ -3630,7 +4000,13 @@
             "files": 1
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-09",
+          "hours": 0.37
+        }
+      ]
     },
     {
       "repo": "/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws",
@@ -3695,7 +4071,13 @@
             "files": 2
           }
         ]
-      }
+      },
+      "monthly_hours": [
+        {
+          "month": "2025-05",
+          "hours": 0.66
+        }
+      ]
     }
   ],
   "authors": [
@@ -3740,7 +4122,12 @@
       "added_total": 8822338,
       "deleted_total": 2664061,
       "files_changed_total": 55405,
-      "active_days": 307
+      "active_days": 307,
+      "weekends_active_days": 61,
+      "weekdays_active_days": 246,
+      "days_night_active": 89,
+      "days_daytime_active": 244,
+      "days_both": 49
     },
     {
       "author": "JRosSx91 <hazee.1491@gmail.com>",
@@ -3755,7 +4142,12 @@
       "added_total": 114157,
       "deleted_total": 108822,
       "files_changed_total": 1853,
-      "active_days": 135
+      "active_days": 135,
+      "weekends_active_days": 26,
+      "weekdays_active_days": 109,
+      "days_night_active": 31,
+      "days_daytime_active": 115,
+      "days_both": 18
     },
     {
       "author": "Alex Colls <alex.colls@innocv.com>",
@@ -3769,7 +4161,12 @@
       "added_total": 11054,
       "deleted_total": 11457,
       "files_changed_total": 315,
-      "active_days": 22
+      "active_days": 22,
+      "weekends_active_days": 12,
+      "weekdays_active_days": 10,
+      "days_night_active": 5,
+      "days_daytime_active": 18,
+      "days_both": 4
     },
     {
       "author": "Alex Colls Outumuro <alexcollsoutumuro@gmail.com>",
@@ -3810,7 +4207,12 @@
       "added_total": 4243,
       "deleted_total": 2653,
       "files_changed_total": 69,
-      "active_days": 63
+      "active_days": 63,
+      "weekends_active_days": 11,
+      "weekdays_active_days": 52,
+      "days_night_active": 7,
+      "days_daytime_active": 49,
+      "days_both": 2
     },
     {
       "author": "Iv\u00e1n G\u00f3mez <123682394+JRosSx91@users.noreply.github.com>",
@@ -3824,7 +4226,12 @@
       "added_total": 2,
       "deleted_total": 0,
       "files_changed_total": 2,
-      "active_days": 47
+      "active_days": 47,
+      "weekends_active_days": 6,
+      "weekdays_active_days": 41,
+      "days_night_active": 5,
+      "days_daytime_active": 38,
+      "days_both": 0
     },
     {
       "author": "Thibaut Hadjean <sasha.hadjean@gmail.com>",
@@ -3838,7 +4245,12 @@
       "added_total": 3572,
       "deleted_total": 3000,
       "files_changed_total": 166,
-      "active_days": 22
+      "active_days": 22,
+      "weekends_active_days": 2,
+      "weekdays_active_days": 20,
+      "days_night_active": 11,
+      "days_daytime_active": 11,
+      "days_both": 0
     },
     {
       "author": "Thibaut Hadjean <thibaut@oriane.xyz>",
@@ -3851,7 +4263,12 @@
       "added_total": 1420,
       "deleted_total": 24,
       "files_changed_total": 62,
-      "active_days": 8
+      "active_days": 8,
+      "weekends_active_days": 1,
+      "weekdays_active_days": 7,
+      "days_night_active": 4,
+      "days_daytime_active": 5,
+      "days_both": 0
     },
     {
       "author": "alexcolls <alexcollsoutumuro@gmail.com>",
@@ -3864,7 +4281,12 @@
       "added_total": 586,
       "deleted_total": 16081,
       "files_changed_total": 14,
-      "active_days": 2
+      "active_days": 2,
+      "weekends_active_days": 2,
+      "weekdays_active_days": 0,
+      "days_night_active": 0,
+      "days_daytime_active": 1,
+      "days_both": 0
     },
     {
       "author": "thibaut-oriane <thibaut@oriane.xyz>",
@@ -3879,7 +4301,12 @@
       "added_total": 7,
       "deleted_total": 0,
       "files_changed_total": 4,
-      "active_days": 4
+      "active_days": 4,
+      "weekends_active_days": 0,
+      "weekdays_active_days": 4,
+      "days_night_active": 0,
+      "days_daytime_active": 3,
+      "days_both": 0
     }
   ]
 }
