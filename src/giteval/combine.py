@@ -86,6 +86,50 @@ def _compute_monthly_hours(commits) -> Dict[str, float]:
     return {m: round(v * calibration / 60.0, 2) for m, v in month_minutes.items()}
 
 
+def _compute_monthly_hours_by_author(commits) -> Dict[str, Dict[str, float]]:
+    session_gap_minutes = int(os.getenv("SESSION_GAP_MINUTES", "90") or "90")
+    per_commit_base = float(os.getenv("MINUTES_PER_COMMIT_BASE", "12") or "12")
+    per_100_lines = float(os.getenv("MINUTES_PER_100_LINES", "8") or "8")
+    per_file_min = float(os.getenv("MINUTES_PER_FILE", "2") or "2")
+    calibration = float(os.getenv("CALIBRATION_FACTOR", "1.5") or "1.5")
+    session_gap = timedelta(minutes=session_gap_minutes)
+
+    per_author: Dict[str, List] = {}
+    for c in commits:
+        key = (c.author_name or "Unknown").strip()
+        if c.author_email:
+            key = f"{key} <{c.author_email}>"
+        per_author.setdefault(key, []).append(c)
+
+    result: Dict[str, Dict[str, float]] = {}
+    for author, cs in per_author.items():
+        cs.sort(key=lambda x: x.author_date)
+        sessions: List[List] = []
+        cur: List = []
+        prev = None
+        for c in cs:
+            if prev is None or (c.author_date - prev) > session_gap:
+                if cur:
+                    sessions.append(cur)
+                cur = [c]
+            else:
+                cur.append(c)
+            prev = c.author_date
+        if cur:
+            sessions.append(cur)
+        month_minutes: Dict[str, float] = {}
+        for sess in sessions:
+            minutes = 0.0
+            for c in sess:
+                loc = max(0, (c.added or 0) + (c.deleted or 0))
+                minutes += per_commit_base + ((loc ** 0.5) / 10.0) * per_100_lines + (c.files_changed or 0) * per_file_min
+            m = sess[-1].author_date.strftime("%Y-%m")
+            month_minutes[m] = month_minutes.get(m, 0.0) + minutes
+        # convert to hours and apply calibration
+        result[author] = {m: round(v * calibration / 60.0, 2) for m, v in month_minutes.items()}
+    return result
+
+
 def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
     # Sort repos by estimated_hours_total desc
     per_repo_sorted = sorted(per_repo, key=lambda r: r["metrics"]["estimated_hours_total"], reverse=True)
@@ -334,6 +378,70 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
             lines.append("```")
             lines.append("")
 
+    # Line charts (ASCII) — monthly hours by top repos and authors
+    # Build author monthly hours aggregate
+    author_month_hours_agg: Dict[str, Dict[str, float]] = {}
+    months_all: set = set(month_totals_hours.keys())
+    for r in per_repo_sorted:
+        for row in r.get("author_monthly_hours", []):
+            a = row.get("author")
+            m = row.get("month")
+            h = float(row.get("hours", 0.0))
+            if not a or not m:
+                continue
+            months_all.add(m)
+            author_month_hours_agg.setdefault(a, {})
+            author_month_hours_agg[a][m] = author_month_hours_agg[a].get(m, 0.0) + h
+
+    def sparkline(vals: List[float]) -> str:
+        # Unicode blocks for levels
+        blocks = "▁▂▃▄▅▆▇█"
+        if not vals:
+            return ""
+        max_v = max(vals)
+        if max_v <= 0:
+            return "".join("▁" for _ in vals)
+        out = []
+        for v in vals:
+            idx = int(round((v / max_v) * (len(blocks) - 1))) if v > 0 else 0
+            out.append(blocks[idx])
+        return "".join(out)
+
+    months_sorted2 = sorted(months_all)
+
+    # Top 5 repos by hours series
+    lines.append("## Monthly hours (ASCII sparkline)")
+    lines.append("")
+    lines.append("### Top repos")
+    # Build per-repo monthly hours series
+    repo_series = []
+    for r in per_repo_sorted[:5]:
+        name = Path(r["repo"]).name
+        mm = {row["month"]: float(row["hours"]) for row in r.get("monthly_hours", [])}
+        series = [mm.get(m, 0.0) for m in months_sorted2]
+        repo_series.append((name, series))
+    # Compute global max for scaling (we scale per-series using sparkline intrinsic; optional)
+    lines.append("```")
+    lines.append("Months: " + ", ".join(months_sorted2))
+    for name, series in repo_series:
+        lines.append(f"{name:<24} {sparkline(series)}  ({sum(series):.1f}h)")
+    lines.append("```")
+    lines.append("")
+
+    # Top 5 authors by hours series
+    lines.append("### Top authors")
+    author_series = []
+    for a in [a["author"] for a in author_sorted[:5]]:
+        mm = author_month_hours_agg.get(a, {})
+        series = [mm.get(m, 0.0) for m in months_sorted2]
+        author_series.append((a, series))
+    lines.append("```")
+    lines.append("Months: " + ", ".join(months_sorted2))
+    for a, series in author_series:
+        lines.append(f"{a:<24} {sparkline(series)}  ({sum(series):.1f}h)")
+    lines.append("```")
+    lines.append("")
+
     # Per-repo breakdowns (from JSON content)
     lines.append("## Per-repo breakdowns")
     lines.append("")
@@ -439,6 +547,13 @@ def main(argv: List[str] = None) -> int:
         # compute monthly hours for this repo
         monthly_hours_map = _compute_monthly_hours(commits)
         monthly_hours_list = [{"month": m, "hours": h} for m, h in sorted(monthly_hours_map.items())]
+        # author monthly hours
+        author_month_hours_map = _compute_monthly_hours_by_author(commits)
+        author_month_hours_list = [
+            {"author": a, "month": m, "hours": h}
+            for a, mm in author_month_hours_map.items()
+            for m, h in mm.items()
+        ]
         data = {
             "repo": path.as_posix(),
             "metrics": asdict(metrics),
@@ -451,6 +566,7 @@ def main(argv: List[str] = None) -> int:
                 ],
             },
             "monthly_hours": monthly_hours_list,
+            "author_monthly_hours": author_month_hours_list,
         }
         all_payloads.append(data)
 
