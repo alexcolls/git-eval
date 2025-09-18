@@ -263,8 +263,8 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
             lines.append(f"| {i} | {m} | {month_totals_hours.get(m,0.0):.2f} | {month_totals_commits.get(m,0)} | {month_totals_added.get(m,0)} | {month_totals_deleted.get(m,0)} |")
         lines.append("")
 
-        # Stacked bar of monthly commits per top N repos (xychart-beta)
-        lines.append("## Monthly commits — stacked (top 5 repos)")
+        # Monthly commits distribution pies for recent months (top 5 repos)
+        lines.append("## Monthly commits - distribution (top 5 repos, recent months)")
         lines.append("")
         # Determine top 5 repos by total commits
         repo_commit_totals: Dict[str, int] = {}
@@ -284,34 +284,34 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
             repo_commit_totals[repo_name] = sum(repo_map.values())
         months_sorted = sorted(all_months)
         top_repos = [name for name, _ in sorted(repo_commit_totals.items(), key=lambda x: x[1], reverse=True)[:5]]
-        if months_sorted and top_repos:
-            lines.append("```mermaid")
-            lines.append("xychart-beta")
-            lines.append("    title Monthly commits — stacked (top 5 repos)")
-            lines.append(f"    x-axis [{', '.join(months_sorted)}]")
-            lines.append("    stacked")
-            # y-axis omitted to let mermaid auto-scale
+        # Show pies for up to last 6 months
+        for m in months_sorted[-6:]:
+            parts = []
             for name in top_repos:
-                series_vals = [str(per_repo_month_commits.get(name, {}).get(m, 0)) for m in months_sorted]
-                safe = name.replace('"', '\\"')
-                lines.append(f"    series \"{safe}\" [{', '.join(series_vals)}]")
-            lines.append("```")
-            lines.append("")
+                v = per_repo_month_commits.get(name, {}).get(m, 0)
+                if v > 0:
+                    parts.append((name, v))
+            if parts:
+                lines.append("```mermaid")
+                lines.append(f"pie title Monthly commits by repo - {m}")
+                for name, v in sorted(parts, key=lambda x: x[1], reverse=True):
+                    safe = name.replace('"', '\\"')
+                    lines.append(f'    "{safe}" : {v}')
+                lines.append("```")
+                lines.append("")
 
-        # Treemap-like hours by repo using sankey-beta
-        lines.append("## Hours by repo — treemap-like")
+        # Hours by repo as a pie (top 15)
+        lines.append("## Hours by repo (top 15)")
         lines.append("")
         lines.append("```mermaid")
-        lines.append("sankey-beta")
-        lines.append("    title Hours by repo (top 15)")
-        # Build top 15 repos by hours
+        lines.append("pie title Hours by repo (top 15)")
         parts = []
         for r in per_repo_sorted[:15]:
             repo_name = Path(r["repo"]).name
             parts.append((repo_name, float(r["metrics"]["estimated_hours_total"])) )
         for repo_name, hours in parts:
-            safe = repo_name.replace(',', ' ')
-            lines.append(f"    All Repos, {safe} {hours:.2f}")
+            safe = repo_name.replace('"', '\\"')
+            lines.append(f'    "{safe}" : {hours:.2f}')
         lines.append("```")
         lines.append("")
 
