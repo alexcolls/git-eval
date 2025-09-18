@@ -8,6 +8,16 @@ import json
 import csv
 from datetime import timedelta
 
+# Optional plotting for PNG charts
+HAS_MPL = False
+try:
+    import matplotlib
+    matplotlib.use("Agg")  # non-interactive backend
+    import matplotlib.pyplot as plt
+    HAS_MPL = True
+except Exception:
+    HAS_MPL = False
+
 from giteval.main import (
     parse_git_log_with_numstat,
     compute_metrics,
@@ -441,6 +451,47 @@ def build_dashboard(per_repo: List[Dict]) -> Tuple[str, Dict]:
         lines.append(f"{a:<24} {sparkline(series)}  ({sum(series):.1f}h)")
     lines.append("```")
     lines.append("")
+
+    # Optional PNG line charts using matplotlib
+    charts_dir = OUTPUT_DIR / "charts"
+    if HAS_MPL and months_sorted2:
+        charts_dir.mkdir(parents=True, exist_ok=True)
+        # Repos chart
+        try:
+            fig, ax = plt.subplots(figsize=(10, 4))
+            for name, series in repo_series:
+                ax.plot(range(len(months_sorted2)), series, marker="o", label=name)
+            ax.set_xticks(range(len(months_sorted2)))
+            ax.set_xticklabels(months_sorted2, rotation=45, ha="right")
+            ax.set_ylabel("Hours")
+            ax.set_title("Monthly hours — top repos")
+            ax.legend(loc="upper left", fontsize=8, ncol=2)
+            fig.tight_layout()
+            repos_png = charts_dir / "monthly_hours_repos.png"
+            fig.savefig(repos_png, dpi=120)
+            plt.close(fig)
+            lines.append(f"![Monthly hours — top repos](charts/{repos_png.name})")
+            lines.append("")
+        except Exception:
+            pass
+        # Authors chart
+        try:
+            fig, ax = plt.subplots(figsize=(10, 4))
+            for name, series in author_series:
+                ax.plot(range(len(months_sorted2)), series, marker="o", label=name)
+            ax.set_xticks(range(len(months_sorted2)))
+            ax.set_xticklabels(months_sorted2, rotation=45, ha="right")
+            ax.set_ylabel("Hours")
+            ax.set_title("Monthly hours — top authors")
+            ax.legend(loc="upper left", fontsize=8, ncol=2)
+            fig.tight_layout()
+            authors_png = charts_dir / "monthly_hours_authors.png"
+            fig.savefig(authors_png, dpi=120)
+            plt.close(fig)
+            lines.append(f"![Monthly hours — top authors](charts/{authors_png.name})")
+            lines.append("")
+        except Exception:
+            pass
 
     # Per-repo breakdowns (from JSON content)
     lines.append("## Per-repo breakdowns")
