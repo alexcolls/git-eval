@@ -1,6 +1,6 @@
 # Git Evaluation — InstagramVideoDownloaderBulk-lambda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/InstagramVideoDownloaderBulk-lambda`
+Repo: `/home/quantium/labs/oriane.xyz/InstagramVideoDownloaderBulk-lambda`
 
 ## Summary
 

@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeVectorDB-qdrant
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeVectorDB-qdrant`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeVectorDB-qdrant`
 
 ## Summary
 

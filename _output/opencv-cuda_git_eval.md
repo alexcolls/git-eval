@@ -1,6 +1,6 @@
 # Git Evaluation — opencv-cuda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/opencv-cuda`
+Repo: `/home/quantium/labs/oriane.xyz/opencv-cuda`
 
 ## Summary
 

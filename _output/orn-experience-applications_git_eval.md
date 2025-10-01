@@ -1,6 +1,6 @@
 # Git Evaluation — orn-experience-applications
 
-Repo: `/home/quantium/labs/oriane/orn-experience-applications`
+Repo: `/home/quantium/labs/oriane.xyz/orn-experience-applications`
 
 ## Summary
 

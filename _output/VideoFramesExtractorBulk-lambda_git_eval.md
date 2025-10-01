@@ -1,6 +1,6 @@
 # Git Evaluation — VideoFramesExtractorBulk-lambda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/VideoFramesExtractorBulk-lambda`
+Repo: `/home/quantium/labs/oriane.xyz/VideoFramesExtractorBulk-lambda`
 
 ## Summary
 

@@ -1,6 +1,6 @@
 # Git Evaluation — orn-processor-applications
 
-Repo: `/home/quantium/labs/oriane/orn-processor-applications`
+Repo: `/home/quantium/labs/oriane.xyz/orn-processor-applications`
 
 ## Summary
 

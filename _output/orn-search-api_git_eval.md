@@ -1,6 +1,6 @@
 # Git Evaluation — orn-search-api
 
-Repo: `/home/quantium/labs/oriane/orn-search-api`
+Repo: `/home/quantium/labs/oriane.xyz/orn-search-api`
 
 ## Summary
 

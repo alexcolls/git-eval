@@ -1,6 +1,6 @@
-# Git Evaluation — orn-admin-web
+# Git Evaluation — OrianeAdmin-react
 
-Repo: `/home/quantium/labs/oriane.xyz/orn-admin-web`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeAdmin-react`
 
 ## Summary
 

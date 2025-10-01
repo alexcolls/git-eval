@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeInfra-bash
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeInfra-bash`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeInfra-bash`
 
 ## Summary
 

@@ -1,6 +1,6 @@
 # Git Evaluation — InstagramContentCollector-lambda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/InstagramContentCollector-lambda`
+Repo: `/home/quantium/labs/oriane.xyz/InstagramContentCollector-lambda`
 
 ## Summary
 

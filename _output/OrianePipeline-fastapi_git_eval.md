@@ -1,6 +1,6 @@
 # Git Evaluation — OrianePipeline-fastapi
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianePipeline-fastapi`
+Repo: `/home/quantium/labs/oriane.xyz/OrianePipeline-fastapi`
 
 ## Summary
 

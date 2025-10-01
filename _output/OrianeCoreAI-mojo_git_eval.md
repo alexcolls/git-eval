@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeCoreAI-mojo
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-mojo`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeCoreAI-mojo`
 
 ## Summary
 

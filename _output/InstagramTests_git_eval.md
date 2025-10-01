@@ -1,6 +1,6 @@
 # Git Evaluation — InstagramTests
 
-Repo: `/home/quantium/labs/oriane/_deprecated/InstagramTests`
+Repo: `/home/quantium/labs/oriane.xyz/InstagramTests`
 
 ## Summary
 

@@ -1,6 +1,6 @@
 # Git Evaluation — EmbeddingsExtraction
 
-Repo: `/home/quantium/labs/oriane/_deprecated/EmbeddingsExtraction`
+Repo: `/home/quantium/labs/oriane.xyz/EmbeddingsExtraction`
 
 ## Summary
 

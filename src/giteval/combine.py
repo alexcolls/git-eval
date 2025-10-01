@@ -27,7 +27,22 @@ from giteval.main import (
     _current_loc_snapshot,
 )
 
-BASE = Path("/home/quantium/labs/oriane").resolve()
+try:
+    from dotenv import load_dotenv
+except Exception:
+    def load_dotenv(*args, **kwargs):
+        return False
+
+# Load .env to get GIT_EVAL_GIT_DIR
+load_dotenv()
+
+# Use GIT_EVAL_GIT_DIR if set, otherwise fall back to hardcoded path
+git_dir_input = os.getenv("GIT_EVAL_GIT_DIR", "").strip()
+if git_dir_input:
+    BASE = Path(git_dir_input).resolve()
+else:
+    BASE = Path("/home/quantium/labs/oriane").resolve()
+    
 OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "./_output")).resolve()
 
 

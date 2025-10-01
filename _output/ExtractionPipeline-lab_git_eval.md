@@ -1,6 +1,6 @@
 # Git Evaluation — ExtractionPipeline-lab
 
-Repo: `/home/quantium/labs/oriane/_deprecated/ExtractionPipeline-lab`
+Repo: `/home/quantium/labs/oriane.xyz/ExtractionPipeline-lab`
 
 ## Summary
 

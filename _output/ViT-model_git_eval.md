@@ -1,6 +1,6 @@
 # Git Evaluation — ViT-model
 
-Repo: `/home/quantium/labs/oriane/_deprecated/ViT-model`
+Repo: `/home/quantium/labs/oriane.xyz/ViT-model`
 
 ## Summary
 

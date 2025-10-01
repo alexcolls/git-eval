@@ -1,6 +1,6 @@
 # Git Evaluation — orn-processor-etls
 
-Repo: `/home/quantium/labs/oriane/orn-processor-etls`
+Repo: `/home/quantium/labs/oriane.xyz/orn-processor-etls`
 
 ## Summary
 

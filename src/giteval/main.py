@@ -824,6 +824,33 @@ def write_reports(output_dir: Path, work_tree: Path, metrics: RepoMetrics, commi
         _write_markdown_report(output_dir, work_tree, metrics, commits)
 
 
+def discover_nested_repos(base_path: Path) -> List[Path]:
+    """Discover git repositories in subdirectories of base_path."""
+    repos: List[Path] = []
+    if not base_path.is_dir():
+        return repos
+    
+    for item in sorted(base_path.iterdir()):
+        if not item.is_dir():
+            continue
+        # Skip common non-repo directories
+        if item.name in {"git-eval", "_deprecated", "node_modules", ".git", "venv", "__pycache__"}:
+            continue
+        # Check if it's a git repo
+        try:
+            result = subprocess.run(
+                ["git", "-C", str(item), "rev-parse", "--is-inside-work-tree"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                check=False
+            )
+            if result.returncode == 0:
+                repos.append(item)
+        except Exception:
+            continue
+    return repos
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     load_dotenv()
     git_dir_input = os.getenv("GIT_EVAL_GIT_DIR", "").strip()
@@ -834,22 +861,48 @@ def main(argv: Optional[List[str]] = None) -> int:
         print("GIT_EVAL_GIT_DIR is required in .env", file=sys.stderr)
         return 2
 
-    input_path = Path(git_dir_input)
+    input_path = Path(git_dir_input).resolve()
+    
+    # Try to resolve as a git directory
+    repos_to_analyze: List[Path] = []
     try:
         work_tree, git_dir = resolve_git_dir(input_path)
-    except SystemExit as e:
-        print(str(e), file=sys.stderr)
-        return 2
-
-    # Pull full history with numstat
-    commits = parse_git_log_with_numstat(work_tree, include_merges=include_merges)
-
-    metrics = compute_metrics(commits)
-    metrics.repo_path = work_tree.as_posix()
-
-    write_reports(output_dir, work_tree, metrics, commits)
+        repos_to_analyze = [work_tree]
+        print(f"Analyzing single repository: {work_tree.as_posix()}")
+    except SystemExit:
+        # Not a git repository, try to discover nested repos
+        if input_path.is_dir():
+            print(f"Not a git repository. Discovering nested repositories in: {input_path.as_posix()}")
+            repos_to_analyze = discover_nested_repos(input_path)
+            if not repos_to_analyze:
+                print(f"No git repositories found in {input_path.as_posix()}", file=sys.stderr)
+                return 2
+            print(f"Found {len(repos_to_analyze)} repositories to analyze")
+        else:
+            print(f"Not a git repository: {input_path}", file=sys.stderr)
+            return 2
+    
+    # Analyze each repository
+    successful = 0
+    for work_tree in repos_to_analyze:
+        try:
+            print(f"\nAnalyzing: {work_tree.name}")
+            # Pull full history with numstat
+            commits = parse_git_log_with_numstat(work_tree, include_merges=include_merges)
+            
+            metrics = compute_metrics(commits)
+            metrics.repo_path = work_tree.as_posix()
+            
+            write_reports(output_dir, work_tree, metrics, commits)
+            print(f"  ✓ Reports written for {work_tree.name}")
+            successful += 1
+        except Exception as e:
+            print(f"  ✗ Error analyzing {work_tree.name}: {e}", file=sys.stderr)
+            continue
+    
+    print(f"\nCompleted: {successful}/{len(repos_to_analyze)} repositories analyzed")
     print(f"Reports written to {output_dir.as_posix()}")
-    return 0
+    return 0 if successful > 0 else 2
 
 
 if __name__ == "__main__":

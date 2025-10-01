@@ -1,6 +1,6 @@
 # Git Evaluation — VideoCropper-lambda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/VideoCropper-lambda`
+Repo: `/home/quantium/labs/oriane.xyz/VideoCropper-lambda`
 
 ## Summary
 

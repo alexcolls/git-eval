@@ -1,6 +1,6 @@
 # Git Evaluation — SSCD-model
 
-Repo: `/home/quantium/labs/oriane/_deprecated/SSCD-model`
+Repo: `/home/quantium/labs/oriane.xyz/SSCD-model`
 
 ## Summary
 

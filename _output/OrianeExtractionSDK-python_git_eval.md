@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeExtractionSDK-python
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeExtractionSDK-python`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeExtractionSDK-python`
 
 ## Summary
 

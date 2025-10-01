@@ -1,6 +1,6 @@
 # Git Evaluation — FrameComparisonModel-lambda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/FrameComparisonModel-lambda`
+Repo: `/home/quantium/labs/oriane.xyz/FrameComparisonModel-lambda`
 
 ## Summary
 

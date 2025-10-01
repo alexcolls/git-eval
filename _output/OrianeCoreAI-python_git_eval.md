@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeCoreAI-python
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeCoreAI-python`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeCoreAI-python`
 
 ## Summary
 

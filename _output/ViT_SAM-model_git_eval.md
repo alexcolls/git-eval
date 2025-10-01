@@ -1,6 +1,6 @@
 # Git Evaluation — ViT_SAM-model
 
-Repo: `/home/quantium/labs/oriane/_deprecated/ViT_SAM-model`
+Repo: `/home/quantium/labs/oriane.xyz/ViT_SAM-model`
 
 ## Summary
 

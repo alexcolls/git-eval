@@ -1,6 +1,6 @@
 # Git Evaluation — orn-platform-clusters
 
-Repo: `/home/quantium/labs/oriane/orn-platform-clusters`
+Repo: `/home/quantium/labs/oriane.xyz/orn-platform-clusters`
 
 ## Summary
 

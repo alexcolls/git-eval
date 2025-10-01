@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeSearch-fastapi
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeSearch-fastapi`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeSearch-fastapi`
 
 ## Summary
 

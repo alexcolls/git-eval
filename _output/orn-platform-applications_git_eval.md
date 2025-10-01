@@ -1,6 +1,6 @@
 # Git Evaluation — orn-platform-applications
 
-Repo: `/home/quantium/labs/oriane/orn-platform-applications`
+Repo: `/home/quantium/labs/oriane.xyz/orn-platform-applications`
 
 ## Summary
 

@@ -1,6 +1,6 @@
 # Git Evaluation — OrianeDevOpsCLI-bash
 
-Repo: `/home/quantium/labs/oriane/_deprecated/OrianeDevOpsCLI-bash`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeDevOpsCLI-bash`
 
 ## Summary
 

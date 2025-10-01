@@ -1,6 +1,6 @@
 # Git Evaluation — orn-acquisition-lambdas
 
-Repo: `/home/quantium/labs/oriane/orn-acquisition-lambdas`
+Repo: `/home/quantium/labs/oriane.xyz/orn-acquisition-lambdas`
 
 ## Summary
 

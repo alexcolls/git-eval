@@ -1,6 +1,6 @@
 # Git Evaluation — SAM-model
 
-Repo: `/home/quantium/labs/oriane/_deprecated/SAM-model`
+Repo: `/home/quantium/labs/oriane.xyz/SAM-model`
 
 ## Summary
 

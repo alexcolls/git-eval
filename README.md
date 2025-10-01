@@ -26,13 +26,19 @@ Usage
 
 Multi-repo dashboard
 
-- Run across all top-level repos under /home/quantium/labs/oriane (and _deprecated/*):
-  python3 -m giteval.combine
-- Outputs in OUTPUT_DIR (default ./_output):
-  - _git_eval_dashboard.md (detailed Markdown with charts and tables)
-  - _git_eval_dashboard.json (data backing the dashboard)
-  - _git_eval_monthly_totals.csv (global month aggregates: hours, commits, added, deleted)
-  - _git_eval_authors_schedule.csv (per-author: hours, commits, weekend/weekday, day/night, repos_count)
+- Set GIT_EVAL_GIT_DIR to a directory containing multiple git repositories
+- Run with Poetry:
+  poetry run python -m giteval.combine
+- Or run directly:
+  bash run-combine.sh
+- Or with Python directly:
+  PYTHONPATH=./src python3 -m giteval.combine
+- Outputs in OUTPUT_DIR (default ./\_output):
+  - \_git_eval_dashboard.md (detailed Markdown with charts and tables)
+  - \_git_eval_dashboard.json (data backing the dashboard)
+  - \_git_eval_monthly_totals.csv (global month aggregates: hours, commits, added, deleted)
+  - \_git_eval_authors_schedule.csv (per-author: hours, commits, weekend/weekday, day/night, repos_count)
+  - Individual per-repo reports (unless DASHBOARD_ONLY=1 is set)
 
 Outputs
 

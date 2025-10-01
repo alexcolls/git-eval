@@ -1,6 +1,6 @@
 # Git Evaluation — FramesEmbeddingsExtractor-lambda
 
-Repo: `/home/quantium/labs/oriane/_deprecated/FramesEmbeddingsExtractor-lambda`
+Repo: `/home/quantium/labs/oriane.xyz/FramesEmbeddingsExtractor-lambda`
 
 ## Summary
 

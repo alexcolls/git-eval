@@ -1,13 +1,13 @@
-# Git Evaluation — orn-experience-app
+# Git Evaluation — OrianeApp-nuxt
 
-Repo: `/home/quantium/labs/oriane.xyz/orn-experience-app`
+Repo: `/home/quantium/labs/oriane.xyz/OrianeApp-nuxt`
 
 ## Summary
 
 | Metric | Value |
 |---|---:|
-| Current tracked files | 7 |
-| Current lines of code (tracked) | 928 |
+| Current tracked files | 189 |
+| Current lines of code (tracked) | 25828 |
 | Commits (total) | 240 |
 | Commits (merges) | 12 |
 | Commits (non-merges) | 228 |

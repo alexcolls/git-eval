@@ -1,6 +1,6 @@
 # Git Evaluation — migration-supabase-to-aws
 
-Repo: `/home/quantium/labs/oriane/_deprecated/migration-supabase-to-aws`
+Repo: `/home/quantium/labs/oriane.xyz/migration-supabase-to-aws`
 
 ## Summary
 
