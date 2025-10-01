@@ -884,6 +884,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     
     # Analyze each repository
     successful = 0
+    all_repo_data: List[Dict] = []
+    
     for work_tree in repos_to_analyze:
         try:
             print(f"\nAnalyzing: {work_tree.name}")
@@ -896,9 +898,38 @@ def main(argv: Optional[List[str]] = None) -> int:
             write_reports(output_dir, work_tree, metrics, commits)
             print(f"  ✓ Reports written for {work_tree.name}")
             successful += 1
+            
+            # Collect data for combined dashboard if analyzing multiple repos
+            if len(repos_to_analyze) > 1:
+                curr_loc = _current_loc_snapshot(work_tree)
+                repo_data = {
+                    "repo": work_tree.as_posix(),
+                    "metrics": asdict(metrics),
+                    "current_loc": {"lines": curr_loc[0], "files": curr_loc[1]},
+                    "breakdowns": {
+                        "authors": _author_details(commits),
+                        "monthly": [
+                            {"month": m, "commits": c, "added": a, "deleted": d, "files": f}
+                            for (m, c, a, d, f) in _aggregate_monthly(commits)
+                        ],
+                    },
+                }
+                all_repo_data.append(repo_data)
         except Exception as e:
             print(f"  ✗ Error analyzing {work_tree.name}: {e}", file=sys.stderr)
             continue
+    
+    # Generate combined dashboard if multiple repos were analyzed
+    if len(repos_to_analyze) > 1 and all_repo_data:
+        try:
+            print("\n📊 Generating combined dashboard...")
+            from giteval.combine import build_dashboard
+            md, combined = build_dashboard(all_repo_data)
+            (output_dir / "_git_eval_dashboard.md").write_text(md)
+            (output_dir / "_git_eval_dashboard.json").write_text(json.dumps(combined, indent=2))
+            print(f"  ✓ Combined dashboard written")
+        except Exception as e:
+            print(f"  ✗ Error generating combined dashboard: {e}", file=sys.stderr)
     
     print(f"\nCompleted: {successful}/{len(repos_to_analyze)} repositories analyzed")
     print(f"Reports written to {output_dir.as_posix()}")
